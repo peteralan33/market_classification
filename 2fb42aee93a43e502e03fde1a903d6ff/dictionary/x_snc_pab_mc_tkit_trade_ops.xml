@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6577a62e93283e502e03fde1a903d694" extends="sn_bom_treasury_service" label="Trade Operations" max_length="40" name="x_snc_pab_mc_tkit_trade_ops" type="collection"/>
+</database>
