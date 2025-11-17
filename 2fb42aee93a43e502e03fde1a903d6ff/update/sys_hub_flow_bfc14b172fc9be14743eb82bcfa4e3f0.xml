@@ -1,0 +1,1185 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=47672000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>link_emails__attachments_for_trade_exceptions</internal_name>
+        <label_cache>[{"name":"97f11c99-ffb8-48e6-9e97-4f7b45056448.Record","label":"2 - Look Up Record➛Email Record","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","usedInstances":{"d938a2a3-6224-4978-90c8-5d6926f19b43":["email_record"],"a6d36d55-3532-4c62-98ba-15900961f306":["email_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"04661522-250f-4a30-986a-bca86d3a1db5.Record.interaction.sys_id","label":"1➛Interaction Related Record Record➛Interaction➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"interaction","column_name":"sys_id","usedInstances":{"97f11c99-ffb8-48e6-9e97-4f7b45056448":["conditions"],"d0d8c63c-7860-48fa-abee-b8365e2de4d7":["conditions"],"fb1145ef-ee8e-4fb9-9452-8a8b9d05f491":["conditions"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Wire Service Case Record","reference":"sn_bom_treasury_wire_service","reference_display":"CM Investigation Case","type":"reference","base_type":"reference","usedInstances":{"90a881e0-dc5e-4ff1-83f4-8bfce6aa4014":["target_record"],"d938a2a3-6224-4978-90c8-5d6926f19b43":["target_record"],"a6d36d55-3532-4c62-98ba-15900961f306":["target_record"],"ce951ff9-767d-4536-b9a4-92c7c5546a39":["target_record"],"55b6fa8b-8a0f-43fd-ada5-3d4e9e002bee":["record"]},"attributes":{}},{"name":"04661522-250f-4a30-986a-bca86d3a1db5.Record.interaction","label":"1➛Interaction Related Record Record➛Interaction","reference":"interaction","reference_display":"Interaction","type":"reference","base_type":"reference","parent_table_name":"interaction_related_record","column_name":"interaction","usedInstances":{"90a881e0-dc5e-4ff1-83f4-8bfce6aa4014":["source_attachment_record"],"392fc62e-34b9-457c-9b1c-fbf1f0954d29":["record"]}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Wire Service Case Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_bom_treasury_wire_service","column_name":"sys_id","usedInstances":{"04661522-250f-4a30-986a-bca86d3a1db5":["conditions"]}},{"name":"97f11c99-ffb8-48e6-9e97-4f7b45056448.__action_status__.message","label":"2➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{},"attributes":{}},{"name":"97f11c99-ffb8-48e6-9e97-4f7b45056448.Record.sys_id","label":"2 - Look Up Record➛Email Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_email","column_name":"sys_id","usedInstances":{"1ac3c132-d463-459c-8152-ab14ce861c8c":["condition"]}},{"name":"04661522-250f-4a30-986a-bca86d3a1db5.Record.sys_id","label":"1➛Interaction Related Record Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"interaction_related_record","column_name":"sys_id","usedInstances":{}},{"name":"fb1145ef-ee8e-4fb9-9452-8a8b9d05f491.Count","label":"5 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"d82eb396-5c25-441e-b6f5-dfbfa09970f3":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fb1145ef-ee8e-4fb9-9452-8a8b9d05f491.Records","label":"5 - Look Up Records➛Attachment Records","reference":"sys_attachment","reference_display":"Attachment","type":"records","base_type":"records","usedInstances":{"85e1a474-527d-46a0-b2c5-6a7fb236d697":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"85e1a474-527d-46a0-b2c5-6a7fb236d697.item.sys_id","label":"7 - For Each➛Attachment Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_attachment","column_name":"sys_id","usedInstances":{}},{"name":"85e1a474-527d-46a0-b2c5-6a7fb236d697.item","label":"7 - For Each➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","usedInstances":{"ce951ff9-767d-4536-b9a4-92c7c5546a39":["source_attachment_record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
+        <master_snapshot>324283972fc9be14743eb82bcfa4e324</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Link Emails &amp; Attachments for Trade Exceptions</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>73a7f52f2f813210743eb82bcfa4e3d5</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:30:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bfc14b172fc9be14743eb82bcfa4e3f0</sys_id>
+        <sys_mod_count>157</sys_mod_count>
+        <sys_name>Link Emails &amp; Attachments for Trade Exceptions</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sys_hub_flow_bfc14b172fc9be14743eb82bcfa4e3f0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 15:45:49</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 2025-11-12 10:45:35 AM">c0b7392f2f813210743eb82bcfa4e3d0</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=bfc14b172fc9be14743eb82bcfa4e3f0"/>
+    <sys_variable_value action="delete_multiple" query="document_key=bfc14b172fc9be14743eb82bcfa4e3f0"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="sn_bom_treasury_wire_service">service_definition=f565708f2fec7a50b14f861cbfa4e359<item display_table="sn_bom_service_definition" display_value="Unmatched Trade" endquery="false" field="service_definition" goto="false" newquery="false" operator="=" or="false" value="f565708f2fec7a50b14f861cbfa4e359"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 15:45:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>73a7f52f2f813210743eb82bcfa4e3d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 15:45:33</sys_updated_on>
+        <table>sn_bom_treasury_wire_service</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>bfc14b172fc9be14743eb82bcfa4e3f0</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 15:45:33</sys_created_on>
+        <sys_id>bfa7f52f2f813210743eb82bcfa4e3d5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 15:45:33</sys_updated_on>
+        <trigger display_value="">73a7f52f2f813210743eb82bcfa4e3d5</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=bfc14b172fc9be14743eb82bcfa4e3f0^sys_idNOT INbfa7f52f2f813210743eb82bcfa4e3d5"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=bfc14b172fc9be14743eb82bcfa4e3f0"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=bfc14b172fc9be14743eb82bcfa4e3f0^sys_idNOT IN3bc14b172fc9be14743eb82bcfa4e3f1"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>bfc14b172fc9be14743eb82bcfa4e3f0</id>
+        <name>Link Emails &amp; Attachments for Trade Exceptions</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:30:56</sys_created_on>
+        <sys_id>3bc14b172fc9be14743eb82bcfa4e3f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:30:56</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3bc14b172fc9be14743eb82bcfa4e3f1"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=bfc14b172fc9be14743eb82bcfa4e3f0^sys_idNOT IN42d103572fc9be14743eb82bcfa4e3b4,8ad103572fc9be14743eb82bcfa4e3a4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Link Emails &amp; Attachments for Trade Exceptions">bfc14b172fc9be14743eb82bcfa4e3f0</model>
+        <model_id>bfc14b172fc9be14743eb82bcfa4e3f0</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_bfc14b172fc9be14743eb82bcfa4e3f0</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:31:06</sys_created_on>
+        <sys_id>42d103572fc9be14743eb82bcfa4e3b4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:33:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=42d103572fc9be14743eb82bcfa4e3b4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Link Emails &amp; Attachments for Trade Exceptions">bfc14b172fc9be14743eb82bcfa4e3f0</model>
+        <model_id>bfc14b172fc9be14743eb82bcfa4e3f0</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_bfc14b172fc9be14743eb82bcfa4e3f0</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:31:05</sys_created_on>
+        <sys_id>8ad103572fc9be14743eb82bcfa4e3a4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:33:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8ad103572fc9be14743eb82bcfa4e3a4"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=bfc14b172fc9be14743eb82bcfa4e3f0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bfc14b172fc9be14743eb82bcfa4e3f0"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=bfc14b172fc9be14743eb82bcfa4e3f0^sys_idNOT INaed143572fc9be14743eb82bcfa4e3a3"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">bfc14b172fc9be14743eb82bcfa4e3f0</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:31:08</sys_created_on>
+        <sys_id>aed143572fc9be14743eb82bcfa4e3a3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:36:05</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACuliWnbetk0UDbDeA7e0+pIFASaRNVKZckVLWu8i/d6ibZV18iZWt8xLAHJpzeHzmzDCPP9QAuThQb9QFcgOsDlTKBI4YChbbDYZlIZcdhtYytkbMRyKMtuqNiGI8UEkUrhd4vQmQgM0EBRwWw8jHkXqjD9QEBTGeb/m9DyfB99Nj8jPVPAyfOXPccO2ICCMeR1vnmUbY4ThKqCe3+ZRDgu1f+e6vEFXmWVSZIi63eCsa+BFm6s3j00DdoAgSCQniRy1EJRKPeGhiYM0zddMwNM0YD3V3ZLq64ZsIaxocWGelhly0kLO7Nv4mMPOxXzLS4A1u6j+wYFvuWAHtGUdr9I3T73D6WJP7CAbsHs5i5Ucn5yRb9lYhcPGwETRk2UqGMwuGQbxmnzP8kk1MUByIgk1YiTmchzcSsgSRIyLzVfg8KxJ+pCy9XR4MQg8F5SckRETdWGAuCSc0AOqdjBsexlGKfnY3fZjdOl8/LKZ/3M2c2d18MbufLu5u1Zf0Xs6/sTwxQ5hjcbLrvJQS+EhxIH9AFq9dQDNQuRfRjfjgCZoU+nsZ7DQ9DZlPU1YauvaKEN/XdXH7Q8LWtE5pe5WMpbwzrQLHhLI0+HesaaZPrJFla2NiEOzZyNJcfUjGI91zCRpi05qcrevRCCEfow5du6Si6yozLdBFC0nV2x9SeL5yisSHmvY/iTy3r9dqfB36OLjdHadCcLkE1VO2iYVk6xkxwR0ROsj3nQqPcitgOib67G5N5R/XfBQzOMIpf6Gm8lMiS0Y/UQ4XeIS6LdhKj4Q4+ZQfOYuZEsJPCX8UL46ALKEUTkju12iZc0zmOMCeqMiCfOHVT39SzilbVlCXSVNWGjnLdCAvpbhSlptfmPypz7Jvkp7UyKw1sbNrW9cJcTExNFtWtq6ZLtE1W7MQ8U1N84xKbTfBdKIUNUm8SY2fV+E8FWNwgvTqFOfgtWo1nCSjZF+DBQlSIrmRTPuBpvcEzZDQaoZonuWIpSyz5dt9dR66Ws/TAvITBN/wTzVGueEEByRB+Axm/Ar3c5H3zzIKY+bX7UieqVCm7HYov+T8/dqjE5IwwocB7O+4Jg/c0V4IF7FtD+5nEt2d4CHWwPRM8DvXmkxcDxmE2CMbG3rN/XYwWrG9C9c7orakTa5dDtgqnKRNb2d43wUAGz54NsDLHTAXZqv/ZbH34XTPK8wcgBo5gfSyhuEtA+rjItZvtTdSJ7v6vrTiyXjiWbpteza8Y6DiyRC7SB8aFprYI3Ns1Sq+AeUQTNHCzE953fAtT4F0uMGXLHRdz/m3lC3HQsh2dH6XZjDHpt9BWZJKp5Q/i5KaShgpn0P22/1unzLH0ADTJ25f7foUFPKHVd4WhhuKVWNegNS/w/peajlndrBydU+qmkiS/bte/KTCw7E1IWa7xZBJm8XswHTDvPrx4sQKSTprrW3OOFXwSWvddA4Gr5BwTSbVieHASNMXKXrvpBhvR4p58RhV1GLnO/I1YN9RC0vnikv6mMyJnZBUzfs2VCCgQBKFEiX/3yL2FXeriBUGSgOYlyGhIrNf6trVLtKEUir45wLJJvBGN4NlJR+grq9R1aTQ7wsY+zayLLNjHp7UX8BtgI7gvfq2dXZVJG1FdrB3nXdu/czW7lWR7L4iTuxLvd66vTldduvW9nTs1pc3nkPv9xYUV9pSnv4DOxu+yIIfAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=bfc14b172fc9be14743eb82bcfa4e3f0^sys_idNOT IN45784f572f0dbe14743eb82bcfa4e36c,64c247d72fc9be14743eb82bcfa4e38a,6a224f572fc9be14743eb82bcfa4e34b,7882cb972fc9be14743eb82bcfa4e383,a075879f2fc9be14743eb82bcfa4e3e9,a3250f5f2fc9be14743eb82bcfa4e36e,a3828f972fc9be14743eb82bcfa4e311"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">bfc14b172fc9be14743eb82bcfa4e3f0</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:59:58</sys_created_on>
+        <sys_id>45784f572f0dbe14743eb82bcfa4e36c</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-11-12 16:44:42</sys_updated_on>
+        <ui_id>55b6fa8b-8a0f-43fd-ada5-3d4e9e002bee</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1W227iMBD9lcjPCCWE+1sXttKuepHaVftQSuTYE7DqxFnbgbKIf9/JjSJKWypVK1Vb3jw3nzmc8eRuTQQnQ9IG7noDr8t8z/dbrtvqt72w64dei/sUwCMNktAYMFIDU5rjeUFllhvW65EGaoEHXpNlWkNiNxv0c2FSSVc3VRha2FxIjn4yvLtvkJRqrGhBk+F6z3UsJElDkBh6VWPax2hXaX7mimUx4gpEbTyrMseVx/kxRg8m5XA8t0Hg0ULCAYFEVBpokJgmnFqlV2RodYYGbJpfJnK1jZiLxJaNxvTRiD94c9vN4yLAzlhFwvYYVASV5mhMLb3GysxmesuXEgxMyQmHiGbSjnZtZcBlaoVKyhRLQ1lnK5nFyUXJCNkW2Pk/MoMgIM37zJGXbUXXc7W8qkGeiqSgpGpRKkbl9kSt1SLMbA5nTUBCwXFM01QksyDVaiGKZIQSN2cSD81IqiXeacQsaVKW424iq7R5ivZxYb6hWuRNnGMZTN40iFmZkaTGPLWCHAa/sxxJ2VjVQlCwUFAQFErIk5kWqT3BqxZQAd80KtGHndcUxgZPgtqp+SR8kwShigOLQjCZXgVLoSEwoBf4nzzX/y16nevS64yogXcPxBFw64H4VcjgMPxqJp7ZznZznYvSUU1E58Mmov+ZJqJq49OPxFuD4LZefWp3lFRo3+wOgcWnf5K5rs89d4qQEG/R80yrLC0d06XSD0GikJXSkMvfmVPjhACJg4G4PZyFoM4tBjonMuc0J8KZKuwDN0u4KhPXk3qsJmQ4Id9jKqTzC9mZgXMyy99xHK1UWCqdc6ofwJoJaUxKsEVGpwNe6PXpwO93el3uutHAixj0Bh2s3gW/CC8kU4QjzwFqQhfm/CD4kWU2U8qYyhJ7EPg39QhqD1q/2/d71O93I9f3PUwKfdYe9KMO9wHajO5BY5mxKgYd1PfsQXy73GbKVGJRcgch/sykAOcMlmKfwzb32i9X9nsvAa1v2wP6drkDXxNfsvuS3b+Q3fs29BHvaL2hTwVIbg48rPV6hhg5sRCUD+3eiq6czk3l3H64ftie9rpu8ftE2/q/+X69/wt7KFr7tg0AAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=45784f572f0dbe14743eb82bcfa4e36c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">bfc14b172fc9be14743eb82bcfa4e3f0</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:35:05</sys_created_on>
+        <sys_id>64c247d72fc9be14743eb82bcfa4e38a</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-11-12 16:44:42</sys_updated_on>
+        <ui_id>392fc62e-34b9-457c-9b1c-fbf1f0954d29</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K1ae2ygfbVX6NtEhITGQYOJlsOjGvqHWHDuLnZau6n/fzVfJADGQeBha3nyv7/U5x8c333aeFN7Cm6AIwqNwxuMwjqMgiOaTMJ3FaRiJGBBDb+RpyJF2lshNKWi9BlXVgd0umMxm4TSKxtE0yMYTiIPx0XwG45TDfEb1oUin/mVT50vtsATupNH7PXUR0hYKttddM4rwlVSiRO0tvt2OvAJKOpdqvMXuUeq1wBWkqGjrZY/8MRO3Leq1MLzKUbtE9sGzrnLZZdjpkjJUVMMJg5GH9w61QAKSgbI48nLQApwpt97ClRUFSgRxodX2sGNFCrREc7i38hedPAnqfRkSM96JcFgmnUBtOFuCgyvqzF1VHvQykqNtNRGYQaXc8TDWbrgoas3bEgep6quNqnJ93iriHRoM7qOyBAKLmmeNvKWVXa3M5rIHeSJ1I0lHURkO6rAC50qZVq6Gs/NQYaNxDkUh9V1SlGYtm2KCkvt3ihZ+psyGzrTyTvutV3xSFfwTii+b8DWUsibxhdpQ8X7k2a09VmDtAxXSMPlZ1UhaYh2FpFGhkSBpnFAX81IW7hMdtcYO+H7UPY10+pLD+NGDoQY9H57HwPBP7X76R/Jtzn8Frt75X5v7fh5nZ/4nsbNhLTtvE531p+9m/flHsn5H48N7/2+OD6IXZ+rASY3J7cDt1oHDmyoIYsGVsSgSYlYosvH3jSl/JNqQFm3+cw5SWUauYSQT8FWtjWUrWCNLETUjQiSmdCiYM8ytkHGw6LMbfaMbujKTHGqFmMkoLy2TOjUVNcS6N6OANhvWI/Cfvr9/He7bJsIr7q2fCCcSlbDPXGQ/DpBAkDZJe7GPRkKXZNdd8vBHfLe5EM6C5vtA0+G/+THe/gZbhrpsNQoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=64c247d72fc9be14743eb82bcfa4e38a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">bfc14b172fc9be14743eb82bcfa4e3f0</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:32:29</sys_created_on>
+        <sys_id>6a224f572fc9be14743eb82bcfa4e34b</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-11-12 16:44:42</sys_updated_on>
+        <ui_id>04661522-250f-4a30-986a-bca86d3a1db5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VY227jNhD9FUHPjiv5JjtvRQIDAbYbIEn3ZbsgKJKKidKklqKSdQz/e4ciZRu2fFHrAAn6ZHA4JM/MnDMi/X0Zchpeh3QSTbLJZDhOoqjfj6LRqE9wnKb9EUmjFA/CTijxnIGnwalgMHzBorRjLg3TmBiuJNJMYMMo/BKlKThRXuQCL75537uNb/DgfOHX+5IZF1QzGV5//9EJc6zhPHAPr5c7U+cCFjhlAlyfPOKdAMwiXw9RNedsX7aXBV/dBEC0UKJOyH4ZJikDDBkWBeuEcywpNkov1hbNML2XYmOYQZJgx9A6/yr4G5w7jqxfxiAqwtzceoh82pw5u8UGPxpdElNq70pmihNWuHxQluFSmJttm3O4z22q3RIXtlutRDmXX106wvUGdZXAUhYAguU2UIvch5E9ztTrQ41yymWVEz8pFMFiPcLGaJ6WxuJZhkywOWyE5jjPuXxGuVYvvFoMWObdZwGDbibUKxxa8GfZdRzpQl5xdwr228r8DWtuo/gDtoHFAIgLYAhyJSxUqatUviAiyqKa0FgWbq9w1QmLRXEjcFFsIoeUo5+lxe3y4CNGLml2CdE8N7/DFi/MB7fq1JoZHqXgZEM5oiTlFkWxJRyqSFllhdO/StiBLpc3wByrn7hLSg1JNl2ADPOr1b6W2i5vKa/TsdXyutkOrilgL7Q925emDbzQ4osJbRBFn0lqcPjHU1p77bgUnBBQTI+SjG74VChtkMvlloL2RdGa52dAqHl+b5kZpItDqDzNM84EbfqeTO3Ezvek9//8nnxIkgMgilz1uBRcVpcDAPpe7B8epV4a7/CsoteG+5UNF2RfAzgwKnhrrYQz4NRKeISzgyeHpwFi3e8ryuz2+troBdC/mAD6vcsIYLkOc53IhpzX90Fbzdr/zfrjXX+g4NaCeNUksFZnxm3P7K32BdxvpeBtsrmZ2wOcu/DF8YAiO+/ZAmaw1J+HnH7RK6fPzGxOr72oMq9Y/N007xmH6kJV4b3DJTQ++g5Kty6hPENzqBzP4a7sHmgFwpqhTJWSIn9L3hDJVjLjujAHX3MPDPQjAwXCDMyMBZV3oP/de+6MOOpU3mVBHYg/rQggkKAKJFgH0i7sNk1rcMHL6aWb1hRzUVUDHkD5VjmZ1kofaFwnCnmEEWd2tTNBxRcF9d/bXpMEGtvfCayf4jV9+dZEGE4HPTxK+nEcRXFEk2icJPF4lGYjnAyyjUYRKiSBbgo7Z0AV2B7V1KjrHO33H9dS2zaaM1DVFLxV0j6te4kJLCyob1DDOg3cN5RUKcGw3OkoT/Cd+G3q8Xu+Dj9cV/kU/y2V/Gk3087UmOv3ujeU/E/Jf5bszlJszKLeOKbkapzEydUgo6OrCcXDKzxJh0mfMjLILnkV+PEP9/fBLMUVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6a224f572fc9be14743eb82bcfa4e34b"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Associate Record to Email">7b95a4c0a73133008299b39f087901b4</action_type>
+        <action_type_parent display_value="Associate Record to Email">18a22c44a73133008299b39f08790116</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>7b95a4c0a73133008299b39f087901b4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">bfc14b172fc9be14743eb82bcfa4e3f0</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>1ac3c132-d463-459c-8152-ab14ce861c8c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:34:01</sys_created_on>
+        <sys_id>7882cb972fc9be14743eb82bcfa4e383</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-11-12 16:44:42</sys_updated_on>
+        <ui_id>d938a2a3-6224-4978-90c8-5d6926f19b43</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TwWrjMBD9laKzY+zEqePclqSFwu4W0tJLKWYsjxKBLHtlKW025N93ZDtpacNSlj32OE8zo/ee9B73TJZsztIim0LCI0gn8WQSRbNxlhWTTESzNIviYsoCpqFC6sQKpMoN8tqUhG5BOQ/v91kq4phn2UiIYjZKZng5yjBLR4lIi2QaTS+TZBauurnDgSZL2TYKdg/DAkL4RqrSoGbzx6eANWDoRouGzffvjj5LWUGBilqvPOeL1ZHzeSV213i0rLmrUNtcHsHvw5blcHJxs6QTGvLU4oDhi0VdInESoFoMWAW6BFubHZtb4wgwCOWtVrtTx0Zq22uu4KWVv+niydj3CSSRfPDjVOaDVz0slmDhjjZz68zJulpybHt7ShTglF28xfqG28bKWvcjFgp1nK6Vq/TP3hZ2WvDmaVxLJLDxOj3zQYa429TPqyPLa6k7S4ZDVXNQpwqsNbJw1vPZMyfvz7mNCruigqaRep03pt7KbidRrMK1oiIUqn4mLq1c6xC41xOS2xBeE77s4Acw0ov7QWtomN6KvM9LUzfNoNk/CzsErN21CwVt+yqdPM9/OU+8N2KQnPeu+RFuZGO/0cVbHNQdgiFFhfjrl4TXv2fBrNGei9GCPovFMo9D7gz5av9LWD7B7BiW+47ah7S8Z/xvcRl/xeUrLk9/AOzz2c12BgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7882cb972fc9be14743eb82bcfa4e383"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Move Attachment">7159823353cc10103a33ddeeff7b1216</action_type>
+        <action_type_parent display_value="Move Attachment">8445146a9353130079b5925cf67ffb61</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>7159823353cc10103a33ddeeff7b1216</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">bfc14b172fc9be14743eb82bcfa4e3f0</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>85e1a474-527d-46a0-b2c5-6a7fb236d697</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:46:49</sys_created_on>
+        <sys_id>a075879f2fc9be14743eb82bcfa4e3e9</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-11-12 16:44:42</sys_updated_on>
+        <ui_id>ce951ff9-767d-4536-b9a4-92c7c5546a39</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9WV22rjMBCGXyX4Og6xFZ96VxoKhd0W2m73ohQzlsaJQD5UlttmQ999x4emTnpeumWXQMCjGemff/TZl2tLCmvPShwvCl3GPMa5M3WmDBgTAjFNg8RxncAaWzlkSJlVUWuOMRgDfJlhbmKNvNCCMm5A1U3Keh166MAsmNmeGwh75sPUTlzu2T4EaeIyX/hRMJEGs/t7qhOyKhWsLvpyivClVEJjbu1dXo2tEjSdbVBbe+udpfeKV5CgotSzVv1of6N+dPqg/u3+zKpsMjSmSAI49qFv/d6ngzgVNHKdsYV3BnOBpDMFVeHYyiAXYAq9svaMrimgEcRJrlabjKXMTedDBneV/EWHMnc8OJdUrqqBRGuwGPduUtL+MCGdg4EzOpGbWm9sLiTHqrNSYAq1MgfDWJdwUhpZ5F2JgUQ9VBeqzvLjzjZrs8FgjHVFcrBs+m866ttLz5bF7casQ5m3VvWLquCgBqkImi8PJapm0KlUGLdzGlvUvZZJbRqpa6uW50+H0wWfGw8qbEebQVnKfBGXuriRrQzqKpssFD1MUlXckvxKLvIJ8MaCCQ0OJocUn7fhC9Cy8eM7bUPFzYk/cnld41GjNgp9zw2B2b4/jexZwLkdeb5LOIQiYkRGkoB1P25meaCgqh6dpCbi67rxofO1dzDuhtCUcC1Ls0+ibrA3637coxy6r9IwuOoG9AKf5feA7qRBETsTXmsyzXwKp+9Q9sDpeSvtCZy7insiRcHrdp5S7DA571dGR/NHKt2/ReULHP4b9HVtfQC+FwjbNnubsW27v4QykXDHZR7awN2UKAtDOxIMbJZOwU8iBj77E8o6p99AbQavXWjXHV7cZrtHxKo8ToosNnTLqlqv4lupMa5Q38j2/bRD2k9aHZ11q6MDqPDD6L1D6SN6ndQd5T1q7ePDO3hIWls2Ou4WetDYZ4EWTv8j0D7+mXuBtC2vt0HbcltWcXdLe9Htrl/FH05T+vmBTf+ePQNGX7nI8ezEiaZBImac8/ATv3JXvwHNfSWvsgoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a075879f2fc9be14743eb82bcfa4e3e9"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">bfc14b172fc9be14743eb82bcfa4e3f0</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:45:40</sys_created_on>
+        <sys_id>a3250f5f2fc9be14743eb82bcfa4e36e</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-11-12 16:44:42</sys_updated_on>
+        <ui_id>fb1145ef-ee8e-4fb9-9452-8a8b9d05f491</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXTW/iMBD9KyhnihIClO2talVppX5IbdVLt4omtgPWmiRrO1CK+O87jp0QQdoFiUqt9uiZsf1m5r2J87zyOPXOvHEy8H0IhuNT3w9D3x+NQgJBHIcjEvvxIPa6XgozhpEaYsFwOQdRmLVaqgi0BjKdsVSjg3KVC1g+Of9500emXFDJUu/s+aXr5SDxTM2kd7bacu0LSkDMBIY+OlRbIPUyr5dR6bO26+a2zq11ZJIaKH7XY6+apZQhhgSEYl1vBikFncllbZEM6F0qNoYpxwzPPM8Evyr+hveOfROXMMyKMOurl5ErkzUnl6DhQcuC6EK6UDLNOGHK1oOyBAqhL5o2G3CXa56ldotN2+7ORDFLb205vPqAqitoKRSCYLlJ1CB3aSQP02xxX6G84mlZE+cUGQFRr7DrkseFNnhWHhPMNDmaQZ7zdBLlMpvzcjNimfUmAhe9RGQLvFTxSdoDYoD3sK7Qu0L7ZWl+AslNFjd4DG5GQFwgQyLbQpUVsizlPCKiUKVDQqrsWd66a+h4IUCpTeZY8uhPYXDbOriMI1s0s4VInutzPGLOXHLr7l66GPobypEspdygUA1xONQoEU5/FXgEXa38wWgUDPv9k/7QT04GEPonP8YjOIkJjEc0hIDGw949I0jHHnKKSVcoe8p6vSuxT7rlmGItK1WJ9aJZqrbyOdnu2K7bDnCyDY4mW8zjOwkXL/96uj1cibYE/5AjOf2QZMMNn1QmdWRr2dDjrnYO5vkeECqe3xlmduLle6gczRPOBG37Ol0Zx9bXqf9/fp2+JMkREI1s93gqeFrOYgT6Wez3Px6xP7Z4VtKr8VAzNlBkVwPQ0Vnn7WAl7AGnUsID3t15tHhaIFbzvqTM9qyvjE4A4dEEEPaPI4BVnWZdyJaaV69L080q/s3Ew3Y8UrCxIVi3CeygO4ND7+yvdwUcHqTgJtms5/Idzh35GfqOIrufOQKmuNXdF1n9RgtOJ0xvbq+iaKYXIH63+R3joqpRZXqf8KQdfCjbUbCRKColkkxh85pv2gCfR7szJOha82EjZA8sVTlu4LVzX4NpRejGiHnOTsreNOfIz9rqSD444oPxy35Jq2a1arDq2bf4EzyeEF7+AszfwvL1EAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a3250f5f2fc9be14743eb82bcfa4e36e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">bfc14b172fc9be14743eb82bcfa4e3f0</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:34:12</sys_created_on>
+        <sys_id>a3828f972fc9be14743eb82bcfa4e311</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-11-12 16:44:42</sys_updated_on>
+        <ui_id>97f11c99-ffb8-48e6-9e97-4f7b45056448</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYUW+jOBD+K4jnJAchgaRvp/YirbS3ldrevuztWQabxjrHsLZpN43y32+MgaCEJkGXnlrdI+Ox/c3M9w0D3zYuI+6VS+bePJ3Pp7PI84LA88IwSLAfx0GYxF6MJ+7AFXhFwVPjmFN4fMK8MM9qrRBdYcbBRpjKOV5/rZZ+q8zJknEiqXCvvn0fuDmWcJKm0r3a7C2dC4XjmHJwfaiw7EHT67x5ROWatX1ub3O+2IVMEgPFG7j0p6aCUMCQYq7owF1hQbDO5LqxSIrJreA7w5IJDSe6xvmnYi9w78wzfimFqBJq15pHVGXImtMbrPG9lkWiC1m5JsuMJVTZfBCa4oLr67bNOtzmmmXCbrFh290ZL1bii02H2xxQFwQshQIQNDeBGuRVGOn9Mnu+q1EumChzUi3yLMG8ecJaSxYX2uDZuJTTFRyEVjjPmXhEucyeWLkZsKxGjxweRinPnuFSxR7FCCcG+AjyikcLsN+U5q9YMhPF73AMbAZAjANDkC2hygpZpvIJJbxQ5YLEQtmz3O3AkPCaY6V2kUPK0Y/C4LZ5qCJGNmlmSyJZrn+FI55oFdx2UKthepSC8x3lkkwQZlColiSYUBpDHv8sYDvZbLxJGPrT8Xg4nnrpcIIDbzifhXgYJ3gWkgD7JJ6O7mgCVBwBn6iskmSkxch2+5fG8pFqmw17aMvtUHf/+f09BX46u7XAr9vp7Up5JfUD2+euAyqp+xeT+sTzPpLY4fL3p/X+6rUpOCFhnxwlGdnxSWVSI5vLloYPVdWb52dAqHl+a5jpxOvXUFU0TxnlpOuNtjALe2+08f/zjfYuSQ6ACLLVY4IzUY4nAPSt2D89Sr3Y3+NZSa/WSGdsWCWHGsCOzpyX3ko4A06thHu423mweDog1v2+pMx+r6+NlQCCiwkgGF9GAJsmzCaRHTmvJ1JTzdr/xfjjfX+gYGuDv+0SWK87/b53jreHAg56KbhNNrty8wrnLjy6vqLIwVu2gCVsre5DVr/omRGYrXa3114k08+Y/921XjEO1YUqw3uDMdg/+iUWt8ZglqIVVI7lMK3LcpBUCEuK0qwQBDVzYk0kU8mUSaUr58NGc0dBP8LJQJiOXlKn9HYa754v4tNx1Kn8lDp1INVtyoFAnDIQpwmkX9h9mtbkgsPppZvWAj7ny2rAJ1jeKieVMpOvNK4ThTzCiDO72pmg/IuC+vdtr0sCne3vBNYP8T1/+daUUBxPxjiMAt/3PN8jkTeLIn8WxmmIo0m60yhCSiTQTeHkFKgCx6OaGnWd/cP+UzXbfn3mDFA1A28yYT6kx5F2DCoor1OjOo276idxlnGKxV5DeQDkvyzKN0JD1+m7ayof4udWwR72M21Nnbl+q7GhYH8I9qOgnwzFZtQbz3ySDGeRHw0nKQmHc4KnQzyPp1FAaDJJLzkJfP8HvmrQZSAWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a3828f972fc9be14743eb82bcfa4e311"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=bfc14b172fc9be14743eb82bcfa4e3f0"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=bfc14b172fc9be14743eb82bcfa4e3f0^sys_idNOT INa145cf5f2fc9be14743eb82bcfa4e34b,a955839f2fc9be14743eb82bcfa4e365,fe934b5b2fc9be14743eb82bcfa4e3e0"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">50954f9f2fc9be14743eb82bcfa4e32a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">bfc14b172fc9be14743eb82bcfa4e3f0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:46:05</sys_created_on>
+        <sys_id>a145cf5f2fc9be14743eb82bcfa4e34b</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 15:45:28</sys_updated_on>
+        <ui_id>d82eb396-5c25-441e-b6f5-dfbfa09970f3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2UXWvbMBSG/0rwtWPkrxD3LnQUBtsKa+nNVowsHyVisuRJctIs5L/vyB9pWNNtlF3uLnqPdM77Hj/kEOjOtZ2z93plrVir4OrLYxgI5TX8fQgUbSC4CphWtXBCq7IXwmBLZecLK+co2zSgnJ197QhJYRZjuRa2lXT/8PtbbCNkbWCc2lKDvR2Y4OrwS8ntWyglrUBisztnhFrjc1HjiRPK44LFLE0WaUJIssziapFWcVKnFGiK96aH11OI2YdeCV9N5+ehbqdJ2tTeVkzCAJ4cqBpwNKfSQhg0VNXUabM/KQZofavks7ARymG7wF9+suIH9k7y3F/kgBkZDMXTsRzXN8hsowWD29YbHBRHKzm+YVp2jfo05PCLB0476abFo9JZ7AetN+1djJb43UbvPk8Db4TqA45FqRmVpxN1uIaqc2D9hwEJ/juWDW1bXE7ZGr0V/WP00kRriYeIS73DoZ6oiDJvPMId0egG9Xe9/ECN8Ck+Yht8PNisqBWs7OnDds5ghGO/lvJ75w0NAcco5bANvGCZEa1b4ZwtjK6P4Ut0z6g9HHgVx1kOfA6whHnGq2JeZHkyX9JlVdQk51kRR9e6U+54HIglL7F+a5t/wX1Bc57HJL/Mfba4xP0F4l+HPfkD7P7z/CXrhJD/sJ/DLmw5QDtm64e/mfVHD/YwwQ7c1MCERSP3Xns//Zv7wh4BEOxc2mnzzUd41o4/Adf14QEXBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">90954f9f2fc9be14743eb82bcfa4e32c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">bfc14b172fc9be14743eb82bcfa4e3f0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>d82eb396-5c25-441e-b6f5-dfbfa09970f3</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:46:21</sys_created_on>
+        <sys_id>a955839f2fc9be14743eb82bcfa4e365</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 15:45:28</sys_updated_on>
+        <ui_id>85e1a474-527d-46a0-b2c5-6a7fb236d697</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51SwW7bMAz9F50Tw3acIM6twFCgh61AV/QyFAYtUYkwWdIkOaln+N9HxU429LiTzUfy8T2RI7N9dH0Mr/YhBHU07PDjfcWUSRj9j8xAh+zAVMQusBU7g+5TPI6yLYpqi3KNuMd1Jdt6XVfbcr2HfVuLfCurushekFsvwjRRq1DBaRje/p+Bn5QWHheRDjxpi+jZYfyUioPDRkOLmgYtDNSvBIVFLWRd5DXflLtNmeflvira3aYtSrEBFDuqu3U+LaY/vUFip9DfeemTVJT5iuFHRCOQBknQAVesAyMgWj+wQ/Q9AR5BPBs93CtOykSiY6n2I6jfxF3keSqUSI44zsl72CwPOcP8ZBXHZxeVNTMSodVLD7e678y3WX5aAUrodbytgJA+EB+6pDmpWCTJ7yd7ebkNfFTm6m9JastB3yOI0au2jxjSGlBjR0RNB84pc2yct2d1bSYtXXbUFGRS2wsNTeeWAU/CM3oiyB4J/3KF38Cr5OIr0VDzdHXf/OrT3NnHoriZTVNB4F65+EB0Z1zETe/pXmemMB+GQK4CDXxN2NPtylNioCUr/i90sf5nkvoXm/4AznV4US8DAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">09d3c39b2fc9be14743eb82bcfa4e3af</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">bfc14b172fc9be14743eb82bcfa4e3f0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:38:48</sys_created_on>
+        <sys_id>fe934b5b2fc9be14743eb82bcfa4e3e0</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 15:45:28</sys_updated_on>
+        <ui_id>1ac3c132-d463-459c-8152-ab14ce861c8c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1U72vbMBD9V4o/J8Z27CTOt7K1UFib0YRCGcXI0jkRkyVPkpNmIf/7Tv6RhjVhY/TjvlnvdHfvne5576naVrU1S3VtDF9Jb/btZeBx6TD83nuSlODNPKok45YrmTXAwNsQUbvATUm4uBKKEgvsCgOMm0qQ3dOlOF1zwTR0nSqisZ4F7c32v4XsroJMkBwElllYzeUK0znDUxGQIkxpSEfReBQFQTSNw3w8ysOIjQiQEd7rEz/1xK++NMjgoiLXD3HTd1KaOVphMPDg1YJkgK0LIgwMvJJIRqzSuyOigbC5FG/AmkuL5Tx3+dXwn1g7ShJ3sQDUSKENHo9ZN7gWpmvFKcwrR7BFLMlFl0OVqEv50OpwI4eC1ML2I0ekNlgPKkfasegoFYu12j72DW+5bAR2QfdE4ngiFseQ1xaMexgQUGKhrCRVhcPJKq02vElGLqW/EnjwC6G22NRtkU+oI+7jjIh/i/jnBn4imjsV91gGk1uaOTGcZs3GYTmrUcKhGUv2o3aEWoGdlKydBl4wVPPKXmOfDXSsD4P363qyqft9OinCkKbpsCjy6TCewniYQjoZxsUkj5MgGcfx1H8Eii/vm53JODsc7hYP8+XN/dfl8/vd/oCKH+GGlCRFEgbJeTfE43NuOOODyxaI/mAB92h/6YAgCP5b4NQC3GTtKnfamub/7IAXt+5tB9PuDQPKDRJZOuyu/6+7wA4XgNNTaKv0dyfhDTv8ApGSIOchBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=bfc14b172fc9be14743eb82bcfa4e3f0"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=bfc14b172fc9be14743eb82bcfa4e3f0"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bfc14b172fc9be14743eb82bcfa4e3f0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:31:06</sys_created_on>
+        <sys_id>0ad103572fc9be14743eb82bcfa4e3b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:31:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bfc14b172fc9be14743eb82bcfa4e3f0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:31:06</sys_created_on>
+        <sys_id>8ad103572fc9be14743eb82bcfa4e3b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:31:06</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_bfc14b172fc9be14743eb82bcfa4e3f0"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_bfc14b172fc9be14743eb82bcfa4e3f0"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>link_emails__attachments_for_trade_exceptions</internal_name>
+        <label_cache>[{"name":"97f11c99-ffb8-48e6-9e97-4f7b45056448.Record","label":"2 - Look Up Record➛Email Record","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","usedInstances":{"d938a2a3-6224-4978-90c8-5d6926f19b43":["email_record"],"a6d36d55-3532-4c62-98ba-15900961f306":["email_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"04661522-250f-4a30-986a-bca86d3a1db5.Record.interaction.sys_id","label":"1➛Interaction Related Record Record➛Interaction➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"interaction","column_name":"sys_id","usedInstances":{"97f11c99-ffb8-48e6-9e97-4f7b45056448":["conditions"],"d0d8c63c-7860-48fa-abee-b8365e2de4d7":["conditions"],"fb1145ef-ee8e-4fb9-9452-8a8b9d05f491":["conditions"]}},{"name":"Created_1.current","label":"Trigger - Record Created➛Wire Service Case Record","reference":"sn_bom_treasury_wire_service","reference_display":"CM Investigation Case","type":"reference","base_type":"reference","usedInstances":{"90a881e0-dc5e-4ff1-83f4-8bfce6aa4014":["target_record"],"d938a2a3-6224-4978-90c8-5d6926f19b43":["target_record"],"a6d36d55-3532-4c62-98ba-15900961f306":["target_record"],"ce951ff9-767d-4536-b9a4-92c7c5546a39":["target_record"],"55b6fa8b-8a0f-43fd-ada5-3d4e9e002bee":["record"]},"attributes":{}},{"name":"04661522-250f-4a30-986a-bca86d3a1db5.Record.interaction","label":"1➛Interaction Related Record Record➛Interaction","reference":"interaction","reference_display":"Interaction","type":"reference","base_type":"reference","parent_table_name":"interaction_related_record","column_name":"interaction","usedInstances":{"90a881e0-dc5e-4ff1-83f4-8bfce6aa4014":["source_attachment_record"],"392fc62e-34b9-457c-9b1c-fbf1f0954d29":["record"]}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Wire Service Case Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_bom_treasury_wire_service","column_name":"sys_id","usedInstances":{"04661522-250f-4a30-986a-bca86d3a1db5":["conditions"]}},{"name":"97f11c99-ffb8-48e6-9e97-4f7b45056448.__action_status__.message","label":"2➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{},"attributes":{}},{"name":"97f11c99-ffb8-48e6-9e97-4f7b45056448.Record.sys_id","label":"2 - Look Up Record➛Email Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_email","column_name":"sys_id","usedInstances":{"1ac3c132-d463-459c-8152-ab14ce861c8c":["condition"]}},{"name":"04661522-250f-4a30-986a-bca86d3a1db5.Record.sys_id","label":"1➛Interaction Related Record Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"interaction_related_record","column_name":"sys_id","usedInstances":{}},{"name":"fb1145ef-ee8e-4fb9-9452-8a8b9d05f491.Count","label":"5 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"d82eb396-5c25-441e-b6f5-dfbfa09970f3":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fb1145ef-ee8e-4fb9-9452-8a8b9d05f491.Records","label":"5 - Look Up Records➛Attachment Records","reference":"sys_attachment","reference_display":"Attachment","type":"records","base_type":"records","usedInstances":{"85e1a474-527d-46a0-b2c5-6a7fb236d697":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"85e1a474-527d-46a0-b2c5-6a7fb236d697.item.sys_id","label":"7 - For Each➛Attachment Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_attachment","column_name":"sys_id","usedInstances":{}},{"name":"85e1a474-527d-46a0-b2c5-6a7fb236d697.item","label":"7 - For Each➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference","usedInstances":{"ce951ff9-767d-4536-b9a4-92c7c5546a39":["source_attachment_record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}}]</label_cache>
+        <master>true</master>
+        <name>Link Emails &amp; Attachments for Trade Exceptions</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Link Emails &amp; Attachments for Trade Exceptions">bfc14b172fc9be14743eb82bcfa4e3f0</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:33:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>324283972fc9be14743eb82bcfa4e324</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 15:45:32</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=324283972fc9be14743eb82bcfa4e324"/>
+    <sys_variable_value action="delete_multiple" query="document_key=324283972fc9be14743eb82bcfa4e324"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=324283972fc9be14743eb82bcfa4e324"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=324283972fc9be14743eb82bcfa4e324^sys_idNOT INb64283972fc9be14743eb82bcfa4e324"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>324283972fc9be14743eb82bcfa4e324</id>
+        <name>Link Emails &amp; Attachments for Trade Exceptions</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:33:03</sys_created_on>
+        <sys_id>b64283972fc9be14743eb82bcfa4e324</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:33:03</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b64283972fc9be14743eb82bcfa4e324"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=324283972fc9be14743eb82bcfa4e324^sys_idNOT INf24283972fc9be14743eb82bcfa4e325,f64283972fc9be14743eb82bcfa4e331"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Link Emails &amp; Attachments for Trade Exceptions">324283972fc9be14743eb82bcfa4e324</model>
+        <model_id>324283972fc9be14743eb82bcfa4e324</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_324283972fc9be14743eb82bcfa4e324</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:33:03</sys_created_on>
+        <sys_id>f24283972fc9be14743eb82bcfa4e325</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 15:45:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f24283972fc9be14743eb82bcfa4e325"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Link Emails &amp; Attachments for Trade Exceptions">324283972fc9be14743eb82bcfa4e324</model>
+        <model_id>324283972fc9be14743eb82bcfa4e324</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_324283972fc9be14743eb82bcfa4e324</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:33:03</sys_created_on>
+        <sys_id>f64283972fc9be14743eb82bcfa4e331</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 15:45:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f64283972fc9be14743eb82bcfa4e331"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=324283972fc9be14743eb82bcfa4e324"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=324283972fc9be14743eb82bcfa4e324"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=324283972fc9be14743eb82bcfa4e324^sys_idNOT INbe4283972fc9be14743eb82bcfa4e33f"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">324283972fc9be14743eb82bcfa4e324</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:33:04</sys_created_on>
+        <sys_id>be4283972fc9be14743eb82bcfa4e33f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:36:07</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACuliWnbetk0UDbDeA7e0+pIFASaRNVKZckVLWu8i/d6ibZV18iZWt8xLAHJpzeHzmzDCPP9QAuThQb9QFcgOsDlTKBI4YChbbDYZlIZcdhtYytkbMRyKMtuqNiGI8UEkUrhd4vQmQgM0EBRwWw8jHkXqjD9QEBTGeb/m9DyfB99Nj8jPVPAyfOXPccO2ICCMeR1vnmUbY4ThKqCe3+ZRDgu1f+e6vEFXmWVSZIi63eCsa+BFm6s3j00DdoAgSCQniRy1EJRKPeGhiYM0zddMwNM0YD3V3ZLq64ZsIaxocWGelhly0kLO7Nv4mMPOxXzLS4A1u6j+wYFvuWAHtGUdr9I3T73D6WJP7CAbsHs5i5Ucn5yRb9lYhcPGwETRk2UqGMwuGQbxmnzP8kk1MUByIgk1YiTmchzcSsgSRIyLzVfg8KxJ+pCy9XR4MQg8F5SckRETdWGAuCSc0AOqdjBsexlGKfnY3fZjdOl8/LKZ/3M2c2d18MbufLu5u1Zf0Xs6/sTwxQ5hjcbLrvJQS+EhxIH9AFq9dQDNQuRfRjfjgCZoU+nsZ7DQ9DZlPU1YauvaKEN/XdXH7Q8LWtE5pe5WMpbwzrQLHhLI0+HesaaZPrJFla2NiEOzZyNJcfUjGI91zCRpi05qcrevRCCEfow5du6Si6yozLdBFC0nV2x9SeL5yisSHmvY/iTy3r9dqfB36OLjdHadCcLkE1VO2iYVk6xkxwR0ROsj3nQqPcitgOib67G5N5R/XfBQzOMIpf6Gm8lMiS0Y/UQ4XeIS6LdhKj4Q4+ZQfOYuZEsJPCX8UL46ALKEUTkju12iZc0zmOMCeqMiCfOHVT39SzilbVlCXSVNWGjnLdCAvpbhSlptfmPypz7Jvkp7UyKw1sbNrW9cJcTExNFtWtq6ZLtE1W7MQ8U1N84xKbTfBdKIUNUm8SY2fV+E8FWNwgvTqFOfgtWo1nCSjZF+DBQlSIrmRTPuBpvcEzZDQaoZonuWIpSyz5dt9dR66Ws/TAvITBN/wTzVGueEEByRB+Axm/Ar3c5H3zzIKY+bX7UieqVCm7HYov+T8/dqjE5IwwocB7O+4Jg/c0V4IF7FtD+5nEt2d4CHWwPRM8DvXmkxcDxmE2CMbG3rN/XYwWrG9C9c7orakTa5dDtgqnKRNb2d43wUAGz54NsDLHTAXZqv/ZbH34XTPK8wcgBo5gfSyhuEtA+rjItZvtTdSJ7v6vrTiyXjiWbpteza8Y6DiyRC7SB8aFprYI3Ns1Sq+AeUQTNHCzE953fAtT4F0uMGXLHRdz/m3lC3HQsh2dH6XZjDHpt9BWZJKp5Q/i5KaShgpn0P22/1unzLH0ADTJ25f7foUFPKHVd4WhhuKVWNegNS/w/peajlndrBydU+qmkiS/bte/KTCw7E1IWa7xZBJm8XswHTDvPrx4sQKSTprrW3OOFXwSWvddA4Gr5BwTSbVieHASNMXKXrvpBhvR4p58RhV1GLnO/I1YN9RC0vnikv6mMyJnZBUzfs2VCCgQBKFEiX/3yL2FXeriBUGSgOYlyGhIrNf6trVLtKEUir45wLJJvBGN4NlJR+grq9R1aTQ7wsY+zayLLNjHp7UX8BtgI7gvfq2dXZVJG1FdrB3nXdu/czW7lWR7L4iTuxLvd66vTldduvW9nTs1pc3nkPv9xYUV9pSnv4DOxu+yIIfAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=324283972fc9be14743eb82bcfa4e324^sys_idNOT IN2ff28fd72fc9be14743eb82bcfa4e3ce,324283972fc9be14743eb82bcfa4e33e,63f28fd72fc9be14743eb82bcfa4e3d0,89954f9f2fc9be14743eb82bcfa4e3ee,c1954f9f2fc9be14743eb82bcfa4e3ed,e0a847972f0dbe14743eb82bcfa4e3c3,e7f28fd72fc9be14743eb82bcfa4e3d1"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">324283972fc9be14743eb82bcfa4e324</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:36:07</sys_created_on>
+        <sys_id>2ff28fd72fc9be14743eb82bcfa4e3ce</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:39:49</sys_updated_on>
+        <ui_id>97f11c99-ffb8-48e6-9e97-4f7b45056448</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYUW+jOBD+K4jnJAchgaRvp/YirbS3ldrevuztWQabxjrHsLZpN43y32+MgaCEJkGXnlrdI+Ox/c3M9w0D3zYuI+6VS+bePJ3Pp7PI84LA88IwSLAfx0GYxF6MJ+7AFXhFwVPjmFN4fMK8MM9qrRBdYcbBRpjKOV5/rZZ+q8zJknEiqXCvvn0fuDmWcJKm0r3a7C2dC4XjmHJwfaiw7EHT67x5ROWatX1ub3O+2IVMEgPFG7j0p6aCUMCQYq7owF1hQbDO5LqxSIrJreA7w5IJDSe6xvmnYi9w78wzfimFqBJq15pHVGXImtMbrPG9lkWiC1m5JsuMJVTZfBCa4oLr67bNOtzmmmXCbrFh290ZL1bii02H2xxQFwQshQIQNDeBGuRVGOn9Mnu+q1EumChzUi3yLMG8ecJaSxYX2uDZuJTTFRyEVjjPmXhEucyeWLkZsKxGjxweRinPnuFSxR7FCCcG+AjyikcLsN+U5q9YMhPF73AMbAZAjANDkC2hygpZpvIJJbxQ5YLEQtmz3O3AkPCaY6V2kUPK0Y/C4LZ5qCJGNmlmSyJZrn+FI55oFdx2UKthepSC8x3lkkwQZlColiSYUBpDHv8sYDvZbLxJGPrT8Xg4nnrpcIIDbzifhXgYJ3gWkgD7JJ6O7mgCVBwBn6iskmSkxch2+5fG8pFqmw17aMvtUHf/+f09BX46u7XAr9vp7Up5JfUD2+euAyqp+xeT+sTzPpLY4fL3p/X+6rUpOCFhnxwlGdnxSWVSI5vLloYPVdWb52dAqHl+a5jpxOvXUFU0TxnlpOuNtjALe2+08f/zjfYuSQ6ACLLVY4IzUY4nAPSt2D89Sr3Y3+NZSa/WSGdsWCWHGsCOzpyX3ko4A06thHu423mweDog1v2+pMx+r6+NlQCCiwkgGF9GAJsmzCaRHTmvJ1JTzdr/xfjjfX+gYGuDv+0SWK87/b53jreHAg56KbhNNrty8wrnLjy6vqLIwVu2gCVsre5DVr/omRGYrXa3114k08+Y/921XjEO1YUqw3uDMdg/+iUWt8ZglqIVVI7lMK3LcpBUCEuK0qwQBDVzYk0kU8mUSaUr58NGc0dBP8LJQJiOXlKn9HYa754v4tNx1Kn8lDp1INVtyoFAnDIQpwmkX9h9mtbkgsPppZvWAj7ny2rAJ1jeKieVMpOvNK4ThTzCiDO72pmg/IuC+vdtr0sCne3vBNYP8T1/+daUUBxPxjiMAt/3PN8jkTeLIn8WxmmIo0m60yhCSiTQTeHkFKgCx6OaGnWd/cP+UzXbfn3mDFA1A28yYT6kx5F2DCoor1OjOo276idxlnGKxV5DeQDkvyzKN0JD1+m7ayof4udWwR72M21Nnbl+q7GhYH8I9qOgnwzFZtQbz3ySDGeRHw0nKQmHc4KnQzyPp1FAaDJJLzkJfP8HvmrQZSAWAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2ff28fd72fc9be14743eb82bcfa4e3ce"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">324283972fc9be14743eb82bcfa4e324</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:33:04</sys_created_on>
+        <sys_id>324283972fc9be14743eb82bcfa4e33e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:33:04</sys_updated_on>
+        <ui_id>04661522-250f-4a30-986a-bca86d3a1db5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VY227jNhD9FUHPjiv5JjtvRQIDAbYbIEn3ZbsgKJKKidKklqKSdQz/e4ciZRu2fFHrAAn6ZHA4JM/MnDMi/X0Zchpeh3QSTbLJZDhOoqjfj6LRqE9wnKb9EUmjFA/CTijxnIGnwalgMHzBorRjLg3TmBiuJNJMYMMo/BKlKThRXuQCL75537uNb/DgfOHX+5IZF1QzGV5//9EJc6zhPHAPr5c7U+cCFjhlAlyfPOKdAMwiXw9RNedsX7aXBV/dBEC0UKJOyH4ZJikDDBkWBeuEcywpNkov1hbNML2XYmOYQZJgx9A6/yr4G5w7jqxfxiAqwtzceoh82pw5u8UGPxpdElNq70pmihNWuHxQluFSmJttm3O4z22q3RIXtlutRDmXX106wvUGdZXAUhYAguU2UIvch5E9ztTrQ41yymWVEz8pFMFiPcLGaJ6WxuJZhkywOWyE5jjPuXxGuVYvvFoMWObdZwGDbibUKxxa8GfZdRzpQl5xdwr228r8DWtuo/gDtoHFAIgLYAhyJSxUqatUviAiyqKa0FgWbq9w1QmLRXEjcFFsIoeUo5+lxe3y4CNGLml2CdE8N7/DFi/MB7fq1JoZHqXgZEM5oiTlFkWxJRyqSFllhdO/StiBLpc3wByrn7hLSg1JNl2ADPOr1b6W2i5vKa/TsdXyutkOrilgL7Q925emDbzQ4osJbRBFn0lqcPjHU1p77bgUnBBQTI+SjG74VChtkMvlloL2RdGa52dAqHl+b5kZpItDqDzNM84EbfqeTO3Ezvek9//8nnxIkgMgilz1uBRcVpcDAPpe7B8epV4a7/CsoteG+5UNF2RfAzgwKnhrrYQz4NRKeISzgyeHpwFi3e8ryuz2+troBdC/mAD6vcsIYLkOc53IhpzX90Fbzdr/zfrjXX+g4NaCeNUksFZnxm3P7K32BdxvpeBtsrmZ2wOcu/DF8YAiO+/ZAmaw1J+HnH7RK6fPzGxOr72oMq9Y/N007xmH6kJV4b3DJTQ++g5Kty6hPENzqBzP4a7sHmgFwpqhTJWSIn9L3hDJVjLjujAHX3MPDPQjAwXCDMyMBZV3oP/de+6MOOpU3mVBHYg/rQggkKAKJFgH0i7sNk1rcMHL6aWb1hRzUVUDHkD5VjmZ1kofaFwnCnmEEWd2tTNBxRcF9d/bXpMEGtvfCayf4jV9+dZEGE4HPTxK+nEcRXFEk2icJPF4lGYjnAyyjUYRKiSBbgo7Z0AV2B7V1KjrHO33H9dS2zaaM1DVFLxV0j6te4kJLCyob1DDOg3cN5RUKcGw3OkoT/Cd+G3q8Xu+Dj9cV/kU/y2V/Gk3087UmOv3ujeU/E/Jf5bszlJszKLeOKbkapzEydUgo6OrCcXDKzxJh0mfMjLILnkV+PEP9/fBLMUVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=324283972fc9be14743eb82bcfa4e33e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Associate Record to Email">7b95a4c0a73133008299b39f087901b4</action_type>
+        <action_type_parent display_value="Associate Record to Email">18a22c44a73133008299b39f08790116</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>7b95a4c0a73133008299b39f087901b4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">324283972fc9be14743eb82bcfa4e324</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>1ac3c132-d463-459c-8152-ab14ce861c8c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:36:07</sys_created_on>
+        <sys_id>63f28fd72fc9be14743eb82bcfa4e3d0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:39:49</sys_updated_on>
+        <ui_id>d938a2a3-6224-4978-90c8-5d6926f19b43</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1TwWrjMBD9laKzY+zEqePclqSFwu4W0tJLKWYsjxKBLHtlKW025N93ZDtpacNSlj32OE8zo/ee9B73TJZsztIim0LCI0gn8WQSRbNxlhWTTESzNIviYsoCpqFC6sQKpMoN8tqUhG5BOQ/v91kq4phn2UiIYjZKZng5yjBLR4lIi2QaTS+TZBauurnDgSZL2TYKdg/DAkL4RqrSoGbzx6eANWDoRouGzffvjj5LWUGBilqvPOeL1ZHzeSV213i0rLmrUNtcHsHvw5blcHJxs6QTGvLU4oDhi0VdInESoFoMWAW6BFubHZtb4wgwCOWtVrtTx0Zq22uu4KWVv+niydj3CSSRfPDjVOaDVz0slmDhjjZz68zJulpybHt7ShTglF28xfqG28bKWvcjFgp1nK6Vq/TP3hZ2WvDmaVxLJLDxOj3zQYa429TPqyPLa6k7S4ZDVXNQpwqsNbJw1vPZMyfvz7mNCruigqaRep03pt7KbidRrMK1oiIUqn4mLq1c6xC41xOS2xBeE77s4Acw0ov7QWtomN6KvM9LUzfNoNk/CzsErN21CwVt+yqdPM9/OU+8N2KQnPeu+RFuZGO/0cVbHNQdgiFFhfjrl4TXv2fBrNGei9GCPovFMo9D7gz5av9LWD7B7BiW+47ah7S8Z/xvcRl/xeUrLk9/AOzz2c12BgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=63f28fd72fc9be14743eb82bcfa4e3d0"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Move Attachment">7159823353cc10103a33ddeeff7b1216</action_type>
+        <action_type_parent display_value="Move Attachment">8445146a9353130079b5925cf67ffb61</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>7159823353cc10103a33ddeeff7b1216</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">324283972fc9be14743eb82bcfa4e324</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>85e1a474-527d-46a0-b2c5-6a7fb236d697</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:47:24</sys_created_on>
+        <sys_id>89954f9f2fc9be14743eb82bcfa4e3ee</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:49:56</sys_updated_on>
+        <ui_id>ce951ff9-767d-4536-b9a4-92c7c5546a39</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9WV22rjMBCGXyX4Og6xFZ96VxoKhd0W2m73ohQzlsaJQD5UlttmQ999x4emTnpeumWXQMCjGemff/TZl2tLCmvPShwvCl3GPMa5M3WmDBgTAjFNg8RxncAaWzlkSJlVUWuOMRgDfJlhbmKNvNCCMm5A1U3Keh166MAsmNmeGwh75sPUTlzu2T4EaeIyX/hRMJEGs/t7qhOyKhWsLvpyivClVEJjbu1dXo2tEjSdbVBbe+udpfeKV5CgotSzVv1of6N+dPqg/u3+zKpsMjSmSAI49qFv/d6ngzgVNHKdsYV3BnOBpDMFVeHYyiAXYAq9svaMrimgEcRJrlabjKXMTedDBneV/EWHMnc8OJdUrqqBRGuwGPduUtL+MCGdg4EzOpGbWm9sLiTHqrNSYAq1MgfDWJdwUhpZ5F2JgUQ9VBeqzvLjzjZrs8FgjHVFcrBs+m866ttLz5bF7casQ5m3VvWLquCgBqkImi8PJapm0KlUGLdzGlvUvZZJbRqpa6uW50+H0wWfGw8qbEebQVnKfBGXuriRrQzqKpssFD1MUlXckvxKLvIJ8MaCCQ0OJocUn7fhC9Cy8eM7bUPFzYk/cnld41GjNgp9zw2B2b4/jexZwLkdeb5LOIQiYkRGkoB1P25meaCgqh6dpCbi67rxofO1dzDuhtCUcC1Ls0+ibrA3637coxy6r9IwuOoG9AKf5feA7qRBETsTXmsyzXwKp+9Q9sDpeSvtCZy7insiRcHrdp5S7DA571dGR/NHKt2/ReULHP4b9HVtfQC+FwjbNnubsW27v4QykXDHZR7awN2UKAtDOxIMbJZOwU8iBj77E8o6p99AbQavXWjXHV7cZrtHxKo8ToosNnTLqlqv4lupMa5Q38j2/bRD2k9aHZ11q6MDqPDD6L1D6SN6ndQd5T1q7ePDO3hIWls2Ou4WetDYZ4EWTv8j0D7+mXuBtC2vt0HbcltWcXdLe9Htrl/FH05T+vmBTf+ePQNGX7nI8ezEiaZBImac8/ATv3JXvwHNfSWvsgoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=89954f9f2fc9be14743eb82bcfa4e3ee"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">324283972fc9be14743eb82bcfa4e324</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:47:24</sys_created_on>
+        <sys_id>c1954f9f2fc9be14743eb82bcfa4e3ed</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:48:53</sys_updated_on>
+        <ui_id>fb1145ef-ee8e-4fb9-9452-8a8b9d05f491</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXTW/iMBD9KyhnihIClO2talVppX5IbdVLt4omtgPWmiRrO1CK+O87jp0QQdoFiUqt9uiZsf1m5r2J87zyOPXOvHEy8H0IhuNT3w9D3x+NQgJBHIcjEvvxIPa6XgozhpEaYsFwOQdRmLVaqgi0BjKdsVSjg3KVC1g+Of9500emXFDJUu/s+aXr5SDxTM2kd7bacu0LSkDMBIY+OlRbIPUyr5dR6bO26+a2zq11ZJIaKH7XY6+apZQhhgSEYl1vBikFncllbZEM6F0qNoYpxwzPPM8Evyr+hveOfROXMMyKMOurl5ErkzUnl6DhQcuC6EK6UDLNOGHK1oOyBAqhL5o2G3CXa56ldotN2+7ORDFLb205vPqAqitoKRSCYLlJ1CB3aSQP02xxX6G84mlZE+cUGQFRr7DrkseFNnhWHhPMNDmaQZ7zdBLlMpvzcjNimfUmAhe9RGQLvFTxSdoDYoD3sK7Qu0L7ZWl+AslNFjd4DG5GQFwgQyLbQpUVsizlPCKiUKVDQqrsWd66a+h4IUCpTeZY8uhPYXDbOriMI1s0s4VInutzPGLOXHLr7l66GPobypEspdygUA1xONQoEU5/FXgEXa38wWgUDPv9k/7QT04GEPonP8YjOIkJjEc0hIDGw949I0jHHnKKSVcoe8p6vSuxT7rlmGItK1WJ9aJZqrbyOdnu2K7bDnCyDY4mW8zjOwkXL/96uj1cibYE/5AjOf2QZMMNn1QmdWRr2dDjrnYO5vkeECqe3xlmduLle6gczRPOBG37Ol0Zx9bXqf9/fp2+JMkREI1s93gqeFrOYgT6Wez3Px6xP7Z4VtKr8VAzNlBkVwPQ0Vnn7WAl7AGnUsID3t15tHhaIFbzvqTM9qyvjE4A4dEEEPaPI4BVnWZdyJaaV69L080q/s3Ew3Y8UrCxIVi3CeygO4ND7+yvdwUcHqTgJtms5/Idzh35GfqOIrufOQKmuNXdF1n9RgtOJ0xvbq+iaKYXIH63+R3joqpRZXqf8KQdfCjbUbCRKColkkxh85pv2gCfR7szJOha82EjZA8sVTlu4LVzX4NpRejGiHnOTsreNOfIz9rqSD444oPxy35Jq2a1arDq2bf4EzyeEF7+AszfwvL1EAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c1954f9f2fc9be14743eb82bcfa4e3ed"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">324283972fc9be14743eb82bcfa4e324</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 03:00:45</sys_created_on>
+        <sys_id>e0a847972f0dbe14743eb82bcfa4e3c3</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:41:56</sys_updated_on>
+        <ui_id>55b6fa8b-8a0f-43fd-ada5-3d4e9e002bee</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1W227iMBD9lcjPCCWE+1sXttKuepHaVftQSuTYE7DqxFnbgbKIf9/JjSJKWypVK1Vb3jw3nzmc8eRuTQQnQ9IG7noDr8t8z/dbrtvqt72w64dei/sUwCMNktAYMFIDU5rjeUFllhvW65EGaoEHXpNlWkNiNxv0c2FSSVc3VRha2FxIjn4yvLtvkJRqrGhBk+F6z3UsJElDkBh6VWPax2hXaX7mimUx4gpEbTyrMseVx/kxRg8m5XA8t0Hg0ULCAYFEVBpokJgmnFqlV2RodYYGbJpfJnK1jZiLxJaNxvTRiD94c9vN4yLAzlhFwvYYVASV5mhMLb3GysxmesuXEgxMyQmHiGbSjnZtZcBlaoVKyhRLQ1lnK5nFyUXJCNkW2Pk/MoMgIM37zJGXbUXXc7W8qkGeiqSgpGpRKkbl9kSt1SLMbA5nTUBCwXFM01QksyDVaiGKZIQSN2cSD81IqiXeacQsaVKW424iq7R5ivZxYb6hWuRNnGMZTN40iFmZkaTGPLWCHAa/sxxJ2VjVQlCwUFAQFErIk5kWqT3BqxZQAd80KtGHndcUxgZPgtqp+SR8kwShigOLQjCZXgVLoSEwoBf4nzzX/y16nevS64yogXcPxBFw64H4VcjgMPxqJp7ZznZznYvSUU1E58Mmov+ZJqJq49OPxFuD4LZefWp3lFRo3+wOgcWnf5K5rs89d4qQEG/R80yrLC0d06XSD0GikJXSkMvfmVPjhACJg4G4PZyFoM4tBjonMuc0J8KZKuwDN0u4KhPXk3qsJmQ4Id9jKqTzC9mZgXMyy99xHK1UWCqdc6ofwJoJaUxKsEVGpwNe6PXpwO93el3uutHAixj0Bh2s3gW/CC8kU4QjzwFqQhfm/CD4kWU2U8qYyhJ7EPg39QhqD1q/2/d71O93I9f3PUwKfdYe9KMO9wHajO5BY5mxKgYd1PfsQXy73GbKVGJRcgch/sykAOcMlmKfwzb32i9X9nsvAa1v2wP6drkDXxNfsvuS3b+Q3fs29BHvaL2hTwVIbg48rPV6hhg5sRCUD+3eiq6czk3l3H64ftie9rpu8ftE2/q/+X69/wt7KFr7tg0AAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e0a847972f0dbe14743eb82bcfa4e3c3"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">324283972fc9be14743eb82bcfa4e324</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:36:07</sys_created_on>
+        <sys_id>e7f28fd72fc9be14743eb82bcfa4e3d1</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 03:43:35</sys_updated_on>
+        <ui_id>392fc62e-34b9-457c-9b1c-fbf1f0954d29</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K1ae2ygfbVX6NtEhITGQYOJlsOjGvqHWHDuLnZau6n/fzVfJADGQeBha3nyv7/U5x8c333aeFN7Cm6AIwqNwxuMwjqMgiOaTMJ3FaRiJGBBDb+RpyJF2lshNKWi9BlXVgd0umMxm4TSKxtE0yMYTiIPx0XwG45TDfEb1oUin/mVT50vtsATupNH7PXUR0hYKttddM4rwlVSiRO0tvt2OvAJKOpdqvMXuUeq1wBWkqGjrZY/8MRO3Leq1MLzKUbtE9sGzrnLZZdjpkjJUVMMJg5GH9w61QAKSgbI48nLQApwpt97ClRUFSgRxodX2sGNFCrREc7i38hedPAnqfRkSM96JcFgmnUBtOFuCgyvqzF1VHvQykqNtNRGYQaXc8TDWbrgoas3bEgep6quNqnJ93iriHRoM7qOyBAKLmmeNvKWVXa3M5rIHeSJ1I0lHURkO6rAC50qZVq6Gs/NQYaNxDkUh9V1SlGYtm2KCkvt3ihZ+psyGzrTyTvutV3xSFfwTii+b8DWUsibxhdpQ8X7k2a09VmDtAxXSMPlZ1UhaYh2FpFGhkSBpnFAX81IW7hMdtcYO+H7UPY10+pLD+NGDoQY9H57HwPBP7X76R/Jtzn8Frt75X5v7fh5nZ/4nsbNhLTtvE531p+9m/flHsn5H48N7/2+OD6IXZ+rASY3J7cDt1oHDmyoIYsGVsSgSYlYosvH3jSl/JNqQFm3+cw5SWUauYSQT8FWtjWUrWCNLETUjQiSmdCiYM8ytkHGw6LMbfaMbujKTHGqFmMkoLy2TOjUVNcS6N6OANhvWI/Cfvr9/He7bJsIr7q2fCCcSlbDPXGQ/DpBAkDZJe7GPRkKXZNdd8vBHfLe5EM6C5vtA0+G/+THe/gZbhrpsNQoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e7f28fd72fc9be14743eb82bcfa4e3d1"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=324283972fc9be14743eb82bcfa4e324"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=324283972fc9be14743eb82bcfa4e324^sys_idNOT IN4d954f9f2fc9be14743eb82bcfa4e3f1,c9954f9f2fc9be14743eb82bcfa4e3f2,e1d3079b2fc9be14743eb82bcfa4e35d"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">50954f9f2fc9be14743eb82bcfa4e32a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">324283972fc9be14743eb82bcfa4e324</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:47:24</sys_created_on>
+        <sys_id>4d954f9f2fc9be14743eb82bcfa4e3f1</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 15:45:32</sys_updated_on>
+        <ui_id>d82eb396-5c25-441e-b6f5-dfbfa09970f3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNn2dDTsHMzHAQokDZAE+TSBsKKWtpEaVIVKTuu4X/vUpIfSNxH2h57E2eXuzPLHWjHTOOqxtkHM7NWLjS7+vQUMKk9Rt87pmGF7Ipxo0vppNF5CwRsDarxgZlzwJcr1M4OPjdhmOAgonApbaVg+/jzLL6Uqqyx71pBTbUd1uxq9yIkSyoiQhDRlEc8icdJHIbxJI2KcVJEcZkAQkIFFRSoKHV+oDu4bZHghzrctvK4dbXUi/5821e5P4CmLj2rKAwYPjvUJRIfAcpiwFagS3Cm3h6RGqG80+oELKV2VI755Gcrv1HDOMt8okCSyLELHo95P70OFtfggKg03DV1n8qXRnK03XBKFNAoNz/HuoS7ykvtrjgo1OG2Uc1Kf+gmwo4FDo9FSGOJBFZeqafe6xD3S7P5eGB5I3U7lT6oDAd1PIGj2RWN83x2DBX6t89XUFU00byqzVq2l4nLarRQdBgJZTbU1G/hCLgnPqLBwuiG8OsWfoRaehXvqQxd7mgWYCXP242lcjQmZPuA2a2dK7D2JJKmm39tPMVOci8u7+bjr/BaVm5GndfY69gHrw1wtvu7nSiiKM1QDBEnOExFMR1O0yweTmBSTMswE+k0Gs1No91+3+19+Nocf1rmbe6ZQiayKMwuuycdX3LPBd+80TLxLyzj3+s3HROG4X/L/LVlpM27Re+1tc3/oWOevD26nsdZc2mJ2oPH3h3+LD6wpeWS/BzamPqLF3XC9t8BL36H96MGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">90954f9f2fc9be14743eb82bcfa4e32c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">324283972fc9be14743eb82bcfa4e324</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>d82eb396-5c25-441e-b6f5-dfbfa09970f3</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:47:24</sys_created_on>
+        <sys_id>c9954f9f2fc9be14743eb82bcfa4e3f2</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 15:45:32</sys_updated_on>
+        <ui_id>85e1a474-527d-46a0-b2c5-6a7fb236d697</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51TwW6jMBD9F58TBIREIbeqVaVKu1sprXpZVdFgjxNrjU1tk5Si/PuOA6FVjz3BPM+8ee9hembb0LTBP9sb79XesM3f1xlTJmL03jMDNbINUwFrz2bsCLqNdd/LKsuKJco54hrnhazKeVks8/ka1lUp0qUsyizZIrdO+POZRoXyjYbu5ecM/KC0cDiKbMCRtoCObfpvR0rQgqwUsszSki/y1SJP03xdZNVqUWW5WACKFRFqqFBT68Po7pvZ0DWxdIOEEfg1zmwnlB5RRJ7OGL4HNAJpvQTtccZqMAKCdR3bBNcS4BDEo9Hd1HFQJhAdi73vXn3QxixNY6NEMsRxOJzK3ZjjAMs7CPBE1Dy0bmzlB6s4+iEKgRJaHW6/YkPDYxOUNcNIgEpfp61ua/NnSIJNBNfPRkjrSQQ20WiUPvqQTwd72l5V3itzCWU81JaDnioIwamqDVFPz1BjTUS7GppGmf2ucfaoLsOkpU72mopEanuipfGKJsCj8IRyheSe8LsL/AJORRe/iYaGzzPmO3+rwftPLxTi7q2NSgZno4fdEEMc4U414YYWHHGUe36Nt37gnjLlypOE54g9XP+VeNDRDVL8K3Sy7l8U/4md/wOwzX3adQMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">09d3c39b2fc9be14743eb82bcfa4e3af</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Link Emails &amp; Attachments for Trade Exceptions">324283972fc9be14743eb82bcfa4e324</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:39:48</sys_created_on>
+        <sys_id>e1d3079b2fc9be14743eb82bcfa4e35d</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 15:45:32</sys_updated_on>
+        <ui_id>1ac3c132-d463-459c-8152-ab14ce861c8c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V72vbMBD9V4I+O8Z27CTOt5K2UGib0YTCGMWcZSkRky3PkpNmIf/7TrbzgzVlK+vHfbPe6e7ePd3DO6JqU9ZGL9SV1mJZkMm3F4eIwmL4vSMF5IxMCFVFJoxQRdIADlmDrG3gJgche1JRMCzrYSATupSwfX4vTldCZhXrOpVQYT3DKjLZ/RYSGaZzD7gfU58OguEg8LxgHPrpcJD6QTYABgMsKCFlEq9ODxR79w3ivMvdbEuLa1OJYtmd77sq8wOoqsyy8j2HsFfDiowhHw5SM4fkUGRgVLU9IhWDbFbIE7AShcFyxF5+1eInNgyiyF7kDEekrA0ej0mnWwvzazCAVGpq6qq7SldKUKZbcTLGoZZmeo61F2alHbVNMZDKQ7aSdV48toqQY4HDMyFSayTBSjuppd7NwecrtXk6sLwVRaNKF7TPKo8nMKhdWhvLZ0eYZDkWSnIoS1Q0KSu1Fk0ycsndpcSDy6XaYFO7eS5QS9xFYcG9Rfy6gZ+hEnaKByyDyS3NFLSgSbOlWA5lYmTvEL3VUwlan4ZEdZMftaXYjtwNl7T62BRaidJcYec16+bYO2+X/mzfd7t4xH2fxnGf83TcD8ds2I9ZPOqHfJSGkRcNw3DsPjGKC+QipURk+/3d/HG2uHn4svj61iGfUPFjnooh4pHvRZc9FQ4veeqCmz5opOAPRrKv+Jc+8jzvv5H+2UhCJ+36d7M1zT/RRy/WNG3Po9ZUaKS2sNjd4R9jA1tcLkHPoY2qvtuhTtj+F3b7paetBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=324283972fc9be14743eb82bcfa4e324"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=324283972fc9be14743eb82bcfa4e324"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_324283972fc9be14743eb82bcfa4e324</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:33:03</sys_created_on>
+        <sys_id>324283972fc9be14743eb82bcfa4e32f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:33:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_324283972fc9be14743eb82bcfa4e324</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:33:03</sys_created_on>
+        <sys_id>724283972fc9be14743eb82bcfa4e336</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:33:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_324283972fc9be14743eb82bcfa4e324"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_324283972fc9be14743eb82bcfa4e324"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>bfc14b172fc9be14743eb82bcfa4e3f0</sys_id>
+        <latest_snapshot>324283972fc9be14743eb82bcfa4e324</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch1-hotfix1a-09-24-2025_10-14-2025_2100.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=bfc14b172fc9be14743eb82bcfa4e3f0^sys_idNOT IN8b4283972fc9be14743eb82bcfa4e34a"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"8b4283972fc9be14743eb82bcfa4e34a","name":"plan","plan_signature":null}}</plan>
+        <plan_id>bfc14b172fc9be14743eb82bcfa4e3f0</plan_id>
+        <snapshot>39350e2f2f813210b14f861cbfa4e38d</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:33:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8b4283972fc9be14743eb82bcfa4e34a</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 15:45:33</sys_updated_on>
+        <trigger display_value="">73a7f52f2f813210743eb82bcfa4e3d5</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=bfc14b172fc9be14743eb82bcfa4e3f0"/>
+</record_update>

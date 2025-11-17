@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <app_config/>
+        <description/>
+        <disable_auto_reflow>false</disable_auto_reflow>
+        <disable_interoperable>false</disable_interoperable>
+        <event_mappings>[
+    {
+        "eventMappingId": "clhhaeewddmtaaaaddaaddbhhtaahhlmsuxr",
+        "isConfiguration": false,
+        "offRowStorageId": null,
+        "sourceEventApiName": "x_snc_pab_mc_tkit.MODAL_SELECTED_RELAY_633fc0af2fc5fe14743eb82bcfa4e391",
+        "sourceEventCorrelationId": null,
+        "sourceEventDefinition": {
+            "apiName": "x_snc_pab_mc_tkit.MODAL_SELECTED_RELAY_633fc0af2fc5fe14743eb82bcfa4e391",
+            "id": null,
+            "type": "UXEVENT"
+        },
+        "sourceEventSysId": null,
+        "targets": [
+            {
+                "broker": null,
+                "clientScript": null,
+                "conditional": null,
+                "declarativeAction": null,
+                "event": {
+                    "apiName": "sn_canvas_core.MODAL_SELECTED",
+                    "payload": {
+                        "type": "JSON_LITERAL",
+                        "value": {
+                            "bare": null,
+                            "displayOptions": null,
+                            "modalId": null,
+                            "showModal": null,
+                            "viewportElementId": null,
+                            "viewportFields": null,
+                            "viewportRoute": null
+                        }
+                    },
+                    "sysId": "882eed4091382d3a41f1bb3f382ae089"
+                },
+                "operation": null,
+                "targetId": "clhhaeewddmtaaaaddbbddbhhtrggqaacqgaa",
+                "type": "EVENT"
+            }
+        ]
+    },
+    {
+        "eventMappingId": "clhhaeevthggaaaaccyddbhhtzvdddmiiry",
+        "isConfiguration": false,
+        "offRowStorageId": null,
+        "sourceEventApiName": "x_snc_pab_mc_tkit.GFORM_SET_VALUE_RELAY_633fc0af2fc5fe14743eb82bcfa4e391",
+        "sourceEventCorrelationId": null,
+        "sourceEventDefinition": {
+            "apiName": "x_snc_pab_mc_tkit.GFORM_SET_VALUE_RELAY_633fc0af2fc5fe14743eb82bcfa4e391",
+            "id": null,
+            "type": "UXEVENT"
+        },
+        "sourceEventSysId": null,
+        "targets": [
+            {
+                "broker": null,
+                "clientScript": null,
+                "conditional": null,
+                "declarativeAction": null,
+                "event": null,
+                "operation": {
+                    "dataBrokerId": "0c3568c75bee0110d78e9e7fb681c784",
+                    "operationName": "RECORD#GFORM_SET_VALUE",
+                    "parentResourceId": "record",
+                    "payload": {
+                        "container": {
+                            "displayValue": {
+                                "binding": {
+                                    "address": [
+                                        "displayValue"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "fieldName": {
+                                "type": "JSON_LITERAL",
+                                "value": "kb_category"
+                            },
+                            "value": {
+                                "binding": {
+                                    "address": [
+                                        "value"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            }
+                        },
+                        "type": "MAP_CONTAINER"
+                    }
+                },
+                "targetId": "clhhaeevthhhaaaacczddbhhtswiipiiycc",
+                "type": "DATABROKER_OP"
+            },
+            {
+                "broker": null,
+                "clientScript": null,
+                "conditional": null,
+                "declarativeAction": null,
+                "event": null,
+                "operation": {
+                    "dataBrokerId": "029f04e053610110ac9bddeeff7b1294",
+                    "operationName": "CTRL_RECORD#SET_FIELD_VALUE",
+                    "parentResourceId": "",
+                    "payload": {
+                        "container": {
+                            "displayValue": {
+                                "binding": {
+                                    "address": [
+                                        "displayValue"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "fieldName": {
+                                "binding": {
+                                    "address": [
+                                        "fieldName"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            },
+                            "value": {
+                                "binding": {
+                                    "address": [
+                                        "value"
+                                    ]
+                                },
+                                "type": "EVENT_PAYLOAD_BINDING"
+                            }
+                        },
+                        "type": "MAP_CONTAINER"
+                    }
+                },
+                "targetId": "clujwgggzraaaaddxddbhhtcefzdpgl",
+                "type": "DATABROKER_OP"
+            }
+        ]
+    }
+]</event_mappings>
+        <macroponent display_value="Knowledge Category Picker Modal Default">633fc0af2fc5fe14743eb82bcfa4e391</macroponent>
+        <macroponent_config>{
+    "bare": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "headerLevel": {
+        "type": "JSON_LITERAL",
+        "value": "1"
+    },
+    "headingOnlyVisibleToScreenReaders": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "interceptNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "label": {
+        "type": "TRANSLATION_LITERAL",
+        "value": {
+            "code": null,
+            "comment": "",
+            "message": ""
+        }
+    },
+    "propagateNotifications": {
+        "type": "JSON_LITERAL",
+        "value": false
+    },
+    "scrollable": {
+        "type": "JSON_LITERAL",
+        "value": "y"
+    }
+}</macroponent_config>
+        <name>Knowledge Category Picker Modal Default</name>
+        <order>0</order>
+        <parent_macroponent display_value="CM Investigation Record Page">903fcc6f2fc5fe14743eb82bcfa4e3dd</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen/>
+        <screen_condition/>
+        <screen_type display_value="Knowledge Category Picker">533fc0af2fc5fe14743eb82bcfa4e38d</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-11-12 08:09:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fb3fc0af2fc5fe14743eb82bcfa4e3db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Knowledge Category Picker Modal Default</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sys_ux_screen_fb3fc0af2fc5fe14743eb82bcfa4e3db</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:09:16</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="delete_multiple" query="documentkey=fb3fc0af2fc5fe14743eb82bcfa4e3db"/>
+</record_update>

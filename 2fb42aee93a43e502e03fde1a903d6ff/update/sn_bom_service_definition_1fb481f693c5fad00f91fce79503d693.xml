@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_bom_service_definition">
+    <sn_bom_service_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <case_type/>
+        <description>This business activity focuses on the early-stage confirmation and agreement of a securities trade's key details before the trade is officially executed or submitted for clearing. It is a proactive step designed to prevent unmatched trades and ensure seamless, efficient settlement.&#13;
+&#13;
+A prematched trade is one where the fundamental trade details (like security, quantity, and counterparty) have been successfully communicated, checked, and agreed upon by the trading parties at or very near the point of execution (T0).&#13;
+&#13;
+Key Components of the Activity:&#13;
+Trade Capture and Communication: As soon as a trade is negotiated or executed by the front office (e.g., a portfolio manager or trader), the essential terms are immediately captured in the internal system.&#13;
+&#13;
+Early Matching/Affirmation: The internal trade details are rapidly transmitted to the counterparty (e.g., the executing broker) or through a third-party matching utility (such as Omgeo CTM). This allows both sides to confirm the core details immediately.&#13;
+&#13;
+Exception/Error Handling: If an early mismatch is detected (e.g., the quantity recorded by the fund manager differs from the quantity recorded by the broker), an exception is flagged, allowing the parties to correct the error within minutes of execution. This is significantly faster and less costly than resolving an unmatched trade one day later.&#13;
+&#13;
+Pre-Settlement Status: Once the core details are confirmed, the trade is designated as prematched or affirmed. This status indicates a high degree of confidence that the trade will clear and settle successfully on the designated settlement date (T+1 or T+2).&#13;
+&#13;
+Settlement Instruction Enrichment: The prematched trade is then used to generate and enrich the complete settlement instructions (including account numbers, custodian details, and payment information) for transmission to the clearing system.&#13;
+&#13;
+This process acts as a critical quality control step, shifting trade resolution effort from the expensive, late-stage "Unmatched Trade Resolution" activity to an immediate, preventative "Pre-Matching" action, drastically reducing settlement failure rates and related financial risks.</description>
+        <id>prematched_trade</id>
+        <image/>
+        <name>Prematched Trade Processing</name>
+        <order>100</order>
+        <playbook_record_generator/>
+        <service_organizations_offering_service>all_service_organizations</service_organizations_offering_service>
+        <service_type>3</service_type>
+        <show_in_interceptor>true</show_in_interceptor>
+        <sys_class_name>sn_bom_service_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 04:09:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1fb481f693c5fad00f91fce79503d693</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Prematched Trade Processing</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sn_bom_service_definition_1fb481f693c5fad00f91fce79503d693</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 04:09:13</sys_updated_on>
+        <table>sn_bom_treasury_service</table>
+        <task_table>sn_bom_treasury_service</task_table>
+        <template>service=^EQ</template>
+        <use_service_catalog_item>false</use_service_catalog_item>
+    </sn_bom_service_definition>
+</record_update>

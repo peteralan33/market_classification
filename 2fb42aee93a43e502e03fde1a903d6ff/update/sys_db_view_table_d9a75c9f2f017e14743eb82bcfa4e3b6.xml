@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <left_join>false</left_join>
+        <order>300</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 14:07:29</sys_created_on>
+        <sys_id>d9a75c9f2f017e14743eb82bcfa4e3b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_bom_treasury_wire_service</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sys_db_view_table_d9a75c9f2f017e14743eb82bcfa4e3b6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 14:07:29</sys_updated_on>
+        <table>sn_bom_treasury_wire_service</table>
+        <variable_prefix>doc</variable_prefix>
+        <view display_value="u_awa_873698db2f017e14743eb82bcfa4e3e9_work_item">99a7589f2f017e14743eb82bcfa4e3a5</view>
+        <where_clause>doc_sys_id = wi_document_id</where_clause>
+    </sys_db_view_table>
+</record_update>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="CM Investigation Record Page">903fcc6f2fc5fe14743eb82bcfa4e3dd</macroponent>
+        <name>AI Banner Display</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ * @param {ApiHelpers} params.helpers
+ */
+function handler({ api, event, helpers, imports }) {
+    const { table } = api.context.props;
+    
+    const solutionMeta = api.state.solutionMeta;
+    if (Object.keys(solutionMeta).length === 0) {
+        // on change predictions don't support filterInactivePredictions, ultimately used in the API script includes
+        const queryParams = `tableName=${table}&sysId=${-1}`;
+        helpers.snHttp(
+            "/api/sn_csm_ml_task/categorization/get_solution_meta?" + queryParams, 
+            { method: "GET" }
+        ).then(({ response: { result } }) => {
+            showBanner(result);
+            api.setState("solutionMeta", result);
+        });
+    } else {
+        showBanner(solutionMeta);
+    }
+
+    function showBanner(solutionMeta) {
+        const { inputFields, outputFields, autofillConstant } = solutionMeta;
+        const unsavedChanges = JSON.parse(api.data.record.unsavedChanges).map((c) => c.name);
+        if (getIntersection(inputFields, unsavedChanges).length > 0) {
+            // only include fields that are labeled as autofill
+            const filterFields = event.payload.fieldNames.filter(function(field) {
+                const fieldOutputMeta = outputFields.find(function (ofield) { return field === ofield.name; });
+                if (!fieldOutputMeta) return false;
+                return fieldOutputMeta.implementationPlan === autofillConstant;
+            });
+            if (filterFields.length > 0) {
+                const rawMessage = "Check fields predicted by AI for accuracy as values might have been modified and save the updated predictions: ";
+                helpers.translate(rawMessage).then(message => {
+                    api.data.record.removeAllFormMessages();
+                    api.data.record.addFormMessage({
+                        message: message,
+                        type: "suggestion",
+                        messageOptions: {
+                            linksToFields: filterFields
+                        }
+                    });
+                });
+            }
+        }
+    }
+
+    function getIntersection(a, b) {
+        return a.filter(value => b.includes(value));
+    }
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 08:09:04</sys_created_on>
+        <sys_id>3c3f00af2fc5fe14743eb82bcfa4e33c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AI Banner Display</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sys_ux_client_script_3c3f00af2fc5fe14743eb82bcfa4e33c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:09:04</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

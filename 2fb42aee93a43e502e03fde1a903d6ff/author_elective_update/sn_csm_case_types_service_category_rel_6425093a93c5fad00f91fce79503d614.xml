@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_csm_case_types_service_category_rel">
+    <sn_csm_case_types_service_category_rel action="DELETE">
+        <service_category display_value="Capital Market Exceptions">7c81493293c5fad00f91fce79503d6bb</service_category>
+        <service_definition display_value="Prematched Trade Processing">1fb481f693c5fad00f91fce79503d693</service_definition>
+        <sys_class_name>sn_csm_case_types_service_category_rel</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 04:09:19</sys_created_on>
+        <sys_id>6425093a93c5fad00f91fce79503d614</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sn_csm_case_types_service_category_rel_6425093a93c5fad00f91fce79503d614</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 04:09:19</sys_updated_on>
+    </sn_csm_case_types_service_category_rel>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sn_csm_case_types_service_category_rel_6425093a93c5fad00f91fce79503d614</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_csm_case_types_service_category_rel"><sn_csm_case_types_service_category_rel action="INSERT_OR_UPDATE"><service_category display_value="Capital Market Exceptions">7c81493293c5fad00f91fce79503d6bb</service_category><service_definition display_value="Prematched Trade Processing">1fb481f693c5fad00f91fce79503d693</service_definition><sys_class_name>sn_csm_case_types_service_category_rel</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-11-10 04:09:19</sys_created_on><sys_id>6425093a93c5fad00f91fce79503d614</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package><sys_policy/><sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope><sys_update_name>sn_csm_case_types_service_category_rel_6425093a93c5fad00f91fce79503d614</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-11-10 04:09:19</sys_updated_on></sn_csm_case_types_service_category_rel></record_update>]]></payload>
+        <payload_hash>-1624560054</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>01a9c0fa2fa4b650b14f861cbfa4e3fb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 04:09:20</sys_created_on>
+        <sys_id>9925093a93c5fad00f91fce79503d6c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19a6bf43d840000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 04:09:20</sys_updated_on>
+        <type>Service Definition Category Relationship</type>
+        <update_guid>dd25093adfc5fad037a3c68947d1cfc3</update_guid>
+        <update_guid_history>dd25093adfc5fad037a3c68947d1cfc3:-1624560054</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">1535893a93c5fad00f91fce79503d6e4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 04:09:36</sys_created_on>
+        <sys_db_object display_value="" name="sn_csm_case_types_service_category_rel">sn_csm_case_types_service_category_rel</sys_db_object>
+        <sys_id>8119b613cbcb42e386e64e8b28adb551</sys_id>
+        <sys_metadata>6425093a93c5fad00f91fce79503d614</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_scope_delete display_value="">1f26bce786f64c68a8aed337e0a89e90</sys_scope_delete>
+        <sys_update_name>sn_csm_case_types_service_category_rel_6425093a93c5fad00f91fce79503d614</sys_update_name>
+        <sys_update_version display_value="sn_csm_case_types_service_category_rel_6425093a93c5fad00f91fce79503d614">9925093a93c5fad00f91fce79503d6c4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 04:09:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
