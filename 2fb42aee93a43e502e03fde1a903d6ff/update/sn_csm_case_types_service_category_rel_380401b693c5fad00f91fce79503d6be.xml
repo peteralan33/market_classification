@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_csm_case_types_service_category_rel">
+    <sn_csm_case_types_service_category_rel action="INSERT_OR_UPDATE">
+        <service_category display_value="Capital Market Operations">5461853293c5fad00f91fce79503d645</service_category>
+        <service_definition display_value="Unmatched Trade">f565708f2fec7a50b14f861cbfa4e359</service_definition>
+        <sys_class_name>sn_csm_case_types_service_category_rel</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 04:04:25</sys_created_on>
+        <sys_id>380401b693c5fad00f91fce79503d6be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sn_csm_case_types_service_category_rel_380401b693c5fad00f91fce79503d6be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 04:04:25</sys_updated_on>
+    </sn_csm_case_types_service_category_rel>
+</record_update>

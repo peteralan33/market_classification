@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="e95209972fc57e14743eb82bcfa4e359" sys_domain="global" table="sn_bom_treasury_service" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-11 17:14:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b95209972fc57e14743eb82bcfa4e379</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_bom_treasury_service" name="sn_bom_treasury_service" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">e95209972fc57e14743eb82bcfa4e359</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="sn_bom_treasury_service" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">3d5209972fc57e14743eb82bcfa4e36d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-11 17:14:01</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-11 17:14:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a55209972fc57e14743eb82bcfa4e366</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_bom_treasury_service" name="sn_bom_treasury_service" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">e95209972fc57e14743eb82bcfa4e359</sys_ui_form>
+            <sys_ui_section caption="Customer Details" display_value="Customer Details" name="sn_bom_treasury_service" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">e15209972fc57e14743eb82bcfa4e35d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-11 17:14:00</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-11 17:14:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b55209972fc57e14743eb82bcfa4e38a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_bom_treasury_service" name="sn_bom_treasury_service" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">e95209972fc57e14743eb82bcfa4e359</sys_ui_form>
+            <sys_ui_section caption="Closure Information" display_value="Closure Information" name="sn_bom_treasury_service" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">b55209972fc57e14743eb82bcfa4e382</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-11 17:14:01</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-11 17:14:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>315209972fc57e14743eb82bcfa4e382</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_bom_treasury_service" name="sn_bom_treasury_service" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">e95209972fc57e14743eb82bcfa4e359</sys_ui_form>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="sn_bom_treasury_service" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">315209972fc57e14743eb82bcfa4e37a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-11 17:14:01</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-11 17:14:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a55209972fc57e14743eb82bcfa4e36d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_bom_treasury_service" name="sn_bom_treasury_service" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">e95209972fc57e14743eb82bcfa4e359</sys_ui_form>
+            <sys_ui_section caption="Major Case Information" display_value="Major Case Information" name="sn_bom_treasury_service" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">615209972fc57e14743eb82bcfa4e367</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-11 17:14:01</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-11 17:14:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>355209972fc57e14743eb82bcfa4e392</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_bom_treasury_service" name="sn_bom_treasury_service" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">e95209972fc57e14743eb82bcfa4e359</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="sn_bom_treasury_service" sys_domain="global" view="90bad3e42f603210b14f861cbfa4e3eb">3d5209972fc57e14743eb82bcfa4e38a</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-11 17:14:01</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>sn_bom_treasury_service</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-11 17:14:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e95209972fc57e14743eb82bcfa4e359</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_bom_treasury_service</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+            <sys_update_name>sys_ui_form_sections_e95209972fc57e14743eb82bcfa4e359</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-11 17:14:00</sys_updated_on>
+            <sys_user/>
+            <view display_value="workspace" name="workspace">90bad3e42f603210b14f861cbfa4e3eb</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

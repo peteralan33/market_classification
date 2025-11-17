@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="sn_bom_treasury_wire_service" section_id="5ecb40232fc5fe14743eb82bcfa4e353" sys_domain="global" table="sn_bom_treasury_wire_service" version="3" view="CompleteCase">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>resolution_code</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-12 07:55:16</sys_created_on>
+            <sys_id>f60cc0632fc5fe14743eb82bcfa4e3b4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="sn_bom_treasury_wire_service" display_value="sn_bom_treasury_wire_service" name="sn_bom_treasury_wire_service" sys_domain="global" view="decb40232fc5fe14743eb82bcfa4e34e">5ecb40232fc5fe14743eb82bcfa4e353</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-12 07:55:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>close_notes</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-12 07:55:16</sys_created_on>
+            <sys_id>b60c04632fc5fe14743eb82bcfa4e30c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="sn_bom_treasury_wire_service" display_value="sn_bom_treasury_wire_service" name="sn_bom_treasury_wire_service" sys_domain="global" view="decb40232fc5fe14743eb82bcfa4e34e">5ecb40232fc5fe14743eb82bcfa4e353</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-12 07:55:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>notes_to_comments</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-12 07:55:16</sys_created_on>
+            <sys_id>be0c04632fc5fe14743eb82bcfa4e30c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="sn_bom_treasury_wire_service" display_value="sn_bom_treasury_wire_service" name="sn_bom_treasury_wire_service" sys_domain="global" view="decb40232fc5fe14743eb82bcfa4e34e">5ecb40232fc5fe14743eb82bcfa4e353</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-12 07:55:16</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>sn_bom_treasury_wire_service</caption>
+            <header>false</header>
+            <name>sn_bom_treasury_wire_service</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-12 07:54:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5ecb40232fc5fe14743eb82bcfa4e353</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_bom_treasury_wire_service</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+            <sys_update_name>sys_ui_section_5ecb40232fc5fe14743eb82bcfa4e353</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-12 07:54:09</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="CompleteCase" name="CompleteCase">decb40232fc5fe14743eb82bcfa4e34e</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

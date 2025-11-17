@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Role: You are a dedicated Trade Reconciliation Analyst responsible for automatically structuring data for unmatched trades. Your input is unstructured text (emails, documents) that may contain details for multiple unmatched trades.
+
+Input: Unstructured text, including email content and attached document data, which contains details for multiple unmatched trades.
+
+Objective: Your sole task is to analyze the input text and identify ALL distinct unmatched trades. For each trade identified, you MUST create a separate record,  containing all specified data points, listed below, to trigger the creation of a new, actionable investigation Task in the downstream system.
+
+
+Goal: Your single goal is to analyze all the input text. For every distinct unmatched trade you find, you must create one separate, complete activity record.
+
+MAPPING RULES: What to Extract
+For each unmatched trade, extract and map the data exactly as follows. Use the specified Missing Data Policy if the information is not found.
+
+1. Short_Description
+What to Find: A concise summary of the task.
+
+Required Format: MUST be constructed as: "Unmatched Trade: [Instrument_Name] - [Reference_Number]"
+
+Missing Policy: (Depends on finding the Instrument Name and Reference Number)
+
+2. ISIN (International Securities Identification Number)
+What to Find: The 12-character alphanumeric security identifier.
+
+Required Format: Must start with a two-letter country code (e.g., 'US', 'FR').
+
+Missing Policy: "N/A"
+
+3. Reference_Number
+What to Find: The unique trade identifier (Deal ID, Trade Reference, or Confirmation Number).
+
+Missing Policy: "N/A"
+
+4. Trade_Date
+What to Find: The date the trade was executed.
+
+Required Format: Strictly YYYY-MM-DD (e.g., '2025-10-27').
+
+Missing Policy: "N/A"
+
+5. Settlement_Date (Value Date)
+What to Find: The date the trade is scheduled to settle.
+
+Required Format: Strictly YYYY-MM-DD.
+
+Missing Policy: "N/A"
+
+6. Direction
+What to Find: Whether the transaction was a Buy or a Sell.
+
+Required Value: MUST be either "Buy" or "Sell".
+
+Missing Policy: "UNCLEAR"
+
+7. Settlement_Amount
+What to Find: The total monetary value of the trade.
+
+Required Format: Numeric value only (no currency symbols or text). Use standard decimal notation (e.g., '1250000.50').
+
+Missing Policy: 0
+
+8. Instrument_Name
+What to Find: The full, descriptive name of the security (e.g., 'Apple Inc. Common Stock').
+
+Missing Policy: "N/A"
+
+9. Category
+What to Find: The classification for internal routing.
+
+Required Value: Always use the literal text "Trade Reconciliation".
+
+Missing Policy: "Trade Reconciliation"
+
+Required Output Format
+Present your final output as a list of separated Trade Activity Records, using the exact field names shown below.
+
+Example Output:
+
+Trade Activity Record 1
+* Short_Description: Unmatched Trade: [Instrument_Name] - [Reference_Number]
+* ISIN: [Extracted Value or N/A]
+* Reference_Number: [Extracted Value or N/A]
+* Trade_Date: YYYY-MM-DD
+* Settlement_Date: YYYY-MM-DD
+* Direction: Buy/Sell/UNCLEAR
+* Settlement_Amount: 1250000.50 or 0
+* Instrument_Name: [Extracted Value or N/A]
+* Category: Trade Reconciliation
+---
+Trade Activity Record 2
+* Short_Description: ...
+(Continue all fields for every trade found)</description>
+        <input_schema>[{"name":"Parent","description":"The current case the task is being ran on","mandatory":false},{"name":"ISIN","description":"International Securities Identification Number","mandatory":false},{"name":"Reference_Number","description":"The reference number outlined in the document","mandatory":false},{"name":"Trade_Date","description":"Trade Date","mandatory":false},{"name":"Settlement_Date","description":"Settlement / Value Date","mandatory":false},{"name":"Direction","description":"Buy or Sell","mandatory":false},{"name":"Settlement_Amount","description":"Settlement Amount","mandatory":false},{"name":"Instrument_Name","description":"Instrument Name","mandatory":false},{"name":"Quantity","description":"Volume of the trade","mandatory":false},{"name":"PerSharePrice","description":"Per share price","mandatory":false},{"name":"ShortDesc","description":"Overview of the task","mandatory":false},{"name":"Description","description":"The detailed description of the task","mandatory":false},{"name":"crudInputs","description":"CRUD Input Variables. These are already pre-defined. Under no circumstances should you prompt the user for this information or attempt to change these values."}]</input_schema>
+        <name>Specialized Activity Creation</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function (inputs) {
+    function getChoiceList(tableName, fieldName) {
+        var choices = GlideChoiceList.getChoiceList(tableName, fieldName);
+        if (!choices) return [];
+
+        var choicesArray = [];
+        for (var i = 0; i < choices.getSize(); i++) {
+            choicesArray.push({
+                value: choices.getChoice(i).getValue(),
+                label: choices.getChoice(i).getLabel(),
+            });
+        }
+        return choicesArray;
+    }
+
+    // parses {{value}} and obtains the correct value for a choice or reference field.
+    function parseValue(table, value, field, inputs) {
+        if (!value || typeof value === 'object') return '';
+        // regex to parse {{var}} and check if the inputs contain that prop
+        var fieldValue = value.replace(
+            /{{\s*(\w+)\s*}}/g,
+            function (match, variableName) {
+                if (inputs && inputs.hasOwnProperty(variableName)) {
+                    return inputs[variableName];
+                }
+                return '';
+            }
+        );
+        if (!fieldValue) return field.type === 'string' ? '' : null;
+        if (field.type === 'choice') {
+            var choices = getChoiceList(table, field.id);
+            for (var i = 0; i < choices.length; i++) {
+                if (
+                    choices[i].value == fieldValue ||
+                    choices[i].label
+                        .toLowerCase()
+                        .includes(fieldValue.toLowerCase())
+                ) {
+                    return choices[i].value;
+                }
+            }
+            // Neither value nor label matched
+            gs.error(
+                '[AIA AGENTS MSG] Invalid choice field value or label: {0}',
+                fieldValue
+            );
+        } else if (field.referenceTable) {
+            // First check if the input is a valid sys_id
+            var refGr = new GlideRecordSecure(field.referenceTable);
+            refGr.addQuery('sys_id', fieldValue);
+            refGr.query();
+            if (refGr.getRowCount() === 1) {
+                return fieldValue; // User input is a valid sys_id
+            }
+
+            if (field.referenceTableDefaultField) {
+                // If not, try to find a record with matching display value
+                var refName = field.referenceTableDefaultField;
+                refGr = new GlideRecordSecure(field.referenceTable);
+
+                // Check for both exact match and display value containing the input
+                var qr = refGr.addQuery(refName, fieldValue);
+                qr.addOrCondition(refName, 'CONTAINS', fieldValue);
+                refGr.setLimit(1);
+                refGr.query();
+
+                if (refGr.next()) {
+                    return refGr.getUniqueValue(); // Return the sys_id
+                }
+            }
+            // No match found
+            gs.error(
+                '[AIA AGENTS MSG] Invalid reference field value or label: {0}',
+                fieldValue
+            );
+        }
+        return fieldValue;
+    }
+
+    var table = inputs.crudInputs.table.value;
+    var tableName = inputs.crudInputs.table.displayValue;
+    var fieldValues = inputs.crudInputs.fieldValues
+        ? inputs.crudInputs.fieldValues
+        : [];
+    // each field is passed as an {id, label} obj to be displayed when editing the tool
+    // each value is not passed directly, but in an object containing the fieldValue prop
+    fieldValues = fieldValues.map(function (item) {
+        var fieldValue = item.value ? item.value.fieldValue : '';
+        return {
+            field: item.field.id,
+            value: parseValue(table, fieldValue, item.field, inputs),
+        };
+    });
+
+    var gr = new GlideRecordSecure(table);
+    if (gr.canCreate()) {
+        gr.initialize();
+        fieldValues.forEach(function (item) {
+            if (gr.isValidField(item.field)) {
+                gr.setValue(item.field, item.value);
+            }
+        });
+    } else {
+        return {
+            output: sn_i18n.Message.getMessage(
+                'sn_aia',
+                'Cannot create record due to security constraints.'
+            ),
+            status: sn_i18n.Message.getMessage('sn_aia', 'error'),
+        };
+    }
+    var sysId = gr.insert();
+
+    if (!sysId) {
+        gs.error('[AIA AGENTS MSG] Failed to insert the record.');
+        return {
+            output: sn_i18n.Message.getMessage(
+                'sn_aia',
+                'Failed to insert the record'
+            ),
+            status: sn_i18n.Message.getMessage('sn_aia', 'error'),
+        };
+    }
+    return {
+        sysId: sysId,
+        message: sn_i18n.Message.getMessage(
+            'sn_aia',
+            'Record successfully inserted into the {table} table.',
+            {
+                table: tableName,
+            }
+        ),
+        status: sn_i18n.Message.getMessage('sn_aia', 'success'),
+    };
+})(inputs);
+]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:09:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e816af1f2f01fe14743eb82bcfa4e321</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Specialized Activity Creation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sn_aia_tool_e816af1f2f01fe14743eb82bcfa4e321</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 13:23:48</sys_updated_on>
+        <target_document/>
+        <target_document_table>sn_aia_tool</target_document_table>
+        <type>crud</type>
+    </sn_aia_tool>
+</record_update>

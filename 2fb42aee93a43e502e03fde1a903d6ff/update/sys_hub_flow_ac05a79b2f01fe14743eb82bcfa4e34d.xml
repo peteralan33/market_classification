@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2235000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>1cd448c293c536d00f91fce79503d620</copied_from>
+        <copied_from_name>Look up emails against interacti</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>look_up_emails_against_case_record</internal_name>
+        <label_cache>[{"name":"subflow.case_sys_id","label":"Input➛Case Sys ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"90d52c8f-c9a7-47f0-8873-d78ce0e08856":["conditions"],"830eaa45-21c3-4b5d-be16-66f491c17c8c":["conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f163f1d3-c1ba-4a37-9532-0358d26862c1","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"755e55c7-0780-4963-959f-8d10f890c93b.Record.subject","label":"2➛Email Record➛Subject","reference":"","reference_display":"Subject","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"sys_email","column_name":"subject","usedInstances":{"6113a439-9957-4bfd-883e-f5b41ebf3f66":["email_subject-0"]}},{"name":"755e55c7-0780-4963-959f-8d10f890c93b.Record.body","label":"2➛Email Record➛Body","reference":"","reference_display":"Body","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"sys_email","column_name":"body","usedInstances":{"6113a439-9957-4bfd-883e-f5b41ebf3f66":["email_body-1"]}},{"name":"830eaa45-21c3-4b5d-be16-66f491c17c8c.Record.sys_id","label":"1 - Look Up Record➛Wire Service Case Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_bom_treasury_wire_service","column_name":"sys_id","usedInstances":{"755e55c7-0780-4963-959f-8d10f890c93b":["conditions"]}}]</label_cache>
+        <master_snapshot>2675e7db2f01fe14743eb82bcfa4e3da</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Look up emails against case record</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:04:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ac05a79b2f01fe14743eb82bcfa4e34d</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>Look up emails against case record</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sys_hub_flow_ac05a79b2f01fe14743eb82bcfa4e34d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:42:06</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 2025-11-12 12:42:01 AM">f68daf132f81fe14743eb82bcfa4e388</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=ac05a79b2f01fe14743eb82bcfa4e34d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ac05a79b2f01fe14743eb82bcfa4e34d"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_ac05a79b2f01fe14743eb82bcfa4e34d^id=ac05a79b2f01fe14743eb82bcfa4e34d"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=ac05a79b2f01fe14743eb82bcfa4e34d"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=ac05a79b2f01fe14743eb82bcfa4e34d^sys_idNOT IN6405a79b2f01fe14743eb82bcfa4e34e"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>ac05a79b2f01fe14743eb82bcfa4e34d</id>
+        <name>Look up emails against case record</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:04:43</sys_created_on>
+        <sys_id>6405a79b2f01fe14743eb82bcfa4e34e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:04:43</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=6405a79b2f01fe14743eb82bcfa4e34e"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=ac05a79b2f01fe14743eb82bcfa4e34d^sys_idNOT IN4945a39b2f01fe14743eb82bcfa4e3e6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f163f1d3-c1ba-4a37-9532-0358d26862c1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Case Sys ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up emails against case record">ac05a79b2f01fe14743eb82bcfa4e34d</model>
+        <model_id>ac05a79b2f01fe14743eb82bcfa4e34d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_ac05a79b2f01fe14743eb82bcfa4e34d</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:05:51</sys_created_on>
+        <sys_id>4945a39b2f01fe14743eb82bcfa4e3e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:05:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4945a39b2f01fe14743eb82bcfa4e3e6"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=ac05a79b2f01fe14743eb82bcfa4e34d^sys_idNOT IN6c05a79b2f01fe14743eb82bcfa4e35e,ac05a79b2f01fe14743eb82bcfa4e362"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=dccc168a-4672-4687-bcc9-e0ced850c79f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>email_subject</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Email subject</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up emails against case record">ac05a79b2f01fe14743eb82bcfa4e34d</model>
+        <model_id>ac05a79b2f01fe14743eb82bcfa4e34d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_ac05a79b2f01fe14743eb82bcfa4e34d</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:04:44</sys_created_on>
+        <sys_id>6c05a79b2f01fe14743eb82bcfa4e35e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:04:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6c05a79b2f01fe14743eb82bcfa4e35e"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e3a00bf6-b42e-48ab-bc98-50eca36afbad</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>email_body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Email body</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up emails against case record">ac05a79b2f01fe14743eb82bcfa4e34d</model>
+        <model_id>ac05a79b2f01fe14743eb82bcfa4e34d</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_ac05a79b2f01fe14743eb82bcfa4e34d</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:04:44</sys_created_on>
+        <sys_id>ac05a79b2f01fe14743eb82bcfa4e362</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:04:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ac05a79b2f01fe14743eb82bcfa4e362"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ac05a79b2f01fe14743eb82bcfa4e34d"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=ac05a79b2f01fe14743eb82bcfa4e34d"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=ac05a79b2f01fe14743eb82bcfa4e34d^sys_idNOT INac05a79b2f01fe14743eb82bcfa4e383,df3d63132f81fe14743eb82bcfa4e3cd"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Look up emails against case record">ac05a79b2f01fe14743eb82bcfa4e34d</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:04:44</sys_created_on>
+        <sys_id>ac05a79b2f01fe14743eb82bcfa4e383</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:47:14</sys_updated_on>
+        <ui_id>755e55c7-0780-4963-959f-8d10f890c93b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYUW/iOBD+K1GegUsIEOjbqT2klfa2Utvbl71dy7GdYp2xs7bTLkX89xvHCSCgQHRUanWPGY/tb2a++TLJt2XIaXgV0kk0ySeT4TiNoiSJotEoITjOsmREsijDg7ATSjxn4GlxJhg8PmFRumezMIjNMRdgo9wUAi++1kt/1GYy44JqJsOrb987YYE1nGSZDq+WO0vnQhE4YwJcH2osO9Dsolg/omrN2z5vbwu++AWlqYMSdUL2yzJJGWDIsTCsE86xpNgqvVhbNMP0VoqNYcalhRND5/zL8Be4dxw5v5xBVIT5tfUjqjPkzfkNtvje6pLYUteuZKY4Ycbng7Icl8Jeb9u8w21huZJ+iw/b71ainMsvPh3h+oCmIGApDYBghQvUIa/DyO9n6vmuQTnlsspJvSgUwWL9hK3VPCutw7MMmWBzOAjNcVFw+YgKrZ54tRmwzHuPAh56uVDPcKnhj7KHiQPeg7zi3hTsN5X5K9bcRfEnHAObARAXwBDkS2hUqatUPiEiSlMtaCyNPytcdRwJrwU2ZhM5pBz9LB1un4c6YuST5rYQzQv7OxzxxOrgVp2mG4ZHKTjZUI4oSblDYbZawmL9yKwH/3cJR1AjUabmgJphU+oFeuYawmL6CUr5g0tjMaTduy6X4yRiGA+G3X5Mku4gG9JuxuJRdzTKB5OYxCkZk94dI8Dcnus+TlerH47f/gDNCIOY6H4/vhtcLQXhdDUaQbjeLsehEtXSsGf7fOiAWhrii0nDIIo+kjjA5e9PG9p3u0/BiZaP6VGS0Q2fjNIW+Vxu9fx+t7Xm+RkQGp7fOmYG2eI1VDXNc84EPfQGnLqFnTdg///5BnyXJAdAFPnqcSm4rNQbgL4V+4dHqZfFOzyr6LU1AjobNmS/B3BgVfDSuhPOgNN0wj3cHTx4PAcgNnpfUWZX6xtj3QDJxRog6V+mAZbrMNeJPJDzZoJ11Wz8X5w/3vUHCm5tiFeHGqzVnXHbO/ur/QZOWnXwNtn8ys0rnLvwqPtKR3beUgJmsLW+D/n+hRGNwhC3ub3xoso+Y/HPofWacagpVBXeG4zN8dEvt2xrbOY5mkPleAHTva4mRoMwjJ65KiVF9Vy/IZKrZM61sbXzvtDcMegfGShozMDOWFB5B2vvli/i03E0qfyUB00g9W0mgECCKpBgHUi7sNuI1uCCw+mlRWsKn/9VNeCTrdgqJ9Na6VeE60QhjzDiTFU7E1R8UVD/XfYOtcBB+TuB9UN8/19emgjD2aCPR2kSx1EURzSNxmkaj0dZPsLpIN/0KEJGElBTODkHqsDxqKFGU+doX3+8pLYVmjNQNRS8UdJ9RvdTGzhYUN+ggXUaeC0omVKCYbmjKA/wnvhtWuOv+Tp8d6ryIf6GlfxhN9PedDDXbzU3lPwvyX+W7JOj2JhF/XFMSXecxml3kNNRd0LxsIsn2TBNKCOD/JKjwPd/ATFI7Z1RFgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ac05a79b2f01fe14743eb82bcfa4e383"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Look up emails against case record">ac05a79b2f01fe14743eb82bcfa4e34d</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:40:41</sys_created_on>
+        <sys_id>df3d63132f81fe14743eb82bcfa4e3cd</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:47:14</sys_updated_on>
+        <ui_id>830eaa45-21c3-4b5d-be16-66f491c17c8c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VY32/iOBD+V6I8Uy7hV6Bvp1ZIK+1tpba397C3ZzmxU6wzdtZ26FLE/77jOIEIUiC6VGp1b3g8tr+Z+b6JzbeNz4h/7ZNZMEtns/E0CoLhMAgmk2GCwzgeTpI4iPHI7/kCLyl4GhxzCsMV5rkda4FiuURGUaxztUbPTFGkqVqxxLoRpjOO119L779g1ntws94N1tYlWTBOFBX+9bfvPT/DCg4yVPnXm4OpS5FyHFMOro8l1APkZp3thqiYc7bP9WXeFzchFbFQgp5PfxoqCAUMKeaa9vwlFgQbqdY7C+SA3Am+NyyYMLCjb51/avYC504D65dSiCqhbm43RGW2nDm9xQY/GJUnJlela7KQkDnt8kFoinNubuo253CXGSaFW+LCdqslz5fii0uHv9ugKg5Ycg0gaGYDtcjLMNKHhXy+r1DOmShyUk5ymWC+G2FjFItzY/FsfMrpEjZCS5xlTDyhTMkVKxYDlmX/icOgn3L5DIdq9iT6OLHA+5BX3J+D/bYwf8WK2Sj+gG1gMQBiHBiCXAm1zFWRyhVKeK6LCYWFdnv5256v1/qGY633kUPK0Y/c4nZ5KCNGLml2SaJYZn6HLVa0DG7bq8QyPknB2Z5yiRSEWRS6phiRL2Oq/s5hMdlsdB7bBPQTEAMCoIiR7fafu3v386TXsby63LqlLM/npJLlTT0pTYkqBXpk+9y0QSnQsDOBjoLgI0kUDn9/Cm2vOZeCM8ILyUmSkT2ftFQGuVzWlHcsmNY8vwBCxfM7y0wvXr+GqqR5yignTd+huZ04+A4N/p/foXdJcgBEkKseE5yJ4lIBQN+K/eOT1IvDA54V9Krd06wN6+RYA9gz0ntprYQL4FRKeICzvUeHpwFi1e8Lyhz2+spYCmDYmQCGg24EsNmFuUtkQ86re6StZuX/Yv3xoT9QsLYg3DYJrNWZYdszB9tjAQ9bKbhONjdz+wrnOr5wvqLI3lu2gAUsLc9DTr/wCCJP1OxPr7yINM+Y/9s0XzIOVYUqwnuDy2t48v0U1y6vLEVLqBzL4I6taALk0AjD4y6VuSCovF3viWQrmTKlTel83GjuKehHeBKE6ZkF9Qpvb+fd8kN8Po4qlZ9SrwqkPE17EIhXBOLtAmkXdpumNerwctp105pjxotqwMMpq5WTKiXVK43rTCFPMOLCrnYhqLBTUP+97TVJoLH9ncH6IV7h3bemhOJ4NMCTaBiGQRAGJAqmURROJ3E6wdEo3WsUIS0S6KawcwpUge1RRY2qzsFx/3EttW2juQBVRcFbKeyrehAZz8KC+noVrPPAy4YSS8kpFgcd5RG+E7/NS/wlX8fvrqt8iP+kcvZ4mGlnasz1W90bcvanYD9y+slSbEqDwTQkydU0CqOrUUomVzOCx1d4Fo+jIaHJKO3yKvD9FxjN0Rf2FQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=df3d63132f81fe14743eb82bcfa4e3cd"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=ac05a79b2f01fe14743eb82bcfa4e34d"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=ac05a79b2f01fe14743eb82bcfa4e34d^sys_idNOT IN6405a79b2f01fe14743eb82bcfa4e382"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">25b7c48a93c536d00f91fce79503d642</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Look up emails against case record">ac05a79b2f01fe14743eb82bcfa4e34d</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>email_body</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:04:44</sys_created_on>
+        <sys_id>6405a79b2f01fe14743eb82bcfa4e382</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:41:58</sys_updated_on>
+        <ui_id>6113a439-9957-4bfd-883e-f5b41ebf3f66</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6VTy27bMBD8lYJnS2Asy5Z8C9AGCNA2QOLmUgTCklzaRClSkSg7ruF/79KSncDooUCPO9zHzOzywHwfmj50K3/bdWbt2PLngRnFlgwkz2FRiqnmNxpvZotZhqKYCqlhhtl8yibMQY2UiTUYWwmv9oRtwfYRPBwWeY55LhcJXxQ8mZXzLCnzUieFuuG6KLksM5E+ovStSmPx8UjlynSNhf3z/3WRG2NVi1HNy4Q10BLRgC1bHq6ewr7ByoJAS8OeQmvcmsr/Vf+58Es04NNowN9MiWMI684DiGxkM50wfAvoFNJADbbDCavBKQi+3V+QFkE9OPsObIwL1I3F5LfO/KbWBec8ZmokaRKH10tYja4OsNx4I/GhCca7AQkg7Fgjve1r933QEPeBGnobzvsgpO+oHzaRdaQxctJPG797PA+8M+4kcHy0XoK9RBDIBtEH7OI+erO6MmdAvl4vBS3WNLGqoWkIqZrWb81pCpGu07WlINXW74hdvOQUZFSYkpuQ3hH++QQ/Q2ui3G/UhorjuB/OvPZ4H5eOGXAu9DwRsykmswJEImRZJDlHCdkctADFjidrq9c+ihpMGu2oBkcpoZOtacItUdjiqPxI92Zc/GzD7W1HJmOoUJqOCK8idv8hT+3ppIz8CO18+ytKfceOfwB3e67rygMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=ac05a79b2f01fe14743eb82bcfa4e34d"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=ac05a79b2f01fe14743eb82bcfa4e34d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>case_sys_id</element>
+        <help/>
+        <hint/>
+        <label>Case Sys ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_ac05a79b2f01fe14743eb82bcfa4e34d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:05:51</sys_created_on>
+        <sys_id>4545ef9b2f01fe14743eb82bcfa4e34d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:05:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_ac05a79b2f01fe14743eb82bcfa4e34d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>email_body</element>
+        <help/>
+        <hint/>
+        <label>Email body</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_ac05a79b2f01fe14743eb82bcfa4e34d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:04:44</sys_created_on>
+        <sys_id>e005a79b2f01fe14743eb82bcfa4e365</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:04:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>email_subject</element>
+        <help/>
+        <hint/>
+        <label>Email subject</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_ac05a79b2f01fe14743eb82bcfa4e34d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:04:44</sys_created_on>
+        <sys_id>ec05a79b2f01fe14743eb82bcfa4e361</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:04:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_ac05a79b2f01fe14743eb82bcfa4e34d"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=224715000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>1cd448c293c536d00f91fce79503d620</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>look_up_emails_against_case_record</internal_name>
+        <label_cache>[{"name":"subflow.case_sys_id","label":"Input➛Case Sys ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"90d52c8f-c9a7-47f0-8873-d78ce0e08856":["conditions"],"830eaa45-21c3-4b5d-be16-66f491c17c8c":["conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f163f1d3-c1ba-4a37-9532-0358d26862c1","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"755e55c7-0780-4963-959f-8d10f890c93b.Record.subject","label":"2➛Email Record➛Subject","reference":"","reference_display":"Subject","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"sys_email","column_name":"subject","usedInstances":{"6113a439-9957-4bfd-883e-f5b41ebf3f66":["email_subject-0"]}},{"name":"755e55c7-0780-4963-959f-8d10f890c93b.Record.body","label":"2➛Email Record➛Body","reference":"","reference_display":"Body","type":"string_full_utf8","base_type":"string_full_utf8","parent_table_name":"sys_email","column_name":"body","usedInstances":{"6113a439-9957-4bfd-883e-f5b41ebf3f66":["email_body-1"]}},{"name":"830eaa45-21c3-4b5d-be16-66f491c17c8c.Record.sys_id","label":"1 - Look Up Record➛Wire Service Case Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sn_bom_treasury_wire_service","column_name":"sys_id","usedInstances":{"755e55c7-0780-4963-959f-8d10f890c93b":["conditions"]}}]</label_cache>
+        <master>true</master>
+        <name>Look up emails against case record</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Look up emails against case record">ac05a79b2f01fe14743eb82bcfa4e34d</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:06:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2675e7db2f01fe14743eb82bcfa4e3da</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:42:00</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=2675e7db2f01fe14743eb82bcfa4e3da"/>
+    <sys_variable_value action="delete_multiple" query="document_key=2675e7db2f01fe14743eb82bcfa4e3da"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_2675e7db2f01fe14743eb82bcfa4e3da^id=2675e7db2f01fe14743eb82bcfa4e3da"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=2675e7db2f01fe14743eb82bcfa4e3da"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=2675e7db2f01fe14743eb82bcfa4e3da^sys_idNOT IN6275e7db2f01fe14743eb82bcfa4e3db"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>2675e7db2f01fe14743eb82bcfa4e3da</id>
+        <name>Look up emails against case record</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:06:47</sys_created_on>
+        <sys_id>6275e7db2f01fe14743eb82bcfa4e3db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:06:47</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=6275e7db2f01fe14743eb82bcfa4e3db"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=2675e7db2f01fe14743eb82bcfa4e3da^sys_idNOT INee75e7db2f01fe14743eb82bcfa4e3db"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f163f1d3-c1ba-4a37-9532-0358d26862c1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Case Sys ID</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up emails against case record">2675e7db2f01fe14743eb82bcfa4e3da</model>
+        <model_id>2675e7db2f01fe14743eb82bcfa4e3da</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_2675e7db2f01fe14743eb82bcfa4e3da</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:06:47</sys_created_on>
+        <sys_id>ee75e7db2f01fe14743eb82bcfa4e3db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:06:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ee75e7db2f01fe14743eb82bcfa4e3db"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=2675e7db2f01fe14743eb82bcfa4e3da^sys_idNOT IN3675e7db2f01fe14743eb82bcfa4e3e9,be75e7db2f01fe14743eb82bcfa4e3f0"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=dccc168a-4672-4687-bcc9-e0ced850c79f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>email_subject</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Email subject</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up emails against case record">2675e7db2f01fe14743eb82bcfa4e3da</model>
+        <model_id>2675e7db2f01fe14743eb82bcfa4e3da</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_2675e7db2f01fe14743eb82bcfa4e3da</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:06:47</sys_created_on>
+        <sys_id>3675e7db2f01fe14743eb82bcfa4e3e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:06:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3675e7db2f01fe14743eb82bcfa4e3e9"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e3a00bf6-b42e-48ab-bc98-50eca36afbad</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>email_body</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Email body</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Look up emails against case record">2675e7db2f01fe14743eb82bcfa4e3da</model>
+        <model_id>2675e7db2f01fe14743eb82bcfa4e3da</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_2675e7db2f01fe14743eb82bcfa4e3da</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:06:47</sys_created_on>
+        <sys_id>be75e7db2f01fe14743eb82bcfa4e3f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:06:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=be75e7db2f01fe14743eb82bcfa4e3f0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2675e7db2f01fe14743eb82bcfa4e3da"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=2675e7db2f01fe14743eb82bcfa4e3da"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=2675e7db2f01fe14743eb82bcfa4e3da^sys_idNOT INe28d6f132f81fe14743eb82bcfa4e3e9,fa752bdb2f01fe14743eb82bcfa4e315"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Look up emails against case record">2675e7db2f01fe14743eb82bcfa4e3da</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:42:00</sys_created_on>
+        <sys_id>e28d6f132f81fe14743eb82bcfa4e3e9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:42:00</sys_updated_on>
+        <ui_id>830eaa45-21c3-4b5d-be16-66f491c17c8c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VY32/iOBD+V6I8Uy7hV6Bvp1ZIK+1tpba397C3ZzmxU6wzdtZ26FLE/77jOIEIUiC6VGp1b3g8tr+Z+b6JzbeNz4h/7ZNZMEtns/E0CoLhMAgmk2GCwzgeTpI4iPHI7/kCLyl4GhxzCsMV5rkda4FiuURGUaxztUbPTFGkqVqxxLoRpjOO119L779g1ntws94N1tYlWTBOFBX+9bfvPT/DCg4yVPnXm4OpS5FyHFMOro8l1APkZp3thqiYc7bP9WXeFzchFbFQgp5PfxoqCAUMKeaa9vwlFgQbqdY7C+SA3Am+NyyYMLCjb51/avYC504D65dSiCqhbm43RGW2nDm9xQY/GJUnJlela7KQkDnt8kFoinNubuo253CXGSaFW+LCdqslz5fii0uHv9ugKg5Ycg0gaGYDtcjLMNKHhXy+r1DOmShyUk5ymWC+G2FjFItzY/FsfMrpEjZCS5xlTDyhTMkVKxYDlmX/icOgn3L5DIdq9iT6OLHA+5BX3J+D/bYwf8WK2Sj+gG1gMQBiHBiCXAm1zFWRyhVKeK6LCYWFdnv5256v1/qGY633kUPK0Y/c4nZ5KCNGLml2SaJYZn6HLVa0DG7bq8QyPknB2Z5yiRSEWRS6phiRL2Oq/s5hMdlsdB7bBPQTEAMCoIiR7fafu3v386TXsby63LqlLM/npJLlTT0pTYkqBXpk+9y0QSnQsDOBjoLgI0kUDn9/Cm2vOZeCM8ILyUmSkT2ftFQGuVzWlHcsmNY8vwBCxfM7y0wvXr+GqqR5yignTd+huZ04+A4N/p/foXdJcgBEkKseE5yJ4lIBQN+K/eOT1IvDA54V9Krd06wN6+RYA9gz0ntprYQL4FRKeICzvUeHpwFi1e8Lyhz2+spYCmDYmQCGg24EsNmFuUtkQ86re6StZuX/Yv3xoT9QsLYg3DYJrNWZYdszB9tjAQ9bKbhONjdz+wrnOr5wvqLI3lu2gAUsLc9DTr/wCCJP1OxPr7yINM+Y/9s0XzIOVYUqwnuDy2t48v0U1y6vLEVLqBzL4I6taALk0AjD4y6VuSCovF3viWQrmTKlTel83GjuKehHeBKE6ZkF9Qpvb+fd8kN8Po4qlZ9SrwqkPE17EIhXBOLtAmkXdpumNerwctp105pjxotqwMMpq5WTKiXVK43rTCFPMOLCrnYhqLBTUP+97TVJoLH9ncH6IV7h3bemhOJ4NMCTaBiGQRAGJAqmURROJ3E6wdEo3WsUIS0S6KawcwpUge1RRY2qzsFx/3EttW2juQBVRcFbKeyrehAZz8KC+noVrPPAy4YSS8kpFgcd5RG+E7/NS/wlX8fvrqt8iP+kcvZ4mGlnasz1W90bcvanYD9y+slSbEqDwTQkydU0CqOrUUomVzOCx1d4Fo+jIaHJKO3yKvD9FxjN0Rf2FQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e28d6f132f81fe14743eb82bcfa4e3e9"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Look up emails against case record">2675e7db2f01fe14743eb82bcfa4e3da</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:06:48</sys_created_on>
+        <sys_id>fa752bdb2f01fe14743eb82bcfa4e315</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:42:00</sys_updated_on>
+        <ui_id>755e55c7-0780-4963-959f-8d10f890c93b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYUW/iOBD+K1GegUsIEOjbqT2klfa2Utvbl71dy7GdYp2xs7bTLkX89xvHCSCgQHRUanWPGY/tb2a++TLJt2XIaXgV0kk0ySeT4TiNoiSJotEoITjOsmREsijDg7ATSjxn4GlxJhg8PmFRumezMIjNMRdgo9wUAi++1kt/1GYy44JqJsOrb987YYE1nGSZDq+WO0vnQhE4YwJcH2osO9Dsolg/omrN2z5vbwu++AWlqYMSdUL2yzJJGWDIsTCsE86xpNgqvVhbNMP0VoqNYcalhRND5/zL8Be4dxw5v5xBVIT5tfUjqjPkzfkNtvje6pLYUteuZKY4Ycbng7Icl8Jeb9u8w21huZJ+iw/b71ainMsvPh3h+oCmIGApDYBghQvUIa/DyO9n6vmuQTnlsspJvSgUwWL9hK3VPCutw7MMmWBzOAjNcVFw+YgKrZ54tRmwzHuPAh56uVDPcKnhj7KHiQPeg7zi3hTsN5X5K9bcRfEnHAObARAXwBDkS2hUqatUPiEiSlMtaCyNPytcdRwJrwU2ZhM5pBz9LB1un4c6YuST5rYQzQv7OxzxxOrgVp2mG4ZHKTjZUI4oSblDYbZawmL9yKwH/3cJR1AjUabmgJphU+oFeuYawmL6CUr5g0tjMaTduy6X4yRiGA+G3X5Mku4gG9JuxuJRdzTKB5OYxCkZk94dI8Dcnus+TlerH47f/gDNCIOY6H4/vhtcLQXhdDUaQbjeLsehEtXSsGf7fOiAWhrii0nDIIo+kjjA5e9PG9p3u0/BiZaP6VGS0Q2fjNIW+Vxu9fx+t7Xm+RkQGp7fOmYG2eI1VDXNc84EPfQGnLqFnTdg///5BnyXJAdAFPnqcSm4rNQbgL4V+4dHqZfFOzyr6LU1AjobNmS/B3BgVfDSuhPOgNN0wj3cHTx4PAcgNnpfUWZX6xtj3QDJxRog6V+mAZbrMNeJPJDzZoJ11Wz8X5w/3vUHCm5tiFeHGqzVnXHbO/ur/QZOWnXwNtn8ys0rnLvwqPtKR3beUgJmsLW+D/n+hRGNwhC3ub3xoso+Y/HPofWacagpVBXeG4zN8dEvt2xrbOY5mkPleAHTva4mRoMwjJ65KiVF9Vy/IZKrZM61sbXzvtDcMegfGShozMDOWFB5B2vvli/i03E0qfyUB00g9W0mgECCKpBgHUi7sNuI1uCCw+mlRWsKn/9VNeCTrdgqJ9Na6VeE60QhjzDiTFU7E1R8UVD/XfYOtcBB+TuB9UN8/19emgjD2aCPR2kSx1EURzSNxmkaj0dZPsLpIN/0KEJGElBTODkHqsDxqKFGU+doX3+8pLYVmjNQNRS8UdJ9RvdTGzhYUN+ggXUaeC0omVKCYbmjKA/wnvhtWuOv+Tp8d6ryIf6GlfxhN9PedDDXbzU3lPwvyX+W7JOj2JhF/XFMSXecxml3kNNRd0LxsIsn2TBNKCOD/JKjwPd/ATFI7Z1RFgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fa752bdb2f01fe14743eb82bcfa4e315"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=2675e7db2f01fe14743eb82bcfa4e3da"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=2675e7db2f01fe14743eb82bcfa4e3da^sys_idNOT INb2752bdb2f01fe14743eb82bcfa4e314"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">25b7c48a93c536d00f91fce79503d642</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Look up emails against case record">2675e7db2f01fe14743eb82bcfa4e3da</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>email_body</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:06:47</sys_created_on>
+        <sys_id>b2752bdb2f01fe14743eb82bcfa4e314</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:42:00</sys_updated_on>
+        <ui_id>6113a439-9957-4bfd-883e-f5b41ebf3f66</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6VTy27bMBD8lYJnS1Bsy5Z8C5IGCJA2QOLmEhTCklraRChSESk7quF/79KSH2h6KNCbdrjDnZmldsy2vm69W9pr59TKsMXrjqmSLRiIJIV5zscyuZJ4NZ1PJ8izMRcSpjiZjdmIGaiQOrECpQtuy46wDeg2gLvdPE0xTcU8SuZZEk3z2STK01xGWXmVyCxPRD7h8RMK25RxIO/3RC+VqzV0L/93i1grXTYY3PwcsRoaEuqxYQvyZujDgH5Q5o0GfGr+V+8aOGpq/RrMfxnM/y0Q39UBc75RZjXUDwP5+QiS+iBvPGL44dGUSCokaIcjVoEpwdumOyENQvlo9BlYk6neSwUfTv2ieVmSJKFTIjkT2J+eymKIuYflLXggKa3wbYPHUKwS6PpMSpTQan9zifUNj7VX1vQUD1wf2Va3lfnep8FOFxy3SkjrSATWwWrQPhiRz2u7fTqqvFPmkMpwqK0AfarAU3a89UHPjrVq+UfMPfIpaNRY0cSigrompKgbu1GHKSS6ileailhquyV14X+IQQSHMa0A4jvCbw/wCzQq2P1G1xA5jPth1HuL9+H54ASShMtZxKdjjKYZ8IiLPIvSBAVMZiA5lGw/Yq5zNxqcOwdFGyre22Czj20IqOgzDhTRqNpfk6gNDlnsw6s14SfuN7MZtJ2WJ5QjC8uA3V/0lR09VyUuoa1t3oL5M7b/DRRsWVoiBAAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=2675e7db2f01fe14743eb82bcfa4e3da"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=2675e7db2f01fe14743eb82bcfa4e3da"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>case_sys_id</element>
+        <help/>
+        <hint/>
+        <label>Case Sys ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_2675e7db2f01fe14743eb82bcfa4e3da</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:06:47</sys_created_on>
+        <sys_id>aa75e7db2f01fe14743eb82bcfa4e3e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:06:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_2675e7db2f01fe14743eb82bcfa4e3da"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>email_subject</element>
+        <help/>
+        <hint/>
+        <label>Email subject</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_2675e7db2f01fe14743eb82bcfa4e3da</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:06:47</sys_created_on>
+        <sys_id>7675e7db2f01fe14743eb82bcfa4e3ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:06:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>email_body</element>
+        <help/>
+        <hint/>
+        <label>Email body</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_2675e7db2f01fe14743eb82bcfa4e3da</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:06:47</sys_created_on>
+        <sys_id>f6752bdb2f01fe14743eb82bcfa4e30e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:06:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_2675e7db2f01fe14743eb82bcfa4e3da"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>ac05a79b2f01fe14743eb82bcfa4e34d</sys_id>
+        <latest_snapshot>2675e7db2f01fe14743eb82bcfa4e3da</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch1-hotfix1a-09-24-2025_10-14-2025_2100.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=ac05a79b2f01fe14743eb82bcfa4e34d"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=ac05a79b2f01fe14743eb82bcfa4e34d^sys_idNOT IN7a752bdb2f01fe14743eb82bcfa4e32b"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"7a752bdb2f01fe14743eb82bcfa4e32b","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Look up emails against case record">ac05a79b2f01fe14743eb82bcfa4e34d</plan_id>
+        <snapshot>e4e7066b2f893210743eb82bcfa4e30f</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:06:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7a752bdb2f01fe14743eb82bcfa4e32b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:42:00</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

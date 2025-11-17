@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="trade" label="Trade" language="en" table="var__m_sys_pd_snapshot_input_a69c0ce32fc5fe14743eb82bcfa4e339">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>trade</element>
+            <help/>
+            <hint/>
+            <label>Trade</label>
+            <language>en</language>
+            <name>var__m_sys_pd_snapshot_input_a69c0ce32fc5fe14743eb82bcfa4e339</name>
+            <plural>Trade</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-12 07:57:43</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Trade</sys_name>
+            <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_pd_snapshot_input_a69c0ce32fc5fe14743eb82bcfa4e339_trade_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-12 07:57:43</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

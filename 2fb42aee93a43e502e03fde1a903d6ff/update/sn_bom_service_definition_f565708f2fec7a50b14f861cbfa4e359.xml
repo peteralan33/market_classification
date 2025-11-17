@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_bom_service_definition">
+    <sn_bom_service_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <case_type/>
+        <description>Trade Reconciliation and Unmatched Trade Resolution&#13;
+This business activity is the core post-trade process responsible for ensuring that the details of a securities transaction (a trade) executed between two parties—a buyer and a seller—are fully aligned and agreed upon before they can be sent for clearing and settlement.&#13;
+&#13;
+An unmatched trade (or "out trade") occurs when the trade details recorded by the two counterparties—the buy-side and the sell-side—do not agree. This prevents the transfer of cash and securities and halts the settlement process.&#13;
+&#13;
+Key Components of the Activity:&#13;
+Data Comparison/Matching: The system or operations team compares key data elements of the trade from both parties' records. These elements include:&#13;
+&#13;
+Security Identifier (e.g., CUSIP, ISIN)&#13;
+&#13;
+Quantity (number of shares/bonds)&#13;
+&#13;
+Price and Total Consideration (money amount)&#13;
+&#13;
+Trade Date and Settlement Date&#13;
+&#13;
+Counterparty/Broker details&#13;
+&#13;
+Discrepancy Identification: If any critical data element differs, the trade is flagged as unmatched or mismatched.&#13;
+&#13;
+Investigation and Resolution (Break-Clearing): The Operations or Middle Office team immediately investigates the cause of the break. Common causes include:&#13;
+&#13;
+Manual data entry errors.&#13;
+&#13;
+Miscommunication between front and back offices.&#13;
+&#13;
+System failures or connectivity issues.&#13;
+&#13;
+Allocation errors (for block trades). The team contacts the counterparty to agree on the correct trade terms and input the necessary corrections (known as "fixing the break").&#13;
+&#13;
+Affirmation: Once both parties' records are updated and agree, the trade is formally affirmed (or "locked-in") and released to the clearing agent (like a Central Counterparty or CCP) for the final settlement process.&#13;
+&#13;
+The goal of this critical activity is to achieve the highest possible matching rate by the required regulatory deadlines (often by noon on T+1) to minimize operational risk, avoid failed trades, and prevent potential financial penalties or regulatory fines.</description>
+        <id>unmatched_trade</id>
+        <image/>
+        <name>Unmatched Trade</name>
+        <order>100</order>
+        <playbook_record_generator/>
+        <service_organizations_offering_service>all_service_organizations</service_organizations_offering_service>
+        <service_type>3</service_type>
+        <show_in_interceptor>true</show_in_interceptor>
+        <sys_class_name>sn_bom_service_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-17 01:10:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f565708f2fec7a50b14f861cbfa4e359</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Unmatched Trade</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sn_bom_service_definition_f565708f2fec7a50b14f861cbfa4e359</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 04:05:07</sys_updated_on>
+        <table>sn_bom_treasury_wire_service</table>
+        <task_table>sn_bom_treasury_wire_service</task_table>
+        <template>service=f565708f2fec7a50b14f861cbfa4e359^EQ</template>
+        <use_service_catalog_item>false</use_service_catalog_item>
+    </sn_bom_service_definition>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_csm_case_types_service_category">
+    <sn_csm_case_types_service_category action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>Capital Market Exceptions</name>
+        <order>100</order>
+        <sys_class_name>sn_csm_case_types_service_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:53:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7c81493293c5fad00f91fce79503d6bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Capital Market Exceptions</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sn_csm_case_types_service_category_7c81493293c5fad00f91fce79503d6bb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-10 03:53:30</sys_updated_on>
+    </sn_csm_case_types_service_category>
+</record_update>

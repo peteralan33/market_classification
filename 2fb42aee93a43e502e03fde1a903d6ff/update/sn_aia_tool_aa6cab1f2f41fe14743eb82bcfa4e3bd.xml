@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>This tool returns the list of attachments of a Glide record. It returns the file_name and sys_id for each one.</description>
+        <input_schema>[{"name":"sys_id_or_number","description":"The sys_id or number of the record."}]</input_schema>
+        <name>Retrieve attachments of a CM INV Case</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[(function(inputs) {
+    // gs.info("Tool 'Get attachments from Glide record': inputs = " + JSON.stringify(inputs));
+
+    var recordId = inputs.sys_id_or_number;
+    var tableName = 'sn_bom_treasury_wire_service';
+    if (!recordId) {
+        throw new Error("No sys_id_or_number given");
+    } else if (!tableName) {
+        throw new Error("No table_name given");
+    } else if (recordId.length != 32) {
+        // record_id is most likely a "number", convert to sys_id
+        try {
+            var recordGr = new GlideRecordSecure(tableName);
+            if(!recordGr.isValidField("number")) {
+                throw new Error("record_id given is not a sys_id and table '" + tableName + "' does not have a 'number' field.");
+            }
+            recordGr.addQuery("number", "=", recordId);
+            recordGr.query();
+            if (recordGr.getRowCount() == 0) {
+                throw new Error("Could not find record number '" + recordId + "' in table '" + tableName + "'");
+            } else if (recordGr.getRowCount() > 1) {
+                // in case the "number" column happens not to be a unique identifier
+                throw new Error("Multiple records for number='" + recordId + "' in table '" + tableName + "'");
+            } else {
+                recordGr.next();
+                recordId = recordGr.getValue("sys_id");
+            }
+        } catch (err) {
+            throw new Error("An error happened while looking up record by identifier in table " + tableName + ": " + err);
+        }
+    }
+
+    var attachmentGr = new GlideRecordSecure("sys_attachment");
+
+    var gc = attachmentGr.addQuery("table_name", "=", tableName);
+    gc.addOrCondition("table_name", "ZZ_YY" + tableName);
+    attachmentGr.addQuery("table_sys_id", "=", recordId);
+    attachmentGr.query();
+
+    var attachmentList = [];
+    while (attachmentGr.next()) {
+        attachmentList.push(
+            {
+                "file_name": attachmentGr.getValue("file_name"),
+                "sys_id": attachmentGr.getValue("sys_id")
+            }
+        );
+    }
+
+    toReturn = {"attachments": attachmentList};
+
+    return JSON.stringify(toReturn);
+})(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:37:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>aa6cab1f2f41fe14743eb82bcfa4e3bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Retrieve attachments of a CM INV Case</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sn_aia_tool_aa6cab1f2f41fe14743eb82bcfa4e3bd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:37:05</sys_updated_on>
+        <target_document/>
+        <target_document_table>sn_aia_tool</target_document_table>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

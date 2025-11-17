@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_templated_snip_note_template">
+    <sn_templated_snip_note_template action="INSERT_OR_UPDATE">
+        <condition table="sn_bom_treasury_wire_service">active=true^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <group_visibility/>
+        <html_script_body><![CDATA[<h2>Unmatched Trade Investigation Summary</h2>
+<ol style="list-style-position: inside;">
+<li>The investigation into an unmatched trade follows a six-step process designed to quickly identify, resolve, and prevent future discrepancies:</li>
+<li>Identify and Log: Record the core trade details (Security, Quantity, Price, Dates) and the reported reason for the unmatch to determine the initial focus and priority.</li>
+<li>Verify Internally: Check the internal booking system and the outgoing trade instruction/confirmation (e.g., SWIFT) to ensure your firm's records and communication are accurate.</li>
+<li>Contact Counterparty (CPTY): Communicate with the CPTY to determine the status of the trade on their side and obtain their specific details to isolate the exact point of discrepancy (e.g., Price or Quantity).</li>
+<li>Resolve Discrepancy: Agree on the correct final trade details with the CPTY and take necessary corrective action (send corrected instruction, update internal booking).</li>
+<li>Confirm Match: Verify that the corrective action has led to a successful match/affirmation in the relevant clearing or settlement utility.</li>
+<li>Determine Root Cause: Document the underlying reason for the error and implement preventative measures to stop its recurrence.</li>
+</ol>]]></html_script_body>
+        <language>en</language>
+        <name>Templated Notes</name>
+        <short_name>templated_notes</short_name>
+        <sys_class_name>sn_templated_snip_note_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 03:58:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d7d49b932f8dbe14743eb82bcfa4e368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Templated Notes</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sn_templated_snip_note_template_d7d49b932f8dbe14743eb82bcfa4e368</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 03:58:50</sys_updated_on>
+        <table>sn_bom_treasury_wire_service</table>
+    </sn_templated_snip_note_template>
+    <sys_translated_text action="delete_multiple" query="documentkey=d7d49b932f8dbe14743eb82bcfa4e368"/>
+</record_update>

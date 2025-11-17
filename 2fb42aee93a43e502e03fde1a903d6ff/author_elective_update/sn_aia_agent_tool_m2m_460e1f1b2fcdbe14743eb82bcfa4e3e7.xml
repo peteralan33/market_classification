@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Email Triage and Classification Agent (Copy)">860e1f1b2fcdbe14743eb82bcfa4e3c9</agent>
+        <description>Purpose
+The Interaction Record Enrichment (IRE) tool ensures that the crucial context from any analyzed documents is preserved and readily accessible. Its function is to integrate the newly generated attachment summaries into the main conversation log.
+
+Inputs
+Interaction Record (Primary Input): The definitive record of the customer interaction.
+
+Attachment Summaries: The textual output from the summarization process (Step 2), representing the condensed content of documents or prior interactions.
+
+Contextual Data for Action
+Original Interaction Record: This is the existing object that the tool acts upon. While not a direct input to the tool's execution, it is the designated target for the update.
+
+Action &amp; Logic
+Direct Integration: This tool takes the received Attachment Summaries text and seamlessly embeds or appends it into a designated field within the Original Interaction Record.
+
+Creating a Complete Package: This action ensures that the master record now contains a holistic view: the associated emails, and the key insights from any supporting documents.
+
+Preparation for Classification: By making the Interaction Record the single source of truth, it perfectly prepares the data package for the next step, Specialized Case Classification (Step 4), which will analyze all this context to make its final determination.
+
+Key Output Determined
+Updated Interaction Record: The resulting object is the enriched Interaction Record, which now fully incorporates the Attachment Summaries. This complete data package is passed forward for subsequent analysis and processing.</description>
+        <display_output>true</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Interaction enrichment with attachment summaries</name>
+        <output_transformation_strategy>abstract_summary</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message>Enriching interaction record with attachment summaries</pre_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 04:34:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>460e1f1b2fcdbe14743eb82bcfa4e3e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Interaction enrichment with attachment summaries</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_460e1f1b2fcdbe14743eb82bcfa4e3e7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 04:34:15</sys_updated_on>
+        <tool display_value="Update interaction record with attachment summaries">dc4ca2e69381bad00f91fce79503d603</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sn_aia_agent_tool_m2m_460e1f1b2fcdbe14743eb82bcfa4e3e7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Email Triage and Classification Agent (Copy)">860e1f1b2fcdbe14743eb82bcfa4e3c9</agent><description>Purpose
+The Interaction Record Enrichment (IRE) tool ensures that the crucial context from any analyzed documents is preserved and readily accessible. Its function is to integrate the newly generated attachment summaries into the main conversation log.
+
+Inputs
+Interaction Record (Primary Input): The definitive record of the customer interaction.
+
+Attachment Summaries: The textual output from the summarization process (Step 2), representing the condensed content of documents or prior interactions.
+
+Contextual Data for Action
+Original Interaction Record: This is the existing object that the tool acts upon. While not a direct input to the tool's execution, it is the designated target for the update.
+
+Action &amp; Logic
+Direct Integration: This tool takes the received Attachment Summaries text and seamlessly embeds or appends it into a designated field within the Original Interaction Record.
+
+Creating a Complete Package: This action ensures that the master record now contains a holistic view: the associated emails, and the key insights from any supporting documents.
+
+Preparation for Classification: By making the Interaction Record the single source of truth, it perfectly prepares the data package for the next step, Specialized Case Classification (Step 4), which will analyze all this context to make its final determination.
+
+Key Output Determined
+Updated Interaction Record: The resulting object is the enriched Interaction Record, which now fully incorporates the Attachment Summaries. This complete data package is passed forward for subsequent analysis and processing.</description><display_output>true</display_output><document_status/><execution_mode>autopilot</execution_mode><inputs>[]</inputs><max_auto_executions>10</max_auto_executions><name>Interaction enrichment with attachment summaries</name><output_transformation_strategy>abstract_summary</output_transformation_strategy><post_processing_script/><pre_message>Enriching interaction record with attachment summaries</pre_message><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-11-12 04:34:15</sys_created_on><sys_domain>global</sys_domain><sys_id>460e1f1b2fcdbe14743eb82bcfa4e3e7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Interaction enrichment with attachment summaries</sys_name><sys_overrides/><sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package><sys_policy/><sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_460e1f1b2fcdbe14743eb82bcfa4e3e7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-11-12 04:34:15</sys_updated_on><tool display_value="Update interaction record with attachment summaries">dc4ca2e69381bad00f91fce79503d603</tool><tool_attributes>{}</tool_attributes><transformation_instructions/></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>5186983</payload_hash>
+        <record_name>Interaction enrichment with attachment summaries</record_name>
+        <reverted_from/>
+        <source>01a9c0fa2fa4b650b14f861cbfa4e3fb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 04:34:15</sys_created_on>
+        <sys_id>ca0e5f1b2fcdbe14743eb82bcfa4e303</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19a7657c8010000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 04:34:15</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>020e5f1b73cdbe149002209600821d03</update_guid>
+        <update_guid_history>020e5f1b73cdbe149002209600821d03:5186983</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Interaction enrichment with attachment summaries">2c16af1f2f01fe14743eb82bcfa4e3bf</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:09:22</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>b25d1b7f6a9d4c1890cd732e055d9e40</sys_id>
+        <sys_metadata>460e1f1b2fcdbe14743eb82bcfa4e3e7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Interaction enrichment with attachment summaries</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_scope_delete display_value="">1f26bce786f64c68a8aed337e0a89e90</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_460e1f1b2fcdbe14743eb82bcfa4e3e7</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_460e1f1b2fcdbe14743eb82bcfa4e3e7">ca0e5f1b2fcdbe14743eb82bcfa4e303</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:09:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

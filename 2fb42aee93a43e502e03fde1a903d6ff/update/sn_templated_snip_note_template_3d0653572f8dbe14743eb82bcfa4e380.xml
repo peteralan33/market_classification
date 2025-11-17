@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_templated_snip_note_template">
+    <sn_templated_snip_note_template action="INSERT_OR_UPDATE">
+        <condition/>
+        <group_visibility/>
+        <html_script_body><![CDATA[<h2>Unmatched Trade Investigation Summary</h2>
+<p>This template can be used to communicate the high-level steps taken or procedures followed when investigating an unmatched trade.</p>
+<p>Subject: Summary of [Trade Date] Unmatched Trade Investigation Procedure</p>
+<p>Dear [Recipient Name/Team Name],</p>
+<p>This email summarizes the six-step process followed by the Operations team when investigating the unmatched trade involving [Security Name/Ticker] for the Trade Date of [Trade Date].</p>
+<p>Our goal is to quickly identify the discrepancy, resolve the trade, and document the root cause for future prevention.</p>
+<hr>
+<h3>Investigation Steps:</h3>
+<ul style="list-style-position: inside;">
+<li>Identify and Log: We first recorded the core trade details (Security, Quantity, Price, Dates) and noted the reported reason for the unmatch to set the initial priority.</li>
+<li>Verify Internally: Our team checked the internal booking system and the outgoing trade instruction/confirmation (e.g., SWIFT) to ensure our firm's records were accurate.</li>
+<li>Contact Counterparty (CPTY): We communicated with [Counterparty Name] to determine the trade status on their side and obtained their specific details to isolate the exact point of discrepancy (e.g., Price, Quantity, Settlement Date).</li>
+<li>Resolve Discrepancy: We agreed on the correct final trade details with the CPTY and executed the necessary corrective action (e.g., sending a corrected instruction).</li>
+<li>Confirm Match: We verified that the corrective action successfully led to a match/affirmation in the relevant clearing or settlement utility.</li>
+<li>Determine Root Cause: Finally, we documented the underlying reason for the error and are implementing preventative measures to stop its recurrence.</li>
+</ul>
+<hr>
+<p>Status of Specific Trade (Optional):</p>
+<ul style="list-style-position: inside;">
+<li>Trade Reference: [Internal Trade ID]</li>
+<li>Final Resolution: [e.g., Successfully Matched/Affirmed on T+1]</li>
+<li>Root Cause Identified: [Briefly state the cause, e.g., Clerical error in quantity input.]</li>
+</ul>
+<p>Please let me know if you require a detailed log of the action taken for this specific trade.</p>
+<p>Best regards,</p>
+<p>Capital Markets Investigation Team</p>]]></html_script_body>
+        <language>en</language>
+        <name>Investigation template</name>
+        <short_name>inv_notes</short_name>
+        <sys_class_name>sn_templated_snip_note_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 03:59:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3d0653572f8dbe14743eb82bcfa4e380</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Investigation template</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sn_templated_snip_note_template_3d0653572f8dbe14743eb82bcfa4e380</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 04:07:46</sys_updated_on>
+        <table>sn_bom_treasury_wire_service</table>
+    </sn_templated_snip_note_template>
+    <sys_translated_text action="delete_multiple" query="documentkey=3d0653572f8dbe14743eb82bcfa4e380"/>
+</record_update>

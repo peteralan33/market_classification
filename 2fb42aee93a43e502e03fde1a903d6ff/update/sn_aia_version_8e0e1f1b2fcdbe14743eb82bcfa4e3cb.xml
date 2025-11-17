@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_version">
+    <sn_aia_version action="INSERT_OR_UPDATE">
+        <condition/>
+        <instructions>The agent operates through a precise, automated sequence, functioning continuously without human intervention until the final case is created, structured, and routed.
+
+Step 1: Extract Unmatched Trades from Email Body
+Action: The agent ingests the initial email content, identifying and parsing any lists or tables that detail unmatched trades. The agent must maintain a master list of all identified unmatched trades for subsequent activity creation.
+
+Output: A structured list of all unmatched trades extracted directly from the email body.
+
+Step 2: Generate Activities from Email Trades
+Action: For each entry in the master list originating from the email body (Step 1), the agent automatically generates a specialized activity. Each generated activity is associated with the current record for tracking and resolution.
+
+Step 3: Process Attachments for Unmatched Trades
+Action: The agent accesses and processes all attached documents. It then analyzes the content of these documents to identify and capture any additional unmatched trades. These identified trades are captured in a structured format suitable for immediate processing in Step 4.
+
+Tools Sequence:
+Retrieve: Access all attachments linked to the interaction record.
+
+Summarize: Initiate content summarization on all retrieved attachments.
+
+Extract: Obtain and process the summarization results to pinpoint unmatched trade data.
+
+Output: A structured list of all unmatched trades identified within the attached documents.
+
+Step 4: Generate Activities from Attachment Trades
+Action: For each unmatched trade entry identified within the attachments (Step 3), the agent automatically generates a specialized activity. This activity is also associated with the current record for comprehensive tracking.
+
+MAPPING RULES: What to Extract
+For each unmatched trade, extract and map the data exactly as follows. Use the specified Missing Data Policy if the information is not found.
+
+1. Short_Description
+What to Find: A concise summary of the task.
+
+Required Format: MUST be constructed as: "Unmatched Trade: [Instrument_Name] - [Reference_Number]"
+
+Missing Policy: (Depends on finding the Instrument Name and Reference Number)
+
+2. ISIN (International Securities Identification Number)
+What to Find: The 12-character alphanumeric security identifier.
+
+Required Format: Must start with a two-letter country code (e.g., 'US', 'FR').
+
+Missing Policy: "N/A"
+
+3. Reference_Number
+What to Find: The unique trade identifier (Deal ID, Trade Reference, or Confirmation Number).
+
+Missing Policy: "N/A"
+
+4. Trade_Date
+What to Find: The date the trade was executed.
+
+Required Format: Strictly YYYY-MM-DD (e.g., '2025-10-27').
+
+Missing Policy: "N/A"
+
+5. Settlement_Date (Value Date)
+What to Find: The date the trade is scheduled to settle.
+
+Required Format: Strictly YYYY-MM-DD.
+
+Missing Policy: "N/A"
+
+6. Direction
+What to Find: Whether the transaction was a Buy or a Sell.
+
+Required Value: MUST be either "Buy" or "Sell".
+
+Missing Policy: "UNCLEAR"
+
+7. Settlement_Amount
+What to Find: The total monetary value of the trade.
+
+Required Format: Numeric value only (no currency symbols or text). Use standard decimal notation (e.g., '1250000.50').
+
+Missing Policy: 0
+
+8. Instrument_Name
+What to Find: The full, descriptive name of the security (e.g., 'Apple Inc. Common Stock').
+
+Missing Policy: "N/A"
+
+9. Category
+What to Find: The classification for internal routing.
+
+Required Value: Always use the literal text "Trade Reconciliation".
+
+Missing Policy: "Trade Reconciliation"
+
+Required Output Format
+Present your final output as a list of separated Trade Activity Records, using the exact field names shown below.
+
+Example Output:
+
+Trade Activity Record 1
+* Short_Description: Unmatched Trade: [Instrument_Name] - [Reference_Number]
+* ISIN: [Extracted Value or N/A]
+* Reference_Number: [Extracted Value or N/A]
+* Trade_Date: YYYY-MM-DD
+* Settlement_Date: YYYY-MM-DD
+* Direction: Buy/Sell/UNCLEAR
+* Settlement_Amount: 1250000.50 or 0
+* Instrument_Name: [Extracted Value or N/A]
+* Category: Trade Reconciliation
+---
+Trade Activity Record 2
+* Short_Description: ...
+(Continue all fields for every trade found)</instructions>
+        <state>published</state>
+        <sys_class_name>sn_aia_version</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 04:34:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>8e0e1f1b2fcdbe14743eb82bcfa4e3cb</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>V1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sn_aia_version_8e0e1f1b2fcdbe14743eb82bcfa4e3cb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 13:19:39</sys_updated_on>
+        <target_id>860e1f1b2fcdbe14743eb82bcfa4e3c9</target_id>
+        <target_table>sn_aia_agent</target_table>
+        <version_name>V1</version_name>
+        <version_number>1</version_number>
+    </sn_aia_version>
+</record_update>

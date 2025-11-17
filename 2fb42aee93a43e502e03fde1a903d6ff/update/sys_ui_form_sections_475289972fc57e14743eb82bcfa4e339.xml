@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="475289972fc57e14743eb82bcfa4e339" sys_domain="global" table="sn_bom_treasury_service" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-11 17:14:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0f5289972fc57e14743eb82bcfa4e356</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_bom_treasury_service" name="sn_bom_treasury_service" sys_domain="global" view="9052ee235b1602100c7609f8e281c7a5">475289972fc57e14743eb82bcfa4e339</sys_ui_form>
+            <sys_ui_section caption="Case" display_value="Case" name="sn_bom_treasury_service" sys_domain="global" view="9052ee235b1602100c7609f8e281c7a5">c75289972fc57e14743eb82bcfa4e347</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-11 17:14:06</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-11 17:14:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0b5289972fc57e14743eb82bcfa4e35e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_bom_treasury_service" name="sn_bom_treasury_service" sys_domain="global" view="9052ee235b1602100c7609f8e281c7a5">475289972fc57e14743eb82bcfa4e339</sys_ui_form>
+            <sys_ui_section caption="Notes" display_value="Notes" name="sn_bom_treasury_service" sys_domain="global" view="9052ee235b1602100c7609f8e281c7a5">835289972fc57e14743eb82bcfa4e357</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-11 17:14:07</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-11 17:14:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>875289972fc57e14743eb82bcfa4e367</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_bom_treasury_service" name="sn_bom_treasury_service" sys_domain="global" view="9052ee235b1602100c7609f8e281c7a5">475289972fc57e14743eb82bcfa4e339</sys_ui_form>
+            <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="sn_bom_treasury_service" sys_domain="global" view="9052ee235b1602100c7609f8e281c7a5">8f5289972fc57e14743eb82bcfa4e35e</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-11 17:14:07</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-11 17:14:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>435289972fc57e14743eb82bcfa4e347</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_bom_treasury_service" name="sn_bom_treasury_service" sys_domain="global" view="9052ee235b1602100c7609f8e281c7a5">475289972fc57e14743eb82bcfa4e339</sys_ui_form>
+            <sys_ui_section caption="Related Records" display_value="Related Records" name="sn_bom_treasury_service" sys_domain="global" view="9052ee235b1602100c7609f8e281c7a5">4f5289972fc57e14743eb82bcfa4e340</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-11 17:14:06</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-11 17:14:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c75289972fc57e14743eb82bcfa4e340</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sn_bom_treasury_service" name="sn_bom_treasury_service" sys_domain="global" view="9052ee235b1602100c7609f8e281c7a5">475289972fc57e14743eb82bcfa4e339</sys_ui_form>
+            <sys_ui_section caption="Major Case Information" display_value="Major Case Information" name="sn_bom_treasury_service" sys_domain="global" view="9052ee235b1602100c7609f8e281c7a5">0f5289972fc57e14743eb82bcfa4e33b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-11 17:14:06</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>sn_bom_treasury_service</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-11 17:14:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>475289972fc57e14743eb82bcfa4e339</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sn_bom_treasury_service</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+            <sys_update_name>sys_ui_form_sections_475289972fc57e14743eb82bcfa4e339</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-11 17:14:06</sys_updated_on>
+            <sys_user/>
+            <view display_value="External Location Agent" name="external_location_agent">9052ee235b1602100c7609f8e281c7a5</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_bom_service_definition">
+    <sn_bom_service_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <case_type/>
+        <description>A Penalty is a non-core, mandatory cash outflow resulting from the failure to comply with external regulatory statutes, internal contractual obligations, or established compliance standards. Penalties represent a direct cost to the business, typically requiring prompt remediation and payment.&#13;
+&#13;
+Core Components for an AI Model:&#13;
+&#13;
+Purpose: To mitigate legal or regulatory exposure and restore compliance by fulfilling a mandatory financial obligation imposed by an external governing body (e.g., government, regulatory agency, contractual counterparty).&#13;
+&#13;
+Input (Trigger): A Compliance Failure or Breach (e.g., late filing, environmental violation, tax error) officially documented in a Notice of Violation or Claim Letter.&#13;
+&#13;
+Process (Work Flow): Involves Notification, Verification, Approval (Authorization for payment), Remittance (Cash outflow transaction), and Documentation (Recording the expense and related liability).&#13;
+&#13;
+Output (Value): Zero immediate economic value; the output is the Resolution of Liability and the Avoidance of Further Legal/Financial Escalation.&#13;
+&#13;
+Constraint: Payment must be made by a specific Due Date to the stipulated Beneficiary Account using the designated Reference Number for accurate reconciliation.&#13;
+&#13;
+Key Classification Types (For Categorization):&#13;
+&#13;
+Financial Impact: Mandatory Cash Outflow and a reduction of Net Income (as an expense).&#13;
+&#13;
+Activity Type: A high-priority Compliance and Treasury Operations activity.&#13;
+&#13;
+Context Specificity (Example): A UST Penalty Fine relates specifically to failure concerning U.S. Treasury/Financial market regulations.</description>
+        <id>tmpg_claim</id>
+        <image/>
+        <name>Penalty / Fine Review</name>
+        <order>100</order>
+        <playbook_record_generator/>
+        <service_organizations_offering_service>all_service_organizations</service_organizations_offering_service>
+        <service_type>3</service_type>
+        <show_in_interceptor>true</show_in_interceptor>
+        <sys_class_name>sn_bom_service_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-10 03:51:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d1a00dbe9385fad00f91fce79503d6d0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Penalty / Fine Review</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sn_bom_service_definition_d1a00dbe9385fad00f91fce79503d6d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 09:09:24</sys_updated_on>
+        <table>x_snc_pab_mc_tkit_trade_ops</table>
+        <task_table>x_snc_pab_mc_tkit_trade_ops</task_table>
+        <template>service=d1a00dbe9385fad00f91fce79503d6d0^EQ</template>
+        <use_service_catalog_item>false</use_service_catalog_item>
+    </sn_bom_service_definition>
+</record_update>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Review classification material">860e1f1b2fcdbe14743eb82bcfa4e3c9</agent>
+        <description>This tool returns the list of attachments of a Glide record. It returns the file_name and sys_id for each one.</description>
+        <display_output>true</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"sys_id_or_number","value":"","description":"The sys_id or number of the record.","invalidMessage":null}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Retrieve attachments of a case record</name>
+        <output_transformation_strategy>abstract_summary</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message>Getting attachments on the case record</pre_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 04:34:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>060e5f1b2fcdbe14743eb82bcfa4e304</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Retrieve attachments of a case record</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_060e5f1b2fcdbe14743eb82bcfa4e304</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:35:43</sys_updated_on>
+        <tool display_value="Retrieve attachments of a interaction record">1838eb9e93c53ad00f91fce79503d684</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions>undefined</transformation_instructions>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sn_aia_agent_tool_m2m_060e5f1b2fcdbe14743eb82bcfa4e304</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Review classification material">860e1f1b2fcdbe14743eb82bcfa4e3c9</agent><description>This tool returns the list of attachments of a Glide record. It returns the file_name and sys_id for each one.</description><display_output>true</display_output><document_status/><execution_mode>autopilot</execution_mode><inputs>[{"name":"sys_id_or_number","value":"","description":"The sys_id or number of the record.","invalidMessage":null}]</inputs><max_auto_executions>10</max_auto_executions><name>Retrieve attachments of a case record</name><output_transformation_strategy>abstract_summary</output_transformation_strategy><post_processing_script/><pre_message>Getting attachments on the case record</pre_message><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-11-12 04:34:15</sys_created_on><sys_domain>global</sys_domain><sys_id>060e5f1b2fcdbe14743eb82bcfa4e304</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Retrieve attachments of a case record</sys_name><sys_overrides/><sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package><sys_policy/><sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_060e5f1b2fcdbe14743eb82bcfa4e304</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-11-12 05:35:43</sys_updated_on><tool display_value="Retrieve attachments of a interaction record">1838eb9e93c53ad00f91fce79503d684</tool><tool_attributes>{}</tool_attributes><transformation_instructions>undefined</transformation_instructions></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>-913054236</payload_hash>
+        <record_name>Retrieve attachments of a case record</record_name>
+        <reverted_from/>
+        <source>01a9c0fa2fa4b650b14f861cbfa4e3fb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:35:44</sys_created_on>
+        <sys_id>f61c6bdb2f41fe14743eb82bcfa4e386</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19a769010460000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:35:44</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>3a1c6bdb9a41fe149d32da9feb3d3c85</update_guid>
+        <update_guid_history>3a1c6bdb9a41fe149d32da9feb3d3c85:-913054236,c68b239b6241fe1467d78be72409e035:-1404974340,01d6ef9fcf01fe149096d4a15e659bbe:542504867,920e5f1b4ccdbe14e1809b36d5b5b607:876782428</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Retrieve attachments of a case record">626cab1f2f41fe14743eb82bcfa4e3c8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:37:05</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>45ba1b36e0ec488c9eef8159592b2459</sys_id>
+        <sys_metadata>060e5f1b2fcdbe14743eb82bcfa4e304</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Retrieve attachments of a case record</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_scope_delete display_value="">1f26bce786f64c68a8aed337e0a89e90</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_060e5f1b2fcdbe14743eb82bcfa4e304</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_060e5f1b2fcdbe14743eb82bcfa4e304">f61c6bdb2f41fe14743eb82bcfa4e386</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:37:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

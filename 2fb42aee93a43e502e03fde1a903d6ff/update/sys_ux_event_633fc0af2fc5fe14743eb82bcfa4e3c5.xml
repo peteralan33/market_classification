@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description>Relay event for toggling "Knowledge Category Picker Modal"</description>
+        <event_name>MODAL_SELECTED_RELAY_633fc0af2fc5fe14743eb82bcfa4e391</event_name>
+        <explicit_api_name/>
+        <interfaces/>
+        <label>Toggle Modal Relay (Knowledge Category Picker Modal)</label>
+        <props>[
+    {
+        "fieldType": "string",
+        "interfaceApiName": "global.modal",
+        "label": "Modal",
+        "name": "modalId"
+    },
+    {
+        "fieldType": "boolean",
+        "interfaceApiName": null,
+        "label": "Show Modal",
+        "name": "showModal"
+    },
+    {
+        "fieldType": "json",
+        "interfaceApiName": null,
+        "label": "Modal display options",
+        "name": "displayOptions"
+    }
+]</props>
+        <required_translations>[ {
+  "message" : "Modal",
+  "comment" : ""
+}, {
+  "message" : "Modal display options",
+  "comment" : ""
+}, {
+  "message" : "Show Modal",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-11-12 08:09:15</sys_created_on>
+        <sys_id>633fc0af2fc5fe14743eb82bcfa4e3c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Toggle Modal Relay (Knowledge Category Picker Modal)</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sys_ux_event_633fc0af2fc5fe14743eb82bcfa4e3c5</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:09:15</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=633fc0af2fc5fe14743eb82bcfa4e3c5"/>
+</record_update>

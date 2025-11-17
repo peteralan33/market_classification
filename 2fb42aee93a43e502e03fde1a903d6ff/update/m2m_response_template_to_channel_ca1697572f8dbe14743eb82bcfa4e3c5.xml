@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="m2m_response_template_to_channel">
+    <m2m_response_template_to_channel action="INSERT_OR_UPDATE">
+        <channel display_value="Form">54e9450c3b4300105a18802b13efc420</channel>
+        <response_template display_value="Investigation template">3d0653572f8dbe14743eb82bcfa4e380</response_template>
+        <sys_class_name>m2m_response_template_to_channel</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 03:59:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ca1697572f8dbe14743eb82bcfa4e3c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Form.Investigation template</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>m2m_response_template_to_channel_ca1697572f8dbe14743eb82bcfa4e3c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 03:59:34</sys_updated_on>
+    </m2m_response_template_to_channel>
+</record_update>

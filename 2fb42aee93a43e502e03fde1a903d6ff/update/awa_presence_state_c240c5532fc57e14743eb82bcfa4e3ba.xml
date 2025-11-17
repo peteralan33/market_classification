@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="awa_presence_state">
+    <awa_presence_state action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <apply_to_all_groups>false</apply_to_all_groups>
+        <apply_to_groups>7d39d8932f417e14743eb82bcfa4e3f5</apply_to_groups>
+        <available_to_receive_work_items>true</available_to_receive_work_items>
+        <description/>
+        <disable_inactivity_check>false</disable_inactivity_check>
+        <name>Trade Exceptions (CM)</name>
+        <order>20</order>
+        <restrict_agent_update/>
+        <service_channels>873698db2f017e14743eb82bcfa4e3e9</service_channels>
+        <show_channels>true</show_channels>
+        <sys_class_name>awa_presence_state</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:05:32</sys_created_on>
+        <sys_id>c240c5532fc57e14743eb82bcfa4e3ba</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Trade Exceptions (CM)</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>awa_presence_state_c240c5532fc57e14743eb82bcfa4e3ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 23:56:59</sys_updated_on>
+    </awa_presence_state>
+</record_update>
