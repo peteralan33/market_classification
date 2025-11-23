@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_definition_config">
+    <sys_one_extend_definition_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <capability display_value="ac05a79b2f01fe14743eb82bcfa4e34d_Look up">d40e41362f957290b14f861cbfa4e3be</capability>
+        <default>true</default>
+        <definition display_value="ac05a79b2f01fe14743eb82bcfa4e34d_Look up emails against case record">d40e49362f957290b14f861cbfa4e3fc</definition>
+        <enable_large_input_support>false</enable_large_input_support>
+        <sys_class_name>sys_one_extend_definition_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-22 15:03:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>580e49362f957290b14f861cbfa4e3fd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sys_one_extend_definition_config_580e49362f957290b14f861cbfa4e3fd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-22 15:03:44</sys_updated_on>
+    </sys_one_extend_definition_config>
+</record_update>

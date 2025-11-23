@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_capability">
+    <sys_one_extend_capability action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <external>true</external>
+        <metadata>{}</metadata>
+        <name>ac05a79b2f01fe14743eb82bcfa4e34d_Look up</name>
+        <short_description/>
+        <sys_class_name>sys_one_extend_capability</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-22 15:03:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d40e41362f957290b14f861cbfa4e3be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ac05a79b2f01fe14743eb82bcfa4e34d_Look up</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sys_one_extend_capability_d40e41362f957290b14f861cbfa4e3be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-22 15:03:44</sys_updated_on>
+        <type>datasource</type>
+    </sys_one_extend_capability>
+    <sys_translated_text action="delete_multiple" query="documentkey=d40e41362f957290b14f861cbfa4e3be"/>
+</record_update>

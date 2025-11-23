@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>This tool is used when the user requests a detailed investigation of a image attachment, or a summarization of the image attachments on a record that may contains details relating to unmatched trades.</description>
+        <input_schema>[{"name":"attachments_sys_ids","description":"list of sys_ids for the attachments to use as a document for summarization"},{"name":"query","description":"Review the document for a list of unmatched trades. You need to return all detail related to that unmatched trade"}]</input_schema>
+        <name>Review attachment for unmatched trades</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[
+            
+            (function(inputs) {
+                var TASK_DEFINITION_SYS_ID = "754a99135350a61016f7ddeeff7b1298";
+
+                // Check if inputs.query is defined and non-empty
+                if (typeof inputs.query === 'undefined' || inputs.query === '') {
+                    return JSON.stringify({
+                        message: "It seems like we're missing a query. Please provide a valid query so we can proceed."
+                    });
+                }
+
+                function normalizeInputData(inputData) {
+                    if (
+                        inputData === null ||
+                        inputData === "{}" ||
+                        (typeof inputData === "object" && !Array.isArray(inputData) && Object.keys(inputData).length === 0)
+                    ) {
+                        return null;
+                    }
+
+                    if (typeof inputData === "string") {
+                        try {
+                            var parsedData = JSON.parse(inputData);
+                            if (Array.isArray(parsedData)) {
+                                return parsedData;
+                            }
+                            return [parsedData];
+                        } catch (error) {
+                            return [inputData];
+                        }
+                    }
+
+                    if (Array.isArray(inputData)) {
+                        return inputData;
+                    }
+
+                    if (typeof inputData === "object") {
+                        return Object.values(inputData);
+                    }
+
+                    throw new Error("Invalid format: inputData must be an object, array, or a valid JSON string.");
+                }
+
+                var attachments = normalizeInputData(inputs.attachments_sys_ids);
+                var queryParams = {};
+
+                var docintelAPI = new sn_docintel_gen_ai.DocintelGenAIQuery();
+
+                var taskID = docintelAPI.query(inputs.query, attachments, null, null, TASK_DEFINITION_SYS_ID, null, null, null, queryParams);
+
+                var taskGr = new GlideRecordSecure("sys_di_task");
+                if (!taskGr.get(taskID)) {
+                    throw new Error("Submission failed: Task ID not found in sys_di_task.");
+                }
+
+                return JSON.stringify({
+                    "docintel_task_id": taskID
+                });
+            })(inputs);]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-23 01:03:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>925753b62f5db290b14f861cbfa4e392</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Review attachment for unmatched trades</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sn_aia_tool_925753b62f5db290b14f861cbfa4e392</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-23 01:03:48</sys_updated_on>
+        <target_document/>
+        <target_document_table>sn_aia_tool</target_document_table>
+        <type>script</type>
+    </sn_aia_tool>
+</record_update>

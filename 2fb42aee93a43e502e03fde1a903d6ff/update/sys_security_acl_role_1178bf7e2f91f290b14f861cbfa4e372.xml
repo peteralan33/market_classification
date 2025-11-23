@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-23 03:28:27</sys_created_on>
+        <sys_id>1178bf7e2f91f290b14f861cbfa4e372</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>global.x_snc_pab_mc_tkit.Unmatched Trade Triage Specialist (Copy).interaction_agent</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_security_acl display_value="global.x_snc_pab_mc_tkit.Unmatched Trade Triage Specialist Documents">0978bf7e2f91f290b14f861cbfa4e358</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_1178bf7e2f91f290b14f861cbfa4e372</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-23 03:28:27</sys_updated_on>
+        <sys_user_role display_value="interaction_agent" name="interaction_agent">b523f1d037001300a213a7f07e41f15b</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

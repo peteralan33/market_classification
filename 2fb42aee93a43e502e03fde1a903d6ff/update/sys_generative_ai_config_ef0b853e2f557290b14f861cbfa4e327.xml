@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_configurations>{"skill_config_id":"630b853e2f557290b14f861cbfa4e35a"}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>9f0b853e2f557290b14f861cbfa4e31a</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <max_tokens>500</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic_small</model>
+        <name>Create Unmatched Trade Structure</name>
+        <parent/>
+        <prompt>## Role
+You are a data extraction expert. Your task is to extract and structure unmatched trade data from email content for downstream processing.
+
+## Context
+The unmatched trade data in email format that needs to be processed: 
+Email Subject: {{LookUpEmailsOnUnmatchedRecord.email_subject}} 
+Email Body: {{LookUpEmailsOnUnmatchedRecord.email_body}} 
+
+## Instructions
+1. Carefully read through the provided email content to identify unmatched trade structures, which could be in the form of a table or a list.
+2. For each unmatched trade, extract the required data fields according to the specified mapping rules:
+   - Short_Description: Construct as "Unmatched Trade: [Instrument_Name] - [Reference_Number]"
+   - ISIN: Extract the 12-character alphanumeric security identifier, starting with a two-letter country code (e.g., 'US', 'FR')
+   - Reference_Number: Extract the unique trade identifier (Deal ID, Trade Reference, or Confirmation Number)
+   - Trade_Date: Extract the date the trade was executed in the format YYYY-MM-DD (e.g., '2025-10-27')
+   - Settlement_Date: Extract the date the trade is scheduled to settle in the format YYYY-MM-DD
+   - Direction: Determine whether the transaction was a Buy or a Sell; if unclear, use "UNCLEAR"
+   - Settlement_Amount: Extract the total monetary value of the trade, using standard decimal notation (e.g., '1250000.50'); if missing, use 0
+   - Instrument_Name: Extract the full, descriptive name of the security (e.g., 'Apple Inc. Common Stock')
+   - Category: Always use the literal text "Trade Reconciliation"
+   - Source: Always use the literal text "Email"
+3. Present the extracted data in a list of Trade Activity Records, using the exact field names specified in the task description.
+
+## Output
+The output should be a list of Trade Activity Records in the following format:
+
+Trade Activity Record 1
+* Short_Description: Unmatched Trade: [Instrument_Name] - [Reference_Number]
+* ISIN: [Extracted Value or N/A]
+* Reference_Number: [Extracted Value or N/A]
+* Trade_Date: YYYY-MM-DD
+* Settlement_Date: YYYY-MM-DD
+* Direction: Buy/Sell/UNCLEAR
+* Settlement_Amount: 1250000.50 or 0
+* Instrument_Name: [Extracted Value or N/A]
+* Category: Trade Reconciliation
+* Source: Email
+
+Repeat the above format for each unmatched trade extracted from the email content.</prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <request_tokens>32018</request_tokens>
+        <show_in_prompt_library>true</show_in_prompt_library>
+        <state>published</state>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-22 14:50:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ef0b853e2f557290b14f861cbfa4e327</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>9f0b853e2f557290b14f861cbfa4e31a</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sys_generative_ai_config_ef0b853e2f557290b14f861cbfa4e327</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-22 15:08:19</sys_updated_on>
+        <temperature>0.2</temperature>
+        <thinking_tokens>0</thinking_tokens>
+        <version>1</version>
+    </sys_generative_ai_config>
+</record_update>

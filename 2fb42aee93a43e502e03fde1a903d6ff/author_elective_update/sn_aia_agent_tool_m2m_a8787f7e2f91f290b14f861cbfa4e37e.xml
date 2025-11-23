@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Unmatched Trade Triage Specialist (Copy)">54787f7e2f91f290b14f861cbfa4e339</agent>
+        <description>Purpose: Retrieve original inbound email for processing. 
+
+Inputs: Number of the current Case</description>
+        <display_output>true</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Look up emails against case record</name>
+        <output_transformation_strategy>abstract_summary</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message/>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-23 03:28:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a8787f7e2f91f290b14f861cbfa4e37e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Look up emails against case record</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_a8787f7e2f91f290b14f861cbfa4e37e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-23 03:28:24</sys_updated_on>
+        <tool display_value="Review Unmatched Trade Structure from Email">e336517e2fd57290b14f861cbfa4e3ca</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sn_aia_agent_tool_m2m_a8787f7e2f91f290b14f861cbfa4e37e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Unmatched Trade Triage Specialist (Copy)">54787f7e2f91f290b14f861cbfa4e339</agent><description>Purpose: Retrieve original inbound email for processing. 
+
+Inputs: Number of the current Case</description><display_output>true</display_output><document_status/><execution_mode>autopilot</execution_mode><inputs>[]</inputs><max_auto_executions>10</max_auto_executions><name>Look up emails against case record</name><output_transformation_strategy>abstract_summary</output_transformation_strategy><post_processing_script/><pre_message/><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-11-23 03:28:24</sys_created_on><sys_domain>global</sys_domain><sys_id>a8787f7e2f91f290b14f861cbfa4e37e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Look up emails against case record</sys_name><sys_overrides/><sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package><sys_policy/><sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_a8787f7e2f91f290b14f861cbfa4e37e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-11-23 03:28:24</sys_updated_on><tool display_value="Review Unmatched Trade Structure from Email">e336517e2fd57290b14f861cbfa4e3ca</tool><tool_attributes>{}</tool_attributes><transformation_instructions/></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>654898273</payload_hash>
+        <record_name>Look up emails against case record</record_name>
+        <reverted_from/>
+        <source>1429837e2f99b290b14f861cbfa4e37e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-23 03:28:24</sys_created_on>
+        <sys_id>6c787f7e2f91f290b14f861cbfa4e381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19aaec172400000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-23 03:28:24</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>a0787f7e2491f2906b0beca17ec77881</update_guid>
+        <update_guid_history>a0787f7e2491f2906b0beca17ec77881:654898273</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Look up emails against case record">d2197bfe2f91f290b14f861cbfa4e386</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-23 03:31:15</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>32227d12bc9745edb8061e8b9ec8b829</sys_id>
+        <sys_metadata>a8787f7e2f91f290b14f861cbfa4e37e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Look up emails against case record</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_scope_delete display_value="">1f26bce786f64c68a8aed337e0a89e90</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_a8787f7e2f91f290b14f861cbfa4e37e</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_a8787f7e2f91f290b14f861cbfa4e37e">6c787f7e2f91f290b14f861cbfa4e381</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-23 03:31:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

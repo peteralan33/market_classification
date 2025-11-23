@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_nowassist_skill_family">
+    <sn_nowassist_skill_family action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <description/>
+        <image_url>images/custom-feature-image.svg</image_url>
+        <name>Unmatched Trade Skills</name>
+        <order>100</order>
+        <parent display_value="FSO">df2cedc977220210daacfd0b8c5a99a5</parent>
+        <preview_image>images/custom-feature-background-image.svg</preview_image>
+        <sub_title/>
+        <sys_class_name>sn_nowassist_skill_family</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-22 15:07:44</sys_created_on>
+        <sys_id>47ee05f62f957290b14f861cbfa4e3d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Unmatched Trade Skills</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sn_nowassist_skill_family_47ee05f62f957290b14f861cbfa4e3d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-22 15:07:44</sys_updated_on>
+        <type>feature</type>
+    </sn_nowassist_skill_family>
+    <sys_translated_text action="delete_multiple" query="documentkey=47ee05f62f957290b14f861cbfa4e3d9"/>
+</record_update>

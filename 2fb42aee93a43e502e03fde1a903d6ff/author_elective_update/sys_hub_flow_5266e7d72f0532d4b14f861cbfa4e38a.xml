@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,intermediateFlowVersion=0.4,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=12697000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source>agentic_ai</generation_source>
+        <internal_name>wire_service_case__ai_agent_review_classification_material__5266e7d72f0532d4b14f861cbfa4e389</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛Wire Service Case Record","reference":"sn_bom_treasury_wire_service","reference_display":"CM Investigation Case","type":"reference","base_type":"reference","usedInstances":{"e6662bd7-9005-32d4-1bb5-a786553f7ea2":["target_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","timeFromCreateToActivate":"97078091000"}}]</label_cache>
+        <master_snapshot>df666bd72f0532d4b14f861cbfa4e33f</master_snapshot>
+        <master_snapshot_digest/>
+        <name>CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>43d618a32f49fe14743eb82bcfa4e388</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:10:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5266e7d72f0532d4b14f861cbfa4e38a</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sys_hub_flow_5266e7d72f0532d4b14f861cbfa4e38a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:42:34</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 2025-11-12 03:42:32 AM">5bd618a32f49fe14743eb82bcfa4e3de</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=5266e7d72f0532d4b14f861cbfa4e38a"/>
+    <sys_variable_value action="DELETE" query="document_key=5266e7d72f0532d4b14f861cbfa4e38a"/>
+    <sys_flow_record_trigger action="DELETE">
+        <active>true</active>
+        <condition table="sn_bom_treasury_wire_service">opened_by=55e1b18a938576d00f91fce79503d6e3^state=10<item display_table="sys_user" display_value="Email Triage Agent  Capital Markets" endquery="false" field="opened_by" goto="false" newquery="false" operator="=" or="false" value="55e1b18a938576d00f91fce79503d6e3"/>
+            <item display_value="Open" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="10"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 08:42:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>43d618a32f49fe14743eb82bcfa4e388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:42:31</sys_updated_on>
+        <table>sn_bom_treasury_wire_service</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="DELETE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>5266e7d72f0532d4b14f861cbfa4e38a</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 08:42:31</sys_created_on>
+        <sys_id>0bd618a32f49fe14743eb82bcfa4e388</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:42:31</sys_updated_on>
+        <trigger display_value="">43d618a32f49fe14743eb82bcfa4e388</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="DELETE" query="identifier=5266e7d72f0532d4b14f861cbfa4e38a^sys_idNOT IN0bd618a32f49fe14743eb82bcfa4e388"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=5266e7d72f0532d4b14f861cbfa4e38a"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=5266e7d72f0532d4b14f861cbfa4e38a^sys_idNOT IN5266e7d72f0532d4b14f861cbfa4e38b"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>5266e7d72f0532d4b14f861cbfa4e38a</id>
+        <name>Wire Service Case - AI Agent: Review classification material - 5266e7d72f0532d4b14f861cbfa4e389</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:10:52</sys_created_on>
+        <sys_id>5266e7d72f0532d4b14f861cbfa4e38b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:10:52</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=5266e7d72f0532d4b14f861cbfa4e38b"/>
+    <sys_hub_flow_input action="DELETE" query="model=5266e7d72f0532d4b14f861cbfa4e38a^sys_idNOT INba662bd72f0532d4b14f861cbfa4e3b7,ee662bd72f0532d4b14f861cbfa4e3ac,fa662bd72f0532d4b14f861cbfa4e3b4"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389">5266e7d72f0532d4b14f861cbfa4e38a</model>
+        <model_id>5266e7d72f0532d4b14f861cbfa4e38a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5266e7d72f0532d4b14f861cbfa4e38a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:10:54</sys_created_on>
+        <sys_id>ba662bd72f0532d4b14f861cbfa4e3b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:10:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=ba662bd72f0532d4b14f861cbfa4e3b7"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389">5266e7d72f0532d4b14f861cbfa4e38a</model>
+        <model_id>5266e7d72f0532d4b14f861cbfa4e38a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5266e7d72f0532d4b14f861cbfa4e38a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:10:53</sys_created_on>
+        <sys_id>ee662bd72f0532d4b14f861cbfa4e3ac</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:42:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=ee662bd72f0532d4b14f861cbfa4e3ac"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389">5266e7d72f0532d4b14f861cbfa4e38a</model>
+        <model_id>5266e7d72f0532d4b14f861cbfa4e38a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_5266e7d72f0532d4b14f861cbfa4e38a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:10:54</sys_created_on>
+        <sys_id>fa662bd72f0532d4b14f861cbfa4e3b4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:42:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=fa662bd72f0532d4b14f861cbfa4e3b4"/>
+    <sys_hub_flow_output action="DELETE" query="model=5266e7d72f0532d4b14f861cbfa4e38a"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=5266e7d72f0532d4b14f861cbfa4e38a"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=5266e7d72f0532d4b14f861cbfa4e38a^sys_idNOT IN5ad6d4a32f49fe14743eb82bcfa4e367"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389">5266e7d72f0532d4b14f861cbfa4e38a</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 08:42:28</sys_created_on>
+        <sys_id>5ad6d4a32f49fe14743eb82bcfa4e367</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:42:28</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=5266e7d72f0532d4b14f861cbfa4e38a^sys_idNOT IN1ad6d4a32f49fe14743eb82bcfa4e36a"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="AIA Trigger Use Case">0b63e51a53c7121059e0ddeeff7b12b5</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0b63e51a53c7121059e0ddeeff7b12b5</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389">5266e7d72f0532d4b14f861cbfa4e38a</flow>
+        <generation_source>agentic_ai</generation_source>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 08:42:28</sys_created_on>
+        <sys_id>1ad6d4a32f49fe14743eb82bcfa4e36a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:42:28</sys_updated_on>
+        <ui_id>e6662bd7-9005-32d4-1bb5-a786553f7ea2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/8VTy27bMBD8lUBnyxAl6mHfihYBArQNkNelCASKXMpEaUqhqCSu4X/vUpINJ0WKJC3aI5f7mJnd+bYNGHeqMWemc8xwuNx0ZyJYBgnLsrgSeSyjNIkFrQiVRUZ4JRmFRKTBLFA+r5BZAilhacJzEpMoXUAkBICUeUXiqsA8w9aAmc6qugZb8sZIVfeW+bElNpkF90z3PiXFoVClEocSCYTmNIGqiCs+DI0BU4XqWs02N6+v4CulhQUTLL/dzoKWWYTjwAbL7bMvt2mh1KwCjY0vEa6p38ByX3g10jz5eEzz5Ey8SggPATO6/fDGCo+UzAJ4dGAEIBjJdAezYM2MYK6xm2DpbI8BC0ycG705ZKyUcdgs8LmPnfqBnYsoinymBGTNYfw9PMtJ3DHMV43icN56dGPEsUpPNbzR/dp8HQn5tYBkvXb7tWCk77AftB60hzFhkper5uFiP/BUmYHf9KkbzvThxRyqUPUOOr+qXl0902aMfH6+L9CwxonlmrUtRsrWNvdqmIKg1/Na42MudfOA6DpVm/l4/3MUk81PMf5pCN8wqzzdL9gGi/24a6PuehjcUVBaFEkuwpjIOKSSZGEl0yzMaLbIZUwJARnsBmnLu96TGkWa5ChHRTGh41a17gNCuIeJ+W72p56k+W+v9fgUma3BlRY4XtqREbfb6xYFAVGSOe8tLsvtdr+6793uOlzAGyAfDDZgPrnYY36BymQlezRpclP8t9yUxE+95Fj3/QU/XY1fL3tqqv1/vjoW6qm1jpf1T9xV0SwjlRQhFxkNKWN5uIiLRUh5xDPG8CCSxbvddfsT4Oq7yPMGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=1ad6d4a32f49fe14743eb82bcfa4e36a"/>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=5266e7d72f0532d4b14f861cbfa4e38a"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=5266e7d72f0532d4b14f861cbfa4e38a"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=5266e7d72f0532d4b14f861cbfa4e38a"/>
+    <sys_hub_flow_variable action="DELETE" query="model=5266e7d72f0532d4b14f861cbfa4e38a"/>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5266e7d72f0532d4b14f861cbfa4e38a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:10:54</sys_created_on>
+        <sys_id>3e662bd72f0532d4b14f861cbfa4e3b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:10:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5266e7d72f0532d4b14f861cbfa4e38a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:10:54</sys_created_on>
+        <sys_id>3e662bd72f0532d4b14f861cbfa4e3b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:10:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_5266e7d72f0532d4b14f861cbfa4e38a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:10:54</sys_created_on>
+        <sys_id>72662bd72f0532d4b14f861cbfa4e3ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:10:54</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_5266e7d72f0532d4b14f861cbfa4e38a"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_5266e7d72f0532d4b14f861cbfa4e38a"/>
+    <sys_hub_flow_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>intermediateFlowVersion=0.4,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=97078091000</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>wire_service_case__ai_agent_review_classification_material__5266e7d72f0532d4b14f861cbfa4e389</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛Wire Service Case Record","reference":"sn_bom_treasury_wire_service","reference_display":"CM Investigation Case","type":"reference","base_type":"reference","usedInstances":{"e6662bd7-9005-32d4-1bb5-a786553f7ea2":["target_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","timeFromCreateToActivate":"97078091000"}}]</label_cache>
+        <master>true</master>
+        <name>CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389">5266e7d72f0532d4b14f861cbfa4e38a</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:10:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>df666bd72f0532d4b14f861cbfa4e33f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:42:31</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=df666bd72f0532d4b14f861cbfa4e33f"/>
+    <sys_variable_value action="DELETE" query="document_key=df666bd72f0532d4b14f861cbfa4e33f"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=df666bd72f0532d4b14f861cbfa4e33f"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=df666bd72f0532d4b14f861cbfa4e33f^sys_idNOT IN9f666bd72f0532d4b14f861cbfa4e340"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>df666bd72f0532d4b14f861cbfa4e33f</id>
+        <name>Wire Service Case - AI Agent: Review classification material - 5266e7d72f0532d4b14f861cbfa4e389</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:10:56</sys_created_on>
+        <sys_id>9f666bd72f0532d4b14f861cbfa4e340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:10:56</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=9f666bd72f0532d4b14f861cbfa4e340"/>
+    <sys_hub_flow_input action="DELETE" query="model=df666bd72f0532d4b14f861cbfa4e33f^sys_idNOT IN1f666bd72f0532d4b14f861cbfa4e353,4b16d0232f49fe14743eb82bcfa4e36a,db666bd72f0532d4b14f861cbfa4e341"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389">df666bd72f0532d4b14f861cbfa4e33f</model>
+        <model_id>df666bd72f0532d4b14f861cbfa4e33f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_df666bd72f0532d4b14f861cbfa4e33f</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:10:56</sys_created_on>
+        <sys_id>1f666bd72f0532d4b14f861cbfa4e353</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:42:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=1f666bd72f0532d4b14f861cbfa4e353"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389">df666bd72f0532d4b14f861cbfa4e33f</model>
+        <model_id>df666bd72f0532d4b14f861cbfa4e33f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_df666bd72f0532d4b14f861cbfa4e33f</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 08:39:16</sys_created_on>
+        <sys_id>4b16d0232f49fe14743eb82bcfa4e36a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:39:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=4b16d0232f49fe14743eb82bcfa4e36a"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389">df666bd72f0532d4b14f861cbfa4e33f</model>
+        <model_id>df666bd72f0532d4b14f861cbfa4e33f</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_df666bd72f0532d4b14f861cbfa4e33f</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:10:56</sys_created_on>
+        <sys_id>db666bd72f0532d4b14f861cbfa4e341</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:42:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=db666bd72f0532d4b14f861cbfa4e341"/>
+    <sys_hub_flow_output action="DELETE" query="model=df666bd72f0532d4b14f861cbfa4e33f"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=df666bd72f0532d4b14f861cbfa4e33f"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=df666bd72f0532d4b14f861cbfa4e33f^sys_idNOT IN6ed6d4a32f49fe14743eb82bcfa4e3e9"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389">df666bd72f0532d4b14f861cbfa4e33f</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 08:42:30</sys_created_on>
+        <sys_id>6ed6d4a32f49fe14743eb82bcfa4e3e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:42:30</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=df666bd72f0532d4b14f861cbfa4e33f^sys_idNOT INf6d618a32f49fe14743eb82bcfa4e349"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="AIA Trigger Use Case">0b63e51a53c7121059e0ddeeff7b12b5</action_type>
+        <action_type_parent display_value="AIA Trigger Use Case">931a511a5387121059e0ddeeff7b1249</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>0b63e51a53c7121059e0ddeeff7b12b5</compiled_snapshot>
+        <display_text/>
+        <flow display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389">df666bd72f0532d4b14f861cbfa4e33f</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 08:42:31</sys_created_on>
+        <sys_id>f6d618a32f49fe14743eb82bcfa4e349</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:42:31</sys_updated_on>
+        <ui_id>e6662bd7-9005-32d4-1bb5-a786553f7ea2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/71TXU/jMBD8K8jPTdV8Nu3bCYSEdHdIFHhBKNrY69Y61wmOA/Sq/vdbN2kpIE49HeLR61nvzKznbs2AO1WZC9M4MBxnq+ZCsCmLIcuiUowjOUrjSCRlmMg8C3kpIcFYpGzAlMflMosxDSGN+TiMwlE6wZEQiFKOyzAqc8IZWCIhnVXzOdqCV0aqeWvBjy3okQF7BN16SEpDsUwlDQ0lhsk4ibHMo5Jvh0ZIUKGaWsPq9vgOvlBaWDRsenc/YDVYouPQsun6zdWxejSUqAl63Qk6OT0UdHIhjpLsVrVHNAQx8/78vX94titWVnii4YDhs0MjkBhK0A0O2BKMAFfZFZs621LBIohLo1d7xEIZR48xj31u1G8al49GI4+USKI5drf7Y9F725XlGTggJi13re2hfFEpjk1nl0AJrXanh7UOcFl7nV2Lg1LvuivdLs3Pzhq2f2C3Sqq0DZHA2iv13Hshcraonq52LM+V2ZrSX+qKg96fwJF1Zes8nzVr1fUbl7vKO59R45ImFkuoa6oUta0e1XYKkV4O55oOQ6mrJ2LXqLkZdpkZ0gZgeE71s235Fqzycn/QM9Tsx90Y9dDiNlF5kuR5PBZBFMooSGSYBaVMsyBLsslYRkkYomSbAWtWzamGpnkxijZUPLReZmdbb1DReexbuFW1+0akHrH3YjP432Qn478m4fCbg52jKyxy+rAHcV6vb2qyCEURDnlraX1us3mf4X/O6BHM9hndUju52lH7gHGfxpdkvA7k1UG9z2T0WZmMo9eJdND8+iCV193VJyezH/gF6ZQzBMsX5wq1X6Npl+U2Jh+k9nAbr4N7uI8vyW6ZZFlYShFwkSVBAjAOJlE+CRI+4hkA/bp48onZvf8DbyDM2pcHAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=f6d618a32f49fe14743eb82bcfa4e349"/>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=df666bd72f0532d4b14f861cbfa4e33f"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=df666bd72f0532d4b14f861cbfa4e33f"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=df666bd72f0532d4b14f861cbfa4e33f"/>
+    <sys_hub_flow_variable action="DELETE" query="model=df666bd72f0532d4b14f861cbfa4e33f"/>
+    <sys_documentation action="DELETE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_df666bd72f0532d4b14f861cbfa4e33f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 08:39:16</sys_created_on>
+        <sys_id>9316d0232f49fe14743eb82bcfa4e370</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:39:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_df666bd72f0532d4b14f861cbfa4e33f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:10:56</sys_created_on>
+        <sys_id>93666bd72f0532d4b14f861cbfa4e34a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:10:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_df666bd72f0532d4b14f861cbfa4e33f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:10:56</sys_created_on>
+        <sys_id>93666bd72f0532d4b14f861cbfa4e358</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 05:10:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_df666bd72f0532d4b14f861cbfa4e33f"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_df666bd72f0532d4b14f861cbfa4e33f"/>
+    <sys_hub_flow action="DELETE">
+        <sys_id>5266e7d72f0532d4b14f861cbfa4e38a</sys_id>
+        <latest_snapshot>df666bd72f0532d4b14f861cbfa4e33f</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch1-hotfix1-09-18-2025_09-20-2025_1616.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=5266e7d72f0532d4b14f861cbfa4e38a^sys_idNOT INa3666bd72f0532d4b14f861cbfa4e370"/>
+    <sys_flow_trigger_plan action="DELETE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"a3666bd72f0532d4b14f861cbfa4e370","name":"plan","plan_signature":null}}</plan>
+        <plan_id>5266e7d72f0532d4b14f861cbfa4e38a</plan_id>
+        <snapshot>df666bd72f0532d4b14f861cbfa4e33f</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:10:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a3666bd72f0532d4b14f861cbfa4e370</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:42:31</sys_updated_on>
+        <trigger display_value="">43d618a32f49fe14743eb82bcfa4e388</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=5266e7d72f0532d4b14f861cbfa4e38a"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_hub_flow_5266e7d72f0532d4b14f861cbfa4e38a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,intermediateFlowVersion=0.4,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=12697000,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;28100&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;generation_source&gt;agentic_ai&lt;/generation_source&gt;&lt;internal_name&gt;wire_service_case__ai_agent_review_classification_material__5266e7d72f0532d4b14f861cbfa4e389&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"Updated_1.current","label":"Trigger - Record Updated➛Wire Service Case Record","reference":"sn_bom_treasury_wire_service","reference_display":"CM Investigation Case","type":"reference","base_type":"reference","usedInstances":{"e6662bd7-9005-32d4-1bb5-a786553f7ea2":["target_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","timeFromCreateToActivate":"97078091000"}}]&lt;/label_cache&gt;&lt;master_snapshot&gt;df666bd72f0532d4b14f861cbfa4e33f&lt;/master_snapshot&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id&gt;43d618a32f49fe14743eb82bcfa4e388&lt;/remote_trigger_id&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;published&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 05:10:52&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5266e7d72f0532d4b14f861cbfa4e38a&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_5266e7d72f0532d4b14f861cbfa4e38a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 08:42:34&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;updation_source/&gt;&lt;version&gt;2&lt;/version&gt;&lt;version_record display_value="Created 2025-11-12 03:42:32 AM"&gt;5bd618a32f49fe14743eb82bcfa4e3de&lt;/version_record&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=5266e7d72f0532d4b14f861cbfa4e38a"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=5266e7d72f0532d4b14f861cbfa4e38a"/&gt;&lt;sys_flow_record_trigger action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;condition table="sn_bom_treasury_wire_service"&gt;opened_by=55e1b18a938576d00f91fce79503d6e3^state=10&lt;item display_table="sys_user" display_value="Email Triage Agent  Capital Markets" endquery="false" field="opened_by" goto="false" newquery="false" operator="=" or="false" value="55e1b18a938576d00f91fce79503d6e3"/&gt;&lt;item display_value="Open" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="10"/&gt;&lt;/condition&gt;&lt;name/&gt;&lt;on_delete&gt;false&lt;/on_delete&gt;&lt;on_insert&gt;false&lt;/on_insert&gt;&lt;on_update&gt;true&lt;/on_update&gt;&lt;published_version/&gt;&lt;run_flow_in&gt;background&lt;/run_flow_in&gt;&lt;run_on_extended&gt;false&lt;/run_on_extended&gt;&lt;run_when_setting&gt;both&lt;/run_when_setting&gt;&lt;run_when_user_list/&gt;&lt;run_when_user_setting&gt;any&lt;/run_when_user_setting&gt;&lt;sys_class_name&gt;sys_flow_record_trigger&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 08:42:31&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;43d618a32f49fe14743eb82bcfa4e388&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 08:42:31&lt;/sys_updated_on&gt;&lt;table&gt;sn_bom_treasury_wire_service&lt;/table&gt;&lt;trigger_definition/&gt;&lt;/sys_flow_record_trigger&gt;&lt;sys_trigger_runner_mapping action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;data&gt;{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}&lt;/data&gt;&lt;identifier&gt;5266e7d72f0532d4b14f861cbfa4e38a&lt;/identifier&gt;&lt;runner&gt;FDTriggerRunner&lt;/runner&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 08:42:31&lt;/sys_created_on&gt;&lt;sys_id&gt;0bd618a32f49fe14743eb82bcfa4e388&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 08:42:31&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;43d618a32f49fe14743eb82bcfa4e388&lt;/trigger&gt;&lt;/sys_trigger_runner_mapping&gt;&lt;sys_trigger_runner_mapping action="delete_multiple" query="identifier=5266e7d72f0532d4b14f861cbfa4e38a^sys_idNOT IN0bd618a32f49fe14743eb82bcfa4e388"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=5266e7d72f0532d4b14f861cbfa4e38a"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=5266e7d72f0532d4b14f861cbfa4e38a^sys_idNOT IN5266e7d72f0532d4b14f861cbfa4e38b"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;5266e7d72f0532d4b14f861cbfa4e38a&lt;/id&gt;&lt;name&gt;Wire Service Case - AI Agent: Review classification material - 5266e7d72f0532d4b14f861cbfa4e389&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 05:10:52&lt;/sys_created_on&gt;&lt;sys_id&gt;5266e7d72f0532d4b14f861cbfa4e38b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 05:10:52&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=5266e7d72f0532d4b14f861cbfa4e38b"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=5266e7d72f0532d4b14f861cbfa4e38a^sys_idNOT INba662bd72f0532d4b14f861cbfa4e3b7,ee662bd72f0532d4b14f861cbfa4e3ac,fa662bd72f0532d4b14f861cbfa4e3b4"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;4000&lt;/max_length&gt;&lt;model display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389"&gt;5266e7d72f0532d4b14f861cbfa4e38a&lt;/model&gt;&lt;model_id&gt;5266e7d72f0532d4b14f861cbfa4e38a&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_5266e7d72f0532d4b14f861cbfa4e38a&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 05:10:54&lt;/sys_created_on&gt;&lt;sys_id&gt;ba662bd72f0532d4b14f861cbfa4e3b7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 05:10:54&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ba662bd72f0532d4b14f861cbfa4e3b7"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389"&gt;5266e7d72f0532d4b14f861cbfa4e38a&lt;/model&gt;&lt;model_id&gt;5266e7d72f0532d4b14f861cbfa4e38a&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_5266e7d72f0532d4b14f861cbfa4e38a&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 05:10:53&lt;/sys_created_on&gt;&lt;sys_id&gt;ee662bd72f0532d4b14f861cbfa4e3ac&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 08:42:28&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ee662bd72f0532d4b14f861cbfa4e3ac"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent&gt;table_name&lt;/dependent&gt;&lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389"&gt;5266e7d72f0532d4b14f861cbfa4e38a&lt;/model&gt;&lt;model_id&gt;5266e7d72f0532d4b14f861cbfa4e38a&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_5266e7d72f0532d4b14f861cbfa4e38a&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 05:10:54&lt;/sys_created_on&gt;&lt;sys_id&gt;fa662bd72f0532d4b14f861cbfa4e3b4&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 08:42:28&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;true&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fa662bd72f0532d4b14f861cbfa4e3b4"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=5266e7d72f0532d4b14f861cbfa4e38a"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=5266e7d72f0532d4b14f861cbfa4e38a"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=5266e7d72f0532d4b14f861cbfa4e38a^sys_idNOT IN5ad6d4a32f49fe14743eb82bcfa4e367"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389"&gt;5266e7d72f0532d4b14f861cbfa4e38a&lt;/flow&gt;&lt;generation_source/&gt;&lt;name&gt;Updated&lt;/name&gt;&lt;published_version/&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 08:42:28&lt;/sys_created_on&gt;&lt;sys_id&gt;5ad6d4a32f49fe14743eb82bcfa4e367&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 08:42:28&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Updated"&gt;bb695e60c31322002841b63b12d3aea5&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;H4sIAAAAAAAA/+Va23LbNhD9FQ6f2hm3w4tESu6TK9uNZxy7Iyvpg+tiQACUOKVAlQTpqBn/exe8meJFV7uxnJc4BEBgz9nds0uK919VEXrTKQuveCQwJ+xuGV1R9VQ1LMsyHGobrtY3Ddpz9J47sHTiuLjHTGypJ6qPHebD0gl2fAbXHhcs5NifLBcMhoUcRhzP5dwcc4pFEC7VUxHG7ER1w2A+YfOFjwUsdrEfwWAQUhaqp/qJmt6W7wG3J9iP5XXEkRPMkQgZjuJwiR69kKGIhYlH5DLqRbDh8nO+evRRueIJi4Q3xcILuDLCkVy2wCFsL+RRX1Uy83waMq6e3j+cqAJsRyvAlJsMgSdZ0SnFusE0YuqmYWiaMejpjmU6ukFNzPCghZUaEtFCzjNs9kUwThktGWnwBsjpLfeX5YoZ0A4bphx/ibx/YfeBJte5DFARls2VlyjnKBsmswCYu11IdrKRzM5sMvDjOb/J7JfsMhfHvijYhZE4gv3YQposjcgtcu9mweO4OPDS4ym6fNIPCPbLKywg/JxYsEi6wvV8cArKuImCOEytH1+Mbsfn6I+zyejDxRiNL+4m46vR5OJcfUpxoX9iuWNmYW4LyuA8lSFx6TFfOpDHcwesOVEjEnoLcUaElxTx93TyEtkwCjj1Uj4bGUGKqahqayU4Kt4uuFyXJppWhhepnFokSwAHMIqc5Z+xppm032e6ow/w0Bz0bYtqmjvUXcLsYR8mLWb+BZAFy9bqWjObDt1u26wbVVlKs85xhpgy3JF1lt3Bfgs1osURVTbX5V8+sk0C9jTtG6VgLq77ZuA8oMw/r0Zmlg/I44tYSLYKhhCEQyiZgfvUz2fXow9nN79d3P2S/70c334s/j+5hfseMRcREgHClKIK//IIwLIplTNOnl4xb8OYw1GojIBm9qaOKj127UVA0D2oVuGN1BiYd6/zLccxVwIIFfhHIXEIzhBKkeru1RxPcx+6vxepkTohj9sEhwjNUbSM0Cx20IonkONYwz6zugpRf4XBVBBg63tVfXiS0cF8RkQlyt1PUfXqoxdFHp9W6C0xps5qQCzRQbYoBYMZ1Oi4sD4cIsLNEEpqoVGT1HUBsrVcFmGZSqVFqN5zbEuzJVO6ZjqurtlaH7vU1LShuTbgO2GIWga8imTuJphRmnv+FplW90FhvIxrf5cwTlZzIN/HkDGT6/LoDZpWqy/mTgWmjNts+Hz78H3h1hDTROo63bZevHqpcP3gEfRpjzLhYPL3NAxiTutCKvdUPK48r1B+yJn/8bhktFoy3CBk6/GurjgelAcXi+cgKhIY82WzTGSD+xWEHiPUtnqWBnXAhBLg9IdDh2DDdW3LZhrtDOtWM4+iEGxIo6QtD7uUtzVEk7bI3qEcfHsDDyoKeYy2loRs7r2L/+OMcQQgQ+RLeW/UgKnvUVbMHSYRjaOS52e/mkzsoBHXudkSu+kO4GHetokNagkK4faYg/We0cdD2zLZRuzrjBUtfPwvz9uyOEhDOtTjUzb1tl5/vc0wj5gQsubt3uhweIhI78GZeZXqLx2qpPIVhMpNwH+6el6n3DGosunrmiPqBaodzzagZQQq7wq1E4hZo8MDpL/C+ApS+QjT4fPv7W1BLcOSVSpb3hbsQ+iejePAHPapa7aXBdtYrxXdGN98C7mlNiWdKtfWqm2b+0mrhJStW7352yMaajGWb21uaFu/X1IOapWLRO58fbKPsd9F25F2kYf0HtJahgK3WpLOAwUmFDhE8Vwlt5ZRxVkqYsbAGT48TcGBijz9yGpRtRQ3kZep9q5xZ0+fjQ4EhpX8YeCIgL1Mc1HLo7XvmVr42q93IO7QoUOz45Gyv03Cb8Dx5ruInaUmaVOutVVzt33re7bWzYrnVyNlyzbhHaN+tVdmLVa85wov4U6yXfao6wEntWdqcsS/psfc+ydmiMwwn2a/lBe4LiEgGCYzJVuiZEuOFyn2H/EyUusdCSSz1Iv8x0MYAOXgmcIfKVCWsHDZ8KQcVOIFlVX7qKDt0YRUvt7MzY5ECCunyxVdJvt/5ED0Yd8w6QAIGJpNAvROtem2q7Of2PBR5oZ+onJ8HgTCm7O0ZpXfQClzLMiMRScKREr6c3pa0rwwEunqn1/y1QZhTSe0ldtO/Um6pKutwG7K8aSuDmXBrZuymkBJLdny23obX2K8f/gHtSk5I+19Ss7ey/Yme3zCq7Y3Jw//Aa2LzVjMLgAA&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_update&lt;/trigger_type&gt;&lt;updation_source/&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=5266e7d72f0532d4b14f861cbfa4e38a^sys_idNOT IN1ad6d4a32f49fe14743eb82bcfa4e36a"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="AIA Trigger Use Case"&gt;0b63e51a53c7121059e0ddeeff7b12b5&lt;/action_type&gt;&lt;action_type_parent/&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;0b63e51a53c7121059e0ddeeff7b12b5&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389"&gt;5266e7d72f0532d4b14f861cbfa4e38a&lt;/flow&gt;&lt;generation_source&gt;agentic_ai&lt;/generation_source&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 08:42:28&lt;/sys_created_on&gt;&lt;sys_id&gt;1ad6d4a32f49fe14743eb82bcfa4e36a&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 08:42:28&lt;/sys_updated_on&gt;&lt;ui_id&gt;e6662bd7-9005-32d4-1bb5-a786553f7ea2&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/8VTy27bMBD8lUBnyxAl6mHfihYBArQNkNelCASKXMpEaUqhqCSu4X/vUpINJ0WKJC3aI5f7mJnd+bYNGHeqMWemc8xwuNx0ZyJYBgnLsrgSeSyjNIkFrQiVRUZ4JRmFRKTBLFA+r5BZAilhacJzEpMoXUAkBICUeUXiqsA8w9aAmc6qugZb8sZIVfeW+bElNpkF90z3PiXFoVClEocSCYTmNIGqiCs+DI0BU4XqWs02N6+v4CulhQUTLL/dzoKWWYTjwAbL7bMvt2mh1KwCjY0vEa6p38ByX3g10jz5eEzz5Ey8SggPATO6/fDGCo+UzAJ4dGAEIBjJdAezYM2MYK6xm2DpbI8BC0ycG705ZKyUcdgs8LmPnfqBnYsoinymBGTNYfw9PMtJ3DHMV43icN56dGPEsUpPNbzR/dp8HQn5tYBkvXb7tWCk77AftB60hzFhkper5uFiP/BUmYHf9KkbzvThxRyqUPUOOr+qXl0902aMfH6+L9CwxonlmrUtRsrWNvdqmIKg1/Na42MudfOA6DpVm/l4/3MUk81PMf5pCN8wqzzdL9gGi/24a6PuehjcUVBaFEkuwpjIOKSSZGEl0yzMaLbIZUwJARnsBmnLu96TGkWa5ChHRTGh41a17gNCuIeJ+W72p56k+W+v9fgUma3BlRY4XtqREbfb6xYFAVGSOe8tLsvtdr+6793uOlzAGyAfDDZgPrnYY36BymQlezRpclP8t9yUxE+95Fj3/QU/XY1fL3tqqv1/vjoW6qm1jpf1T9xV0SwjlRQhFxkNKWN5uIiLRUh5xDPG8CCSxbvddfsT4Oq7yPMGAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=1ad6d4a32f49fe14743eb82bcfa4e36a"/&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=5266e7d72f0532d4b14f861cbfa4e38a"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=5266e7d72f0532d4b14f861cbfa4e38a"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=5266e7d72f0532d4b14f861cbfa4e38a"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=5266e7d72f0532d4b14f861cbfa4e38a"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_5266e7d72f0532d4b14f861cbfa4e38a&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 05:10:54&lt;/sys_created_on&gt;&lt;sys_id&gt;3e662bd72f0532d4b14f861cbfa4e3b3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 05:10:54&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_5266e7d72f0532d4b14f861cbfa4e38a&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 05:10:54&lt;/sys_created_on&gt;&lt;sys_id&gt;3e662bd72f0532d4b14f861cbfa4e3b6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 05:10:54&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_5266e7d72f0532d4b14f861cbfa4e38a&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 05:10:54&lt;/sys_created_on&gt;&lt;sys_id&gt;72662bd72f0532d4b14f861cbfa4e3ba&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 05:10:54&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_5266e7d72f0532d4b14f861cbfa4e38a"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_5266e7d72f0532d4b14f861cbfa4e38a"/&gt;&lt;sys_hub_flow_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;intermediateFlowVersion=0.4,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=97078091000&lt;/attributes&gt;&lt;authored_on_release_version&gt;28100&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;internal_name&gt;wire_service_case__ai_agent_review_classification_material__5266e7d72f0532d4b14f861cbfa4e389&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"Updated_1.current","label":"Trigger - Record Updated➛Wire Service Case Record","reference":"sn_bom_treasury_wire_service","reference_display":"CM Investigation Case","type":"reference","base_type":"reference","usedInstances":{"e6662bd7-9005-32d4-1bb5-a786553f7ea2":["target_record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","timeFromCreateToActivate":"97078091000"}}]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;parent_flow display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389"&gt;5266e7d72f0532d4b14f861cbfa4e38a&lt;/parent_flow&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;user&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 05:10:56&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;df666bd72f0532d4b14f861cbfa4e33f&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 08:42:31&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=df666bd72f0532d4b14f861cbfa4e33f"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=df666bd72f0532d4b14f861cbfa4e33f"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=df666bd72f0532d4b14f861cbfa4e33f"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=df666bd72f0532d4b14f861cbfa4e33f^sys_idNOT IN9f666bd72f0532d4b14f861cbfa4e340"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;df666bd72f0532d4b14f861cbfa4e33f&lt;/id&gt;&lt;name&gt;Wire Service Case - AI Agent: Review classification material - 5266e7d72f0532d4b14f861cbfa4e389&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 05:10:56&lt;/sys_created_on&gt;&lt;sys_id&gt;9f666bd72f0532d4b14f861cbfa4e340&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 05:10:56&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=9f666bd72f0532d4b14f861cbfa4e340"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=df666bd72f0532d4b14f861cbfa4e33f^sys_idNOT IN1f666bd72f0532d4b14f861cbfa4e353,4b16d0232f49fe14743eb82bcfa4e36a,db666bd72f0532d4b14f861cbfa4e341"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389"&gt;df666bd72f0532d4b14f861cbfa4e33f&lt;/model&gt;&lt;model_id&gt;df666bd72f0532d4b14f861cbfa4e33f&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_df666bd72f0532d4b14f861cbfa4e33f&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 05:10:56&lt;/sys_created_on&gt;&lt;sys_id&gt;1f666bd72f0532d4b14f861cbfa4e353&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 08:42:30&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1f666bd72f0532d4b14f861cbfa4e353"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;4000&lt;/max_length&gt;&lt;model display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389"&gt;df666bd72f0532d4b14f861cbfa4e33f&lt;/model&gt;&lt;model_id&gt;df666bd72f0532d4b14f861cbfa4e33f&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_df666bd72f0532d4b14f861cbfa4e33f&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 08:39:16&lt;/sys_created_on&gt;&lt;sys_id&gt;4b16d0232f49fe14743eb82bcfa4e36a&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 08:39:16&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4b16d0232f49fe14743eb82bcfa4e36a"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent&gt;table_name&lt;/dependent&gt;&lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389"&gt;df666bd72f0532d4b14f861cbfa4e33f&lt;/model&gt;&lt;model_id&gt;df666bd72f0532d4b14f861cbfa4e33f&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_df666bd72f0532d4b14f861cbfa4e33f&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 05:10:56&lt;/sys_created_on&gt;&lt;sys_id&gt;db666bd72f0532d4b14f861cbfa4e341&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 08:42:30&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;true&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=db666bd72f0532d4b14f861cbfa4e341"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=df666bd72f0532d4b14f861cbfa4e33f"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=df666bd72f0532d4b14f861cbfa4e33f"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=df666bd72f0532d4b14f861cbfa4e33f^sys_idNOT IN6ed6d4a32f49fe14743eb82bcfa4e3e9"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389"&gt;df666bd72f0532d4b14f861cbfa4e33f&lt;/flow&gt;&lt;generation_source/&gt;&lt;name&gt;Updated&lt;/name&gt;&lt;published_version/&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 08:42:30&lt;/sys_created_on&gt;&lt;sys_id&gt;6ed6d4a32f49fe14743eb82bcfa4e3e9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 08:42:30&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Updated"&gt;bb695e60c31322002841b63b12d3aea5&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;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&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_update&lt;/trigger_type&gt;&lt;updation_source/&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=df666bd72f0532d4b14f861cbfa4e33f^sys_idNOT INf6d618a32f49fe14743eb82bcfa4e349"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="AIA Trigger Use Case"&gt;0b63e51a53c7121059e0ddeeff7b12b5&lt;/action_type&gt;&lt;action_type_parent display_value="AIA Trigger Use Case"&gt;931a511a5387121059e0ddeeff7b1249&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;0b63e51a53c7121059e0ddeeff7b12b5&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389"&gt;df666bd72f0532d4b14f861cbfa4e33f&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 08:42:31&lt;/sys_created_on&gt;&lt;sys_id&gt;f6d618a32f49fe14743eb82bcfa4e349&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 08:42:31&lt;/sys_updated_on&gt;&lt;ui_id&gt;e6662bd7-9005-32d4-1bb5-a786553f7ea2&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/71TXU/jMBD8K8jPTdV8Nu3bCYSEdHdIFHhBKNrY69Y61wmOA/Sq/vdbN2kpIE49HeLR61nvzKznbs2AO1WZC9M4MBxnq+ZCsCmLIcuiUowjOUrjSCRlmMg8C3kpIcFYpGzAlMflMosxDSGN+TiMwlE6wZEQiFKOyzAqc8IZWCIhnVXzOdqCV0aqeWvBjy3okQF7BN16SEpDsUwlDQ0lhsk4ibHMo5Jvh0ZIUKGaWsPq9vgOvlBaWDRsenc/YDVYouPQsun6zdWxejSUqAl63Qk6OT0UdHIhjpLsVrVHNAQx8/78vX94titWVnii4YDhs0MjkBhK0A0O2BKMAFfZFZs621LBIohLo1d7xEIZR48xj31u1G8al49GI4+USKI5drf7Y9F725XlGTggJi13re2hfFEpjk1nl0AJrXanh7UOcFl7nV2Lg1LvuivdLs3Pzhq2f2C3Sqq0DZHA2iv13Hshcraonq52LM+V2ZrSX+qKg96fwJF1Zes8nzVr1fUbl7vKO59R45ImFkuoa6oUta0e1XYKkV4O55oOQ6mrJ2LXqLkZdpkZ0gZgeE71s235Fqzycn/QM9Tsx90Y9dDiNlF5kuR5PBZBFMooSGSYBaVMsyBLsslYRkkYomSbAWtWzamGpnkxijZUPLReZmdbb1DReexbuFW1+0akHrH3YjP432Qn478m4fCbg52jKyxy+rAHcV6vb2qyCEURDnlraX1us3mf4X/O6BHM9hndUju52lH7gHGfxpdkvA7k1UG9z2T0WZmMo9eJdND8+iCV193VJyezH/gF6ZQzBMsX5wq1X6Npl+U2Jh+k9nAbr4N7uI8vyW6ZZFlYShFwkSVBAjAOJlE+CRI+4hkA/bp48onZvf8DbyDM2pcHAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=f6d618a32f49fe14743eb82bcfa4e349"/&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=df666bd72f0532d4b14f861cbfa4e33f"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=df666bd72f0532d4b14f861cbfa4e33f"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=df666bd72f0532d4b14f861cbfa4e33f"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=df666bd72f0532d4b14f861cbfa4e33f"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_df666bd72f0532d4b14f861cbfa4e33f&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 08:39:16&lt;/sys_created_on&gt;&lt;sys_id&gt;9316d0232f49fe14743eb82bcfa4e370&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 08:39:16&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_df666bd72f0532d4b14f861cbfa4e33f&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 05:10:56&lt;/sys_created_on&gt;&lt;sys_id&gt;93666bd72f0532d4b14f861cbfa4e34a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 05:10:56&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_df666bd72f0532d4b14f861cbfa4e33f&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 05:10:56&lt;/sys_created_on&gt;&lt;sys_id&gt;93666bd72f0532d4b14f861cbfa4e358&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 05:10:56&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_df666bd72f0532d4b14f861cbfa4e33f"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_df666bd72f0532d4b14f861cbfa4e33f"/&gt;&lt;sys_hub_flow action="UPDATE"&gt;&lt;sys_id&gt;5266e7d72f0532d4b14f861cbfa4e38a&lt;/sys_id&gt;&lt;latest_snapshot&gt;df666bd72f0532d4b14f861cbfa4e33f&lt;/latest_snapshot&gt;&lt;compiler_build&gt;glide-zurich-07-01-2025__patch1-hotfix1-09-18-2025_09-20-2025_1616.zip&lt;/compiler_build&gt;&lt;version_record/&gt;&lt;/sys_hub_flow&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=5266e7d72f0532d4b14f861cbfa4e38a^sys_idNOT INa3666bd72f0532d4b14f861cbfa4e370"/&gt;&lt;sys_flow_trigger_plan action="INSERT_OR_UPDATE"&gt;&lt;binding_strategy&gt;com.snc.process_flow.engine.binding.OncePerRecord&lt;/binding_strategy&gt;&lt;plan&gt;{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"a3666bd72f0532d4b14f861cbfa4e370","name":"plan","plan_signature":null}}&lt;/plan&gt;&lt;plan_id&gt;5266e7d72f0532d4b14f861cbfa4e38a&lt;/plan_id&gt;&lt;snapshot&gt;df666bd72f0532d4b14f861cbfa4e33f&lt;/snapshot&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 05:10:57&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a3666bd72f0532d4b14f861cbfa4e370&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 08:42:31&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;43d618a32f49fe14743eb82bcfa4e388&lt;/trigger&gt;&lt;/sys_flow_trigger_plan&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=5266e7d72f0532d4b14f861cbfa4e38a"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>842338805</payload_hash>
+        <record_name>CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e3</record_name>
+        <reverted_from/>
+        <source>01a9c0fa2fa4b650b14f861cbfa4e3fb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 08:42:35</sys_created_on>
+        <sys_id>3fd658a32f49fe14743eb82bcfa4e330</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19a773b20d90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:42:35</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>bfd658a35249fe1448cd5049a1a6302f</update_guid>
+        <update_guid_history>bfd658a35249fe1448cd5049a1a6302f:842338805,4bd618a3d449fe14a9779f114dcdcba4:-1329063888,16d6d4a32749fe145d1a27e01ae2d482:1775144030,bb1614235749fe14266877ee79139c18:44581708,361690235249fe14146716c73854dbb2:-450234166,c6c59027ea0d32d4fa4232062dbaf2be:-138105248,d5c55027a60d32d4c71abc90dd046678:-1172626182,8792d0e7a3097214b134c39ecf55adc4:-1350937374,b99290e79f0972148d49add22a388395:697102801,77666bd7790532d4a4d0c8d56bac88a5:-1064624718,0b662bd7510532d441a3a0ccc3fb8ce7:1268023835,9a662bd7cb0532d4a924942673bf6e7b:-462717102</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-23 03:34:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>a1d69022e46c45409be9ed0e12dc4291</sys_id>
+        <sys_metadata>5266e7d72f0532d4b14f861cbfa4e38a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CM Investigation Case - AI Agent: Unmatched Trade Triage Specialist - 5266e7d72f0532d4b14f861cbfa4e389</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_scope_delete display_value="">1f26bce786f64c68a8aed337e0a89e90</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_5266e7d72f0532d4b14f861cbfa4e38a</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_5266e7d72f0532d4b14f861cbfa4e38a">3fd658a32f49fe14743eb82bcfa4e330</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-23 03:34:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

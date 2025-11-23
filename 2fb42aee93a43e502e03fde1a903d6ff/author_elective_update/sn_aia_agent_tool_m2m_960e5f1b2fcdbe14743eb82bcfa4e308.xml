@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="DELETE">
+        <active>true</active>
+        <agent display_value="Email Triage and Classification Agent (Copy)">860e1f1b2fcdbe14743eb82bcfa4e3c9</agent>
+        <description>Get the results of an qna job. The response is async and may not be finished yet. The response will either be in "IN_PROGRESS", "ERROR", or "COMPLETED". If the process is not finished you may need to wait a few moments and call the API again.</description>
+        <display_output>true</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"task_id","value":"","description":"The task_id of the process running QnA","invalidMessage":null},{"name":"random_id","value":"","description":"Random identifier to be able to call this tool again","invalidMessage":null}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Get attachment summarisation results</name>
+        <output_transformation_strategy>abstract_summary</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message>Getting attachment summaries</pre_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 04:34:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>960e5f1b2fcdbe14743eb82bcfa4e308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get attachment summarisation results</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_960e5f1b2fcdbe14743eb82bcfa4e308</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 04:34:15</sys_updated_on>
+        <tool display_value="Get attachment summarisation results">94386f9e93c53ad00f91fce79503d670</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sn_aia_agent_tool_m2m_960e5f1b2fcdbe14743eb82bcfa4e308</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="Email Triage and Classification Agent (Copy)">860e1f1b2fcdbe14743eb82bcfa4e3c9</agent><description>Get the results of an qna job. The response is async and may not be finished yet. The response will either be in "IN_PROGRESS", "ERROR", or "COMPLETED". If the process is not finished you may need to wait a few moments and call the API again.</description><display_output>true</display_output><document_status/><execution_mode>autopilot</execution_mode><inputs>[{"name":"task_id","value":"","description":"The task_id of the process running QnA","invalidMessage":null},{"name":"random_id","value":"","description":"Random identifier to be able to call this tool again","invalidMessage":null}]</inputs><max_auto_executions>10</max_auto_executions><name>Get attachment summarisation results</name><output_transformation_strategy>abstract_summary</output_transformation_strategy><post_processing_script/><pre_message>Getting attachment summaries</pre_message><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-11-12 04:34:15</sys_created_on><sys_domain>global</sys_domain><sys_id>960e5f1b2fcdbe14743eb82bcfa4e308</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Get attachment summarisation results</sys_name><sys_overrides/><sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package><sys_policy/><sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_960e5f1b2fcdbe14743eb82bcfa4e308</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-11-12 04:34:15</sys_updated_on><tool display_value="Get attachment summarisation results">94386f9e93c53ad00f91fce79503d670</tool><tool_attributes>{}</tool_attributes><transformation_instructions/></sn_aia_agent_tool_m2m></record_update>]]></payload>
+        <payload_hash>-1987553336</payload_hash>
+        <record_name>Get attachment summarisation results</record_name>
+        <reverted_from/>
+        <source>01a9c0fa2fa4b650b14f861cbfa4e3fb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 04:34:15</sys_created_on>
+        <sys_id>120e5f1b2fcdbe14743eb82bcfa4e30c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19a7657c8c30000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 04:34:15</sys_updated_on>
+        <type>Agent Tool</type>
+        <update_guid>560e5f1b72cdbe1468c24a5bab3c340b</update_guid>
+        <update_guid_history>560e5f1b72cdbe1468c24a5bab3c340b:-1987553336</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Get attachment summarisation results">1da9b3722fd1f290b14f861cbfa4e3de</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-23 03:33:39</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_agent_tool_m2m">sn_aia_agent_tool_m2m</sys_db_object>
+        <sys_id>a0ef96868ff3412393a2424cfd57ca79</sys_id>
+        <sys_metadata>960e5f1b2fcdbe14743eb82bcfa4e308</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get attachment summarisation results</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_scope_delete display_value="">1f26bce786f64c68a8aed337e0a89e90</sys_scope_delete>
+        <sys_update_name>sn_aia_agent_tool_m2m_960e5f1b2fcdbe14743eb82bcfa4e308</sys_update_name>
+        <sys_update_version display_value="sn_aia_agent_tool_m2m_960e5f1b2fcdbe14743eb82bcfa4e308">120e5f1b2fcdbe14743eb82bcfa4e30c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-23 03:33:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

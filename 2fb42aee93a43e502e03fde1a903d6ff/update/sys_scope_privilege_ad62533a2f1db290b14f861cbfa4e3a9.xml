@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>triage.aia</sys_created_by>
+        <sys_created_on>2025-11-23 00:42:10</sys_created_on>
+        <sys_id>ad62533a2f1db290b14f861cbfa4e3a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AttachmentSummarizer</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sys_scope_privilege_ad62533a2f1db290b14f861cbfa4e3a9</sys_update_name>
+        <sys_updated_by>triage.aia</sys_updated_by>
+        <sys_updated_on>2025-11-23 00:42:10</sys_updated_on>
+        <target_name>AttachmentSummarizer</target_name>
+        <target_scope display_value="Now Assist in Document Intelligence">725a3709519cf550f877149997a6e6b9</target_scope>
+        <target_type>sys_script_include</target_type>
+    </sys_scope_privilege>
+</record_update>

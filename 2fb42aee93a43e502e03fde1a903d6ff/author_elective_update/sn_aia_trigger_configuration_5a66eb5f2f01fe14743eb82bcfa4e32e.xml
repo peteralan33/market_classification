@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_trigger_configuration">
+    <sn_aia_trigger_configuration action="DELETE">
+        <active>true</active>
+        <business_rule/>
+        <channel display_value="Now Assist Panel">b023fcb3537321106167ddeeff7b12a8</channel>
+        <condition table="sn_bom_treasury_wire_service">opened_by=55e1b18a938576d00f91fce79503d6e3^state=10<item display_table="sys_user" display_value="Email Triage Agent  Capital Markets" endquery="false" field="opened_by" goto="false" newquery="false" operator="=" or="false" value="55e1b18a938576d00f91fce79503d6e3"/>
+            <item display_value="Open" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="10"/>
+        </condition>
+        <description/>
+        <enable_discovery>false</enable_discovery>
+        <internal_name>global.x_snc_pab_mc_tkit.ReviewCaseForUnmatchedTrades</internal_name>
+        <name>ReviewCaseForUnmatchedTrades</name>
+        <notification_script/>
+        <objective_template><![CDATA[Help me review any unmatched trades ${number}]]></objective_template>
+        <portal/>
+        <profile/>
+        <run_as>opened_by</run_as>
+        <run_as_script/>
+        <run_as_user/>
+        <run_dayofmonth/>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start/>
+        <run_time/>
+        <show_notifications>true</show_notifications>
+        <sys_class_name>sn_aia_trigger_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 05:10:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5a66eb5f2f01fe14743eb82bcfa4e32e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>sn_bom_treasury_wire_service</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sn_aia_trigger_configuration_5a66eb5f2f01fe14743eb82bcfa4e32e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 08:39:13</sys_updated_on>
+        <target_table>sn_bom_treasury_wire_service</target_table>
+        <trigger_flow/>
+        <trigger_flow_definition_type>record_update</trigger_flow_definition_type>
+        <usecase display_value="">undefined</usecase>
+        <usecase_discovery>false</usecase_discovery>
+    </sn_aia_trigger_configuration>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sn_aia_trigger_configuration_5a66eb5f2f01fe14743eb82bcfa4e32e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_aia_trigger_configuration"&gt;&lt;sn_aia_trigger_configuration action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;business_rule/&gt;&lt;channel display_value="Now Assist Panel"&gt;b023fcb3537321106167ddeeff7b12a8&lt;/channel&gt;&lt;condition table="sn_bom_treasury_wire_service"&gt;opened_by=55e1b18a938576d00f91fce79503d6e3^state=10&lt;item display_table="sys_user" display_value="Email Triage Agent  Capital Markets" endquery="false" field="opened_by" goto="false" newquery="false" operator="=" or="false" value="55e1b18a938576d00f91fce79503d6e3"/&gt;&lt;item display_value="Open" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="10"/&gt;&lt;/condition&gt;&lt;description/&gt;&lt;enable_discovery&gt;false&lt;/enable_discovery&gt;&lt;internal_name&gt;global.x_snc_pab_mc_tkit.ReviewCaseForUnmatchedTrades&lt;/internal_name&gt;&lt;name&gt;ReviewCaseForUnmatchedTrades&lt;/name&gt;&lt;notification_script/&gt;&lt;objective_template&gt;&lt;![CDATA[Help me review any unmatched trades ${number}]]&gt;&lt;/objective_template&gt;&lt;portal/&gt;&lt;profile/&gt;&lt;run_as&gt;opened_by&lt;/run_as&gt;&lt;run_as_script/&gt;&lt;run_as_user/&gt;&lt;run_dayofmonth/&gt;&lt;run_dayofweek/&gt;&lt;run_period/&gt;&lt;run_start/&gt;&lt;run_time/&gt;&lt;show_notifications&gt;true&lt;/show_notifications&gt;&lt;sys_class_name&gt;sn_aia_trigger_configuration&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-12 05:10:51&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;5a66eb5f2f01fe14743eb82bcfa4e32e&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;sn_bom_treasury_wire_service&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_aia_trigger_configuration_5a66eb5f2f01fe14743eb82bcfa4e32e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 08:39:13&lt;/sys_updated_on&gt;&lt;target_table&gt;sn_bom_treasury_wire_service&lt;/target_table&gt;&lt;trigger_flow/&gt;&lt;trigger_flow_definition_type&gt;record_update&lt;/trigger_flow_definition_type&gt;&lt;usecase display_value=""&gt;undefined&lt;/usecase&gt;&lt;usecase_discovery&gt;false&lt;/usecase_discovery&gt;&lt;/sn_aia_trigger_configuration&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-897253127</payload_hash>
+        <record_name>sn_bom_treasury_wire_service</record_name>
+        <reverted_from/>
+        <source>1429837e2f99b290b14f861cbfa4e37e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-23 03:34:28</sys_created_on>
+        <sys_id>59d9fb722fd1f290b14f861cbfa4e37e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19aaec6ff040000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-23 03:34:28</sys_updated_on>
+        <type>AIA Trigger Configuration</type>
+        <update_guid>15d9fb7207d1f2905ce0a60223d7d97e</update_guid>
+        <update_guid_history>15d9fb7207d1f2905ce0a60223d7d97e:0,bcd9bb724ed1f2909e5903a118f6219f:0,a6169cef3409fe14db3b5c2857110cd0:1502264220,cdc514ef4109fe14cbe0be50be32d198:370458340,e99214e71109fe1428a676fa4dab172f:-973487862,5a66eb5f6f01fe14b8c9dc0f260c1930:1078730006</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="sn_bom_treasury_wire_service">79d9fb722fd1f290b14f861cbfa4e3fc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-23 03:34:29</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_trigger_configuration">sn_aia_trigger_configuration</sys_db_object>
+        <sys_id>042d646c4faa4dc08034bf3255fac951</sys_id>
+        <sys_metadata>5a66eb5f2f01fe14743eb82bcfa4e32e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sn_bom_treasury_wire_service</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_scope_delete display_value="">1f26bce786f64c68a8aed337e0a89e90</sys_scope_delete>
+        <sys_update_name>sn_aia_trigger_configuration_5a66eb5f2f01fe14743eb82bcfa4e32e</sys_update_name>
+        <sys_update_version display_value="sn_aia_trigger_configuration_5a66eb5f2f01fe14743eb82bcfa4e32e">59d9fb722fd1f290b14f861cbfa4e37e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-23 03:34:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

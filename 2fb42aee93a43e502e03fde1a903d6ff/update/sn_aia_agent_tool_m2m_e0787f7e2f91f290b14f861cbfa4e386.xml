@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Unmatched Trade Triage Specialist Documents">54787f7e2f91f290b14f861cbfa4e339</agent>
+        <description>Get the results of an qna job. The response is async and may not be finished yet. The response will either be in "IN_PROGRESS", "ERROR", or "COMPLETED". If the process is not finished you may need to wait a few moments and call the API again.</description>
+        <display_output>true</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[{"name":"task_id","value":"","description":"The task_id of the process running QnA","invalidMessage":null},{"name":"random_id","value":"","description":"Random identifier to be able to call this tool again","invalidMessage":null}]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Get attachment results</name>
+        <output_transformation_strategy>abstract_summary</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message>Getting attachment results</pre_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-23 03:28:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e0787f7e2f91f290b14f861cbfa4e386</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Get attachment results</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_e0787f7e2f91f290b14f861cbfa4e386</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-23 03:31:15</sys_updated_on>
+        <tool display_value="Get attachment summarisation results">94386f9e93c53ad00f91fce79503d670</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+</record_update>

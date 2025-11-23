@@ -92,7 +92,7 @@ Trade Activity Record 2
 * Short_Description: ...
 (Continue all fields for every trade found)</description>
         <input_schema>[{"name":"Parent","description":"The current case the task is being ran on","mandatory":false},{"name":"ISIN","description":"International Securities Identification Number","mandatory":false},{"name":"Reference_Number","description":"The reference number outlined in the document","mandatory":false},{"name":"Trade_Date","description":"Trade Date","mandatory":false},{"name":"Settlement_Date","description":"Settlement / Value Date","mandatory":false},{"name":"Direction","description":"Buy or Sell","mandatory":false},{"name":"Settlement_Amount","description":"Settlement Amount","mandatory":false},{"name":"Instrument_Name","description":"Instrument Name","mandatory":false},{"name":"Quantity","description":"Volume of the trade","mandatory":false},{"name":"PerSharePrice","description":"Per share price","mandatory":false},{"name":"ShortDesc","description":"Overview of the task","mandatory":false},{"name":"Description","description":"The detailed description of the task","mandatory":false},{"name":"crudInputs","description":"CRUD Input Variables. These are already pre-defined. Under no circumstances should you prompt the user for this information or attempt to change these values."}]</input_schema>
-        <name>Specialized Activity Creation</name>
+        <name>Unmatched Trade Activity Creation</name>
         <record_type>custom</record_type>
         <script><![CDATA[(function (inputs) {
     function getChoiceList(tableName, fieldName) {
@@ -235,15 +235,15 @@ Trade Activity Record 2
         <sys_created_on>2025-11-12 05:09:22</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>e816af1f2f01fe14743eb82bcfa4e321</sys_id>
-        <sys_mod_count>7</sys_mod_count>
-        <sys_name>Specialized Activity Creation</sys_name>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Unmatched Trade Activity Creation</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
         <sys_update_name>sn_aia_tool_e816af1f2f01fe14743eb82bcfa4e321</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-12 13:23:48</sys_updated_on>
+        <sys_updated_on>2025-11-22 15:41:08</sys_updated_on>
         <target_document/>
         <target_document_table>sn_aia_tool</target_document_table>
         <type>crud</type>
