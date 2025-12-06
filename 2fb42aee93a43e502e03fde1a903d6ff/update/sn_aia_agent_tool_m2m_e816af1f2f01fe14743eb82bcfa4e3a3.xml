@@ -8,114 +8,81 @@ Input: Unstructured text, including email content and attached document data, wh
 
 Objective: Your sole task is to analyze the input text and identify ALL distinct unmatched trades. For each trade identified, you MUST create a separate record,  containing all specified data points, listed below, to trigger the creation of a new, actionable investigation Task in the downstream system.
 
-
 Goal: Your single goal is to analyze all the input text. For every distinct unmatched trade you find, you must create one separate, complete activity record.
 
-MAPPING RULES: What to Extract
-For each unmatched trade, extract and map the data exactly as follows. Use the specified Missing Data Policy if the information is not found.
+Key Considerations 
+--&gt; DO NOT CREATE DUPLICATE RECORDS
+--&gt; DO NOT PLACE MULTIPLE TRADES IN ONE RECORD
 
-1. Short_Description
-What to Find: A concise summary of the task.
+MAPPING RULES AND EXTRACTION GUIDANCE
+Case Management Fields (High-Level Context)
+Key Name: Current_Case_Record --&gt; What to Find: The unique identifier for the current underlying case or task (System Context).
 
-Required Format: MUST be constructed as: "Unmatched Trade: [Instrument_Name] - [Reference_Number]"
+Trade Detail Fields (Transaction Specific)
+Key Name: Short_Description --&gt; What to Find: A concise summary of the task. --&gt; Required Format: MUST be constructed as: "Unmatched Trade: [Instrument_Name] - [Reference_Number]".
 
-Missing Policy: (Depends on finding the Instrument Name and Reference Number)
+Key Name: ISIN --&gt; What to Find: The 12-character alphanumeric security identifier. --&gt; Required Format: Must start with a two-letter country code (e.g., 'US', 'FR'). --&gt; Missing Data Policy: If not found, use the value "N/A".
 
-2. ISIN (International Securities Identification Number)
-What to Find: The 12-character alphanumeric security identifier.
+Key Name: Reference_Number --&gt; What to Find: The unique trade identifier (Deal ID, Trade Reference, or Confirmation Number). --&gt; Missing Data Policy: If not found, use the value "N/A".
 
-Required Format: Must start with a two-letter country code (e.g., 'US', 'FR').
+Key Name: Trade_Date --&gt; What to Find: The date the trade was executed. --&gt; Required Format: Strictly YYYY-MM-DD (e.g., '2025-10-27'). --&gt; Missing Data Policy: If not found, use the value "N/A".
 
-Missing Policy: "N/A"
+Key Name: Settlement_Date --&gt; What to Find: The date the trade is scheduled to settle (Value Date). --&gt; Required Format: Strictly YYYY-MM-DD. --&gt; Missing Data Policy: If not found, use the value "N/A".
 
-3. Reference_Number
-What to Find: The unique trade identifier (Deal ID, Trade Reference, or Confirmation Number).
+Key Name: Direction --&gt; What to Find: Whether the transaction was a Buy or a Sell. --&gt; Required Value: MUST be either "Buy" or "Sell". --&gt; Missing Data Policy: If ambiguous or not found, use the value "UNCLEAR".
 
-Missing Policy: "N/A"
+Key Name: Settlement_Amount --&gt; What to Find: The total monetary value of the trade. --&gt; Required Format: Numeric value only (no currency symbols or text). Use standard decimal notation (e.g., '1250000.50'). --&gt; Missing Data Policy: If not found or ambiguous, use the value 0.
 
-4. Trade_Date
-What to Find: The date the trade was executed.
+Key Name: Instrument_Name --&gt; What to Find: The full, descriptive name of the security. --&gt; Missing Data Policy: If not found, use the value "N/A".
 
-Required Format: Strictly YYYY-MM-DD (e.g., '2025-10-27').
+Key Name: Quantity --&gt; What to Find: The quantity of shares, bonds, or contracts traded. --&gt; Missing Data Policy: If not found, use the value 0.
 
-Missing Policy: "N/A"
+Key Name: Price_Per_Share --&gt; What to Find: The price per unit of the security. --&gt; Missing Data Policy: If not found, use the value 0.00.
 
-5. Settlement_Date (Value Date)
-What to Find: The date the trade is scheduled to settle.
+Key Name: Source --&gt; Extraction Logic: This value will be defaulted. --&gt; Default Value: Always use the literal value "Email".
 
-Required Format: Strictly YYYY-MM-DD.
-
-Missing Policy: "N/A"
-
-6. Direction
-What to Find: Whether the transaction was a Buy or a Sell.
-
-Required Value: MUST be either "Buy" or "Sell".
-
-Missing Policy: "UNCLEAR"
-
-7. Settlement_Amount
-What to Find: The total monetary value of the trade.
-
-Required Format: Numeric value only (no currency symbols or text). Use standard decimal notation (e.g., '1250000.50').
-
-Missing Policy: 0
-
-8. Instrument_Name
-What to Find: The full, descriptive name of the security (e.g., 'Apple Inc. Common Stock').
-
-Missing Policy: "N/A"
-
-9. Category
-What to Find: The classification for internal routing.
-
-Required Value: Always use the literal text "Trade Reconciliation".
-
-Missing Policy: "Trade Reconciliation"
-
-Required Output Format
-Present your final output as a list of separated Trade Activity Records, using the exact field names shown below.
-
-Example Output:
-
-Trade Activity Record 1
-* Short_Description: Unmatched Trade: [Instrument_Name] - [Reference_Number]
-* ISIN: [Extracted Value or N/A]
-* Reference_Number: [Extracted Value or N/A]
-* Trade_Date: YYYY-MM-DD
-* Settlement_Date: YYYY-MM-DD
-* Direction: Buy/Sell/UNCLEAR
-* Settlement_Amount: 1250000.50 or 0
-* Instrument_Name: [Extracted Value or N/A]
-* Category: Trade Reconciliation
+Example Output 
+Current_Case_Record: WIR0000NNN
+Account: Boxeo Investments
+Contact: Jane Doe
+Short_Description: Unmatched Trade: INVESCO QQQ TRUST ETF - 95004413
+ISIN: US46090E1035
+Reference_Number: 95004413
+Trade_Date: 2025-12-01
+Settlement_Date: 2025-12-02
+Direction: Buy
+Settlement_Amount: 2580000.00
+Instrument_Name: INVESCO QQQ TRUST ETF
+Quantity: 6000
+Price_Per_Share: 430.00
+Source: Email
 ---
 Trade Activity Record 2
-* Short_Description: ...
 (Continue all fields for every trade found)</description>
         <display_output>true</display_output>
         <document_status/>
         <execution_mode>autopilot</execution_mode>
-        <inputs>[{"name":"Parent","value":"","description":"The current case the task is being ran on","mandatory":false,"invalidMessage":null},{"name":"ISIN","value":"","description":"International Securities Identification Number","mandatory":false,"invalidMessage":null},{"name":"Reference_Number","value":"","description":"The reference number outlined in the document","mandatory":false,"invalidMessage":null},{"name":"Trade_Date","value":"","description":"Trade Date","mandatory":false,"invalidMessage":null},{"name":"Settlement_Date","value":"","description":"Settlement / Value Date","mandatory":false,"invalidMessage":null},{"name":"Direction","value":"","description":"Buy or Sell","mandatory":false,"invalidMessage":null},{"name":"Settlement_Amount","value":"","description":"Settlement Amount","mandatory":false,"invalidMessage":null},{"name":"Instrument_Name","value":"","description":"Instrument Name","mandatory":false,"invalidMessage":null},{"name":"Quantity","value":"","description":"Volume of the trade","mandatory":false,"invalidMessage":null},{"name":"PerSharePrice","value":"","description":"Per share price","mandatory":false,"invalidMessage":null},{"name":"ShortDesc","value":"","description":"Overview of the task","mandatory":false,"invalidMessage":null},{"name":"Description","value":"","description":"The detailed description of the task","mandatory":false,"invalidMessage":null},{"name":"crudInputs","value":{"operation":"create","table":{"value":"sn_bom_treasury_task","displayValue":"Treasury Task"},"fieldValues":[{"field":{"id":"parent","sublabel":"parent","excludedOperators":[],"extendedOperators":null,"label":"Parent","type":"reference","referenceTable":"task","referenceTableDefaultField":"number","referenceKey":null,"dictionaryAttributes":[{"name":"encode_utf8","value":"false"}]},"value":{"fieldValue":"{{Parent}}"}},{"field":{"id":"x_snc_pab_mc_tkit_isin","sublabel":"x_snc_pab_mc_tkit_isin","excludedOperators":[],"extendedOperators":null,"label":"ISIN","type":"string","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"}]},"value":{"fieldValue":"{{ISIN}}"}},{"field":{"id":"x_snc_pab_mc_tkit_order_reference","sublabel":"x_snc_pab_mc_tkit_order_reference","excludedOperators":[],"extendedOperators":null,"label":"Order reference","type":"string","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"}]},"value":{"fieldValue":"{{Reference Number}}"}},{"field":{"id":"x_snc_pab_mc_tkit_trade_date","sublabel":"x_snc_pab_mc_tkit_trade_date","excludedOperators":[],"extendedOperators":null,"label":"Trade date","type":"glide_date","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"}]},"value":{"fieldValue":"{{Trade_Date}}"}},{"field":{"id":"x_snc_pab_mc_tkit_settlement_date","sublabel":"x_snc_pab_mc_tkit_settlement_date","excludedOperators":[],"extendedOperators":null,"label":"Settlement Date","type":"glide_date","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"}]},"value":{"fieldValue":"{{Settlement_Date}}"}},{"field":{"id":"x_snc_pab_mc_tkit_settlement_amount","sublabel":"x_snc_pab_mc_tkit_settlement_amount","excludedOperators":[],"extendedOperators":null,"label":"Settlement Amount","type":"currency","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"omit_sys_original","value":"true"}]},"value":{"fieldValue":"{{Settlement_Amount}}"}},{"field":{"id":"x_snc_pab_mc_tkit_instrument_name","sublabel":"x_snc_pab_mc_tkit_instrument_name","excludedOperators":[],"extendedOperators":null,"label":"Instrument name","type":"string","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"}]},"value":{"fieldValue":"{{Instrument_Name}}"}},{"field":{"id":"x_snc_pab_mc_tkit_direction","sublabel":"x_snc_pab_mc_tkit_direction","excludedOperators":[],"extendedOperators":null,"label":"Direction","type":"choice","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[]},"value":{"fieldValue":"{{Direction}}"}},{"field":{"id":"service_definition","sublabel":"service_definition","excludedOperators":[],"extendedOperators":null,"label":"Treasury service","type":"reference","referenceTable":"sn_bom_service_definition","referenceTableDefaultField":"name","referenceKey":null,"dictionaryAttributes":[{"name":"encode_utf8","value":"false"}]},"value":{"fieldValue":"5f03e3172f01fe14743eb82bcfa4e3ee"}},{"field":{"id":"x_snc_pab_mc_tkit_quantity","sublabel":"x_snc_pab_mc_tkit_quantity","excludedOperators":[],"extendedOperators":null,"label":"Quantity","type":"decimal","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[]},"value":{"fieldValue":"{{Quantity}}"}},{"field":{"id":"x_snc_pab_mc_tkit_per_share_price","sublabel":"x_snc_pab_mc_tkit_per_share_price","excludedOperators":[],"extendedOperators":null,"label":"Per share price","type":"currency","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"omit_sys_original","value":"true"}]},"value":{"fieldValue":"{{PerSharePrice}}"}},{"field":{"id":"short_description","sublabel":"short_description","excludedOperators":[],"extendedOperators":null,"label":"Short description","type":"string","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"},{"name":"knowledge_search","value":"true"},{"name":"no_truncate","value":"true"},{"name":"ts_weight","value":"10"}]},"value":{"fieldValue":"{{ShortDesc}}"}},{"field":{"id":"description","sublabel":"description","excludedOperators":[],"extendedOperators":null,"label":"Description","type":"string","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"}]},"value":{"fieldValue":"{{Description}}"}}]},"description":"CRUD Input Variables. These are already pre-defined. Under no circumstances should you prompt the user for this information or attempt to change these values."}]</inputs>
+        <inputs>[{"name":"Current_Case_Record","value":"","description":"The current case the task is being ran on","mandatory":true,"invalidMessage":null},{"name":"ISIN","value":"","description":"International Securities Identification Number","mandatory":true,"invalidMessage":null},{"name":"Reference_Number","value":"","description":"The reference number outlined in the document","mandatory":true,"invalidMessage":null},{"name":"Trade_Date","value":"","description":"Trade Date","mandatory":true,"invalidMessage":null},{"name":"Settlement_Date","value":"","description":"Settlement / Value Date","mandatory":true,"invalidMessage":null},{"name":"Direction","value":"","description":"Buy or Sell","mandatory":true,"invalidMessage":null},{"name":"Settlement_Amount","value":"","description":"Settlement Amount","mandatory":true,"invalidMessage":null},{"name":"Instrument_Name","value":"","description":"Instrument Name","mandatory":true,"invalidMessage":null},{"name":"Quantity","value":"","description":"Volume of the trade","mandatory":true,"invalidMessage":null},{"name":"PerSharePrice","value":"","description":"Per share price","mandatory":true,"invalidMessage":null},{"name":"ShortDesc","value":"","description":"Overview of the task","mandatory":true,"invalidMessage":null},{"name":"Description","value":"","description":"The detailed description of the task","mandatory":true,"invalidMessage":null},{"name":"Soure","value":"","description":"Email","mandatory":true,"invalidMessage":null},{"name":"crudInputs","value":{"operation":"create","table":{"value":"sn_bom_treasury_task","displayValue":"Treasury Task"},"fieldValues":[{"field":{"id":"parent","sublabel":"parent","excludedOperators":[],"extendedOperators":null,"label":"Parent","type":"reference","referenceTable":"task","referenceTableDefaultField":"number","referenceKey":null,"dictionaryAttributes":[{"name":"encode_utf8","value":"false"}]},"value":{"fieldValue":"{{Current_Case_Record}}"}},{"field":{"id":"x_snc_pab_mc_tkit_isin","sublabel":"x_snc_pab_mc_tkit_isin","excludedOperators":[],"extendedOperators":null,"label":"ISIN","type":"string","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"}]},"value":{"fieldValue":"{{ISIN}}"}},{"field":{"id":"x_snc_pab_mc_tkit_order_reference","sublabel":"x_snc_pab_mc_tkit_order_reference","excludedOperators":[],"extendedOperators":null,"label":"Order reference","type":"string","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"}]},"value":{"fieldValue":"{{Reference Number}}"}},{"field":{"id":"x_snc_pab_mc_tkit_trade_date","sublabel":"x_snc_pab_mc_tkit_trade_date","excludedOperators":[],"extendedOperators":null,"label":"Trade date","type":"glide_date","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"}]},"value":{"fieldValue":"{{Trade_Date}}"}},{"field":{"id":"x_snc_pab_mc_tkit_settlement_date","sublabel":"x_snc_pab_mc_tkit_settlement_date","excludedOperators":[],"extendedOperators":null,"label":"Settlement Date","type":"glide_date","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"}]},"value":{"fieldValue":"{{Settlement_Date}}"}},{"field":{"id":"x_snc_pab_mc_tkit_settlement_amount","sublabel":"x_snc_pab_mc_tkit_settlement_amount","excludedOperators":[],"extendedOperators":null,"label":"Settlement Amount","type":"currency","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"omit_sys_original","value":"true"}]},"value":{"fieldValue":"{{Settlement_Amount}}"}},{"field":{"id":"x_snc_pab_mc_tkit_instrument_name","sublabel":"x_snc_pab_mc_tkit_instrument_name","excludedOperators":[],"extendedOperators":null,"label":"Instrument name","type":"string","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"}]},"value":{"fieldValue":"{{Instrument_Name}}"}},{"field":{"id":"x_snc_pab_mc_tkit_direction","sublabel":"x_snc_pab_mc_tkit_direction","excludedOperators":[],"extendedOperators":null,"label":"Direction","type":"choice","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[]},"value":{"fieldValue":"{{Direction}}"}},{"field":{"id":"service_definition","sublabel":"service_definition","excludedOperators":[],"extendedOperators":null,"label":"Treasury service","type":"reference","referenceTable":"sn_bom_service_definition","referenceTableDefaultField":"name","referenceKey":null,"dictionaryAttributes":[{"name":"encode_utf8","value":"false"}]},"value":{"fieldValue":"2f9c53d52fa17ed0b14f861cbfa4e3e9"}},{"field":{"id":"x_snc_pab_mc_tkit_quantity","sublabel":"x_snc_pab_mc_tkit_quantity","excludedOperators":[],"extendedOperators":null,"label":"Quantity","type":"decimal","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[]},"value":{"fieldValue":"{{Quantity}}"}},{"field":{"id":"x_snc_pab_mc_tkit_per_share_price","sublabel":"x_snc_pab_mc_tkit_per_share_price","excludedOperators":[],"extendedOperators":null,"label":"Per share price","type":"currency","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"omit_sys_original","value":"true"}]},"value":{"fieldValue":"{{PerSharePrice}}"}},{"field":{"id":"short_description","sublabel":"short_description","excludedOperators":[],"extendedOperators":null,"label":"Short description","type":"string","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"},{"name":"knowledge_search","value":"true"},{"name":"no_truncate","value":"true"},{"name":"ts_weight","value":"10"}]},"value":{"fieldValue":"{{ShortDesc}}"}},{"field":{"id":"description","sublabel":"description","excludedOperators":[],"extendedOperators":null,"label":"Description","type":"string","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"}]},"value":{"fieldValue":"{{Description}}"}},{"field":{"id":"x_snc_petes_tkit_source","sublabel":"x_snc_petes_tkit_source","excludedOperators":[],"extendedOperators":null,"label":"Source","type":"choice","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[]},"value":{"fieldValue":"{{Soure}}"}}]},"description":"CRUD Input Variables. These are already pre-defined. Under no circumstances should you prompt the user for this information or attempt to change these values."}]</inputs>
         <max_auto_executions>10</max_auto_executions>
-        <name>Unmatched Trade Activity Creation</name>
+        <name>Created Unmatched Trade Activity Record</name>
         <output_transformation_strategy>abstract_summary</output_transformation_strategy>
         <post_processing_script/>
-        <pre_message/>
+        <pre_message>Creating unmatched trade activities for investigation</pre_message>
         <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-12 05:09:22</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>e816af1f2f01fe14743eb82bcfa4e3a3</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>Unmatched Trade Activity Creation</sys_name>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Created Unmatched Trade Activity Record</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
         <sys_update_name>sn_aia_agent_tool_m2m_e816af1f2f01fe14743eb82bcfa4e3a3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-22 15:41:08</sys_updated_on>
-        <tool display_value="Unmatched Trade Activity Creation">e816af1f2f01fe14743eb82bcfa4e321</tool>
+        <sys_updated_on>2025-11-30 19:53:36</sys_updated_on>
+        <tool display_value="Create Unmatched Trade Activity">e816af1f2f01fe14743eb82bcfa4e321</tool>
         <tool_attributes>{}</tool_attributes>
         <transformation_instructions>undefined</transformation_instructions>
     </sn_aia_agent_tool_m2m>

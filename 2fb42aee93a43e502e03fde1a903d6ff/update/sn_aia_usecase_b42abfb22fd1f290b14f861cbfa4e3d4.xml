@@ -26,9 +26,15 @@
     return context.table == 'incident' ; */
     return false;
 })(inputs);]]></applicability_script>
-        <base_plan>Expertise: Automated analysis and validation of inbound trade data to detect unmatched trades.
+        <base_plan>### Mission
+Execute the following sequential workflow to process inbound unmatched trades.
+
+### Execution Steps
+
 1. Review inbound emails 
-2. Review inbound documents</base_plan>
+--&gt; Tool - Unmatched Trade Triage Specialist Email
+2. Review inbound documents -
+--&gt; Tool - Unmatched Trade Triage Specialist Documents</base_plan>
         <description>This workflow automates the review of inbound content to identify and address unmatched trades. It is designed for operations and compliance teams handling trade reconciliation.</description>
         <execution_mode>copilot</execution_mode>
         <internal_name>global.x_snc_pab_mc_tkit.Unmatched Trade Review</internal_name>
@@ -42,14 +48,14 @@
         <sys_created_on>2025-11-23 03:37:50</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>b42abfb22fd1f290b14f861cbfa4e3d4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Unmatched Trade Review</sys_name>
         <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
         <sys_update_name>sn_aia_usecase_b42abfb22fd1f290b14f861cbfa4e3d4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-23 03:37:50</sys_updated_on>
+        <sys_updated_on>2025-11-29 01:24:58</sys_updated_on>
         <team display_value="Unmatched Trade Review">a69a77362fd1f290b14f861cbfa4e328</team>
     </sn_aia_usecase>
 </record_update>

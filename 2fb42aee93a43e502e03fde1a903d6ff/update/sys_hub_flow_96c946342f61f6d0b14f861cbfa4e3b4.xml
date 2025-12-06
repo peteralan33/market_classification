@@ -1,0 +1,1321 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=189000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9fdddf33974852909556341de053af35</copied_from>
+        <copied_from_name>Update State, Stage and Notes (P</copied_from_name>
+        <description>Automatically updates case parameters from the playbook</description>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>update_state_stage_and_notes_mc</internal_name>
+        <label_cache>[{"name":"subflow.work_notes","label":"Input➛Work Notes","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"b993b724-78e0-48cb-a857-0aa76e18c3dc":["work_notes"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1a117a03-7596-415c-80fe-12283e9ce671","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.case","label":"Flow Variables➛Case","reference":"sn_complaint_case","reference_display":"Complaint Case","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"e92bc7f7-4e40-4caf-ae43-0c8fa7c87bb9"}},{"name":"subflow.activity_status","label":"Input➛Activity status","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"activity_status","choices":[{"label":"New","value":"new","order":0.0},{"label":"Name change information","value":"nc_information","order":1.0},{"label":"Name change collect documents","value":"nc_collect_documents","order":2.0},{"label":"Name change submit","value":"nc_submit","order":3.0},{"label":"Name change verify documents","value":"nc_verify_documents","order":4.0},{"label":"Name change due diligence","value":"nc_due_diligence","order":5.0},{"label":"Name change authorize","value":"nc_authorize","order":6.0},{"label":"Name change fulfillment","value":"nc_fulfillment","order":7.0},{"label":"KYC compliance information","value":"kyc_compliance_information","order":8.0},{"label":"KYC collect documents","value":"kyc_collect_documents","order":9.0},{"label":"KYC submit","value":"kyc_submit","order":10.0},{"label":"KYC verify documents","value":"kyc_verify_documents","order":11.0},{"label":"KYC due diligence","value":"kyc_due_diligence","order":12.0},{"label":"KYC fulfillment","value":"kyc_fulfillment","order":13.0},{"label":"Bereavement details","value":"bereavement_details","order":14.0},{"label":"Bereavement submit","value":"bereavement_submit","order":15.0},{"label":"Bereavement verify documents","value":"bereavement_verify_documents","order":16.0},{"label":"Address Modification Case Submitted","value":"am_submit","order":17.0},{"label":"Bereavement release funds","value":"bereavement_release_funds","order":18.0},{"label":"Address Modification Details Submitted","value":"am_information","order":19.0},{"label":"Bereavement probate verification","value":"bereavement_probate_verification","order":20.0},{"label":"Bereavement probate doc submitted","value":"bereavement_pro_doc_submitted","order":21.0},{"label":"Bereavement fulfillment","value":"bereavement_fulfillment","order":22.0}],"usedInstances":{"b993b724-78e0-48cb-a857-0aa76e18c3dc":["activity_status"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f5936bbc-1873-4135-b475-34652b13be80","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.case","label":"Input➛Case","reference":"sn_bom_treasury_wire_service","reference_display":"CM Investigation Case","type":"reference","base_type":"reference","column_name":"","usedInstances":{"b993b724-78e0-48cb-a857-0aa76e18c3dc":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"fe28ca47-2c98-4cf9-aa66-d74e623bb4eb","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.stage","label":"Input➛Stage","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"stage","choices":[],"usedInstances":{"b993b724-78e0-48cb-a857-0aa76e18c3dc":["stage"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f32d78d5-3b3e-434f-b7ee-4f4399948069"}},{"name":"subflow.state","label":"Input➛State","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"state","choices":[],"usedInstances":{"b993b724-78e0-48cb-a857-0aa76e18c3dc":["state"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e9dee7dd-6185-4c5b-a217-ba94ec3520f3","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <master_snapshot>f48a0ab42f61f6d0b14f861cbfa4e37d</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Update State, Stage and Notes (MC)</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:32:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>96c946342f61f6d0b14f861cbfa4e3b4</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Update State, Stage and Notes (MC)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sys_hub_flow_96c946342f61f6d0b14f861cbfa4e3b4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:36:03</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 2025-11-28 07:35:59 PM">a98a4ab42f61f6d0b14f861cbfa4e392</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=96c946342f61f6d0b14f861cbfa4e3b4"/>
+    <sys_variable_value action="delete_multiple" query="document_key=96c946342f61f6d0b14f861cbfa4e3b4"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=96c946342f61f6d0b14f861cbfa4e3b4"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=96c946342f61f6d0b14f861cbfa4e3b4^sys_idNOT INd6c94a342f61f6d0b14f861cbfa4e30f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>96c946342f61f6d0b14f861cbfa4e3b4</id>
+        <name>Update State, Stage and Notes (MC)</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:32:46</sys_created_on>
+        <sys_id>d6c94a342f61f6d0b14f861cbfa4e30f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:32:46</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d6c94a342f61f6d0b14f861cbfa4e30f"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=96c946342f61f6d0b14f861cbfa4e3b4^sys_idNOT IN1ac94a342f61f6d0b14f861cbfa4e330,52c94a342f61f6d0b14f861cbfa4e31a,750a06742f61f6d0b14f861cbfa4e307,aec94a342f61f6d0b14f861cbfa4e33b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=e9dee7dd-6185-4c5b-a217-ba94ec3520f3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field>state</choice_field>
+        <choice_table>sn_bom_treasury_wire_service</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>1</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>state</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>State</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Update State, Stage and Notes (MC)">96c946342f61f6d0b14f861cbfa4e3b4</model>
+        <model_id>96c946342f61f6d0b14f861cbfa4e3b4</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_96c946342f61f6d0b14f861cbfa4e3b4</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:32:46</sys_created_on>
+        <sys_id>1ac94a342f61f6d0b14f861cbfa4e330</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:35:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1ac94a342f61f6d0b14f861cbfa4e330"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=fe28ca47-2c98-4cf9-aa66-d74e623bb4eb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sn_bom_treasury_wire_service</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Case</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Update State, Stage and Notes (MC)">96c946342f61f6d0b14f861cbfa4e3b4</model>
+        <model_id>96c946342f61f6d0b14f861cbfa4e3b4</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_96c946342f61f6d0b14f861cbfa4e3b4</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sn_bom_treasury_wire_service">sn_bom_treasury_wire_service</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:32:46</sys_created_on>
+        <sys_id>52c94a342f61f6d0b14f861cbfa4e31a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:33:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=52c94a342f61f6d0b14f861cbfa4e31a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=f32d78d5-3b3e-434f-b7ee-4f4399948069</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field>stage</choice_field>
+        <choice_table>sn_bom_treasury_wire_service</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>initiate</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>stage</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Stage</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Update State, Stage and Notes (MC)">96c946342f61f6d0b14f861cbfa4e3b4</model>
+        <model_id>96c946342f61f6d0b14f861cbfa4e3b4</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_96c946342f61f6d0b14f861cbfa4e3b4</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:33:49</sys_created_on>
+        <sys_id>750a06742f61f6d0b14f861cbfa4e307</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:35:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=750a06742f61f6d0b14f861cbfa4e307"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1a117a03-7596-415c-80fe-12283e9ce671</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>work_notes</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Work Notes</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update State, Stage and Notes (MC)">96c946342f61f6d0b14f861cbfa4e3b4</model>
+        <model_id>96c946342f61f6d0b14f861cbfa4e3b4</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_96c946342f61f6d0b14f861cbfa4e3b4</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:32:47</sys_created_on>
+        <sys_id>aec94a342f61f6d0b14f861cbfa4e33b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:33:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=aec94a342f61f6d0b14f861cbfa4e33b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=96c946342f61f6d0b14f861cbfa4e3b4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=96c946342f61f6d0b14f861cbfa4e3b4"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=96c946342f61f6d0b14f861cbfa4e3b4"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=96c946342f61f6d0b14f861cbfa4e3b4^sys_idNOT INa2c94a342f61f6d0b14f861cbfa4e37b"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Update State, Stage and Notes (MC)">96c946342f61f6d0b14f861cbfa4e3b4</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:32:47</sys_created_on>
+        <sys_id>a2c94a342f61f6d0b14f861cbfa4e37b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:48:56</sys_updated_on>
+        <ui_id>b993b724-78e0-48cb-a857-0aa76e18c3dc</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPCCUEGPA2gSoh9UNqp750bXQT31BrjpPZDjRD/Pdd5wMQRRXVuknVeEG+H/Y5x/fEDxsGsRWZWihjQcV4V5oFZ1M2ijjnSRBMvgzGw/7EmwyHo2Dgc/SGASTjEesy4eoGyD1/4o/iwA+Cvuf1xwM/GgWR3+cBIPpUpyBFqtQYZ5rTegWycIHNxhRRIrN1LwaD2y2luDC5hPK+qaBI/Cwk16jY9OGxy3LQtJlFzaabo9S5aCREKKn0toVzDM+WuVvzLC5SVDYUbfCy6Zw3mc5iThlqcnB8r8vwxaLiSEASkAa7LAXFwWa6ZFOrCwpoBH6jZLmreBbK1kRTeDHiF5088FxdgsQsbkTYLcNGoDqczMHCHe0c20Lv9MpEjKbWhGMChbSzw1hdcJO7S69bLESy7c5kkarrWhG22+DgPgpDIDB3PB3ymlZy95ytb1uQF0JVkjQUZRaD3K3AWi2iwjo4G4YSK41TyHOhlmGus5WomglK2ltKWvTciNCZRixVrx7WHqkKvQuKz6vwPWjhSFzRNtS87TJTmpkEY/ZUSMPwZ+GQ1MQaCmGlQiVBWE2Ca461yO1XOmqFDfBt90+NEg3fGs14sp/EAzB7sxgVRlkaWpogU+gyXAuNoUG9ost8bZzZVWehVmisWIID3ZmRw97tpjMgt276Vs3QaQqNoV7FLg97O9d1orHT8MPsNP5MdmpofHo//TUXef03P/AHI1gZxxw6yMISvxeeF/D9y1MFt9sn+renktYl15n+EaqMND6u2GdOPV//4MT3GfoM9VpDXwiU3JyQs3UzpkTVYljLe+ToJtm5b5K7R/LDbO2PvOr3icz937yVj78BbgY3vFYKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a2c94a342f61f6d0b14f861cbfa4e37b"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=96c946342f61f6d0b14f861cbfa4e3b4"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=96c946342f61f6d0b14f861cbfa4e3b4"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=96c946342f61f6d0b14f861cbfa4e3b4"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=96c946342f61f6d0b14f861cbfa4e3b4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>stage</element>
+        <help/>
+        <hint/>
+        <label>Stage</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_96c946342f61f6d0b14f861cbfa4e3b4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:33:49</sys_created_on>
+        <sys_id>750a06742f61f6d0b14f861cbfa4e325</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:33:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>case</element>
+        <help/>
+        <hint/>
+        <label>Case</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_96c946342f61f6d0b14f861cbfa4e3b4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:32:46</sys_created_on>
+        <sys_id>dec94a342f61f6d0b14f861cbfa4e329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:32:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>work_notes</element>
+        <help/>
+        <hint/>
+        <label>Work Notes</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_96c946342f61f6d0b14f861cbfa4e3b4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:32:47</sys_created_on>
+        <sys_id>e2c94a342f61f6d0b14f861cbfa4e33e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:32:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>state</element>
+        <help/>
+        <hint/>
+        <label>State</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_96c946342f61f6d0b14f861cbfa4e3b4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:32:47</sys_created_on>
+        <sys_id>eec94a342f61f6d0b14f861cbfa4e33a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:32:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_96c946342f61f6d0b14f861cbfa4e3b4"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_96c946342f61f6d0b14f861cbfa4e3b4"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=8000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9fdddf33974852909556341de053af35</copied_from>
+        <copied_from_name/>
+        <description>Automatically updates case parameters from the playbook</description>
+        <flow_priority/>
+        <internal_name>update_state_stage_and_notes_mc</internal_name>
+        <label_cache>[{"name":"subflow.work_notes","label":"Input➛Work Notes","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"b993b724-78e0-48cb-a857-0aa76e18c3dc":["work_notes"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1a117a03-7596-415c-80fe-12283e9ce671","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.case","label":"Flow Variables➛Case","reference":"sn_complaint_case","reference_display":"Complaint Case","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"e92bc7f7-4e40-4caf-ae43-0c8fa7c87bb9"}},{"name":"subflow.activity_status","label":"Input➛Activity status","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"activity_status","choices":[{"label":"New","value":"new","order":0.0},{"label":"Name change information","value":"nc_information","order":1.0},{"label":"Name change collect documents","value":"nc_collect_documents","order":2.0},{"label":"Name change submit","value":"nc_submit","order":3.0},{"label":"Name change verify documents","value":"nc_verify_documents","order":4.0},{"label":"Name change due diligence","value":"nc_due_diligence","order":5.0},{"label":"Name change authorize","value":"nc_authorize","order":6.0},{"label":"Name change fulfillment","value":"nc_fulfillment","order":7.0},{"label":"KYC compliance information","value":"kyc_compliance_information","order":8.0},{"label":"KYC collect documents","value":"kyc_collect_documents","order":9.0},{"label":"KYC submit","value":"kyc_submit","order":10.0},{"label":"KYC verify documents","value":"kyc_verify_documents","order":11.0},{"label":"KYC due diligence","value":"kyc_due_diligence","order":12.0},{"label":"KYC fulfillment","value":"kyc_fulfillment","order":13.0},{"label":"Bereavement details","value":"bereavement_details","order":14.0},{"label":"Bereavement submit","value":"bereavement_submit","order":15.0},{"label":"Bereavement verify documents","value":"bereavement_verify_documents","order":16.0},{"label":"Address Modification Case Submitted","value":"am_submit","order":17.0},{"label":"Bereavement release funds","value":"bereavement_release_funds","order":18.0},{"label":"Address Modification Details Submitted","value":"am_information","order":19.0},{"label":"Bereavement probate verification","value":"bereavement_probate_verification","order":20.0},{"label":"Bereavement probate doc submitted","value":"bereavement_pro_doc_submitted","order":21.0},{"label":"Bereavement fulfillment","value":"bereavement_fulfillment","order":22.0}],"usedInstances":{"b993b724-78e0-48cb-a857-0aa76e18c3dc":["activity_status"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f5936bbc-1873-4135-b475-34652b13be80","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.case","label":"Input➛Case","reference":"sn_bom_treasury_wire_service","reference_display":"CM Investigation Case","type":"reference","base_type":"reference","column_name":"","usedInstances":{"b993b724-78e0-48cb-a857-0aa76e18c3dc":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"fe28ca47-2c98-4cf9-aa66-d74e623bb4eb","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.stage","label":"Input➛Stage","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"stage","choices":[],"usedInstances":{"b993b724-78e0-48cb-a857-0aa76e18c3dc":["stage"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f32d78d5-3b3e-434f-b7ee-4f4399948069"}},{"name":"subflow.state","label":"Input➛State","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"state","choices":[],"usedInstances":{"b993b724-78e0-48cb-a857-0aa76e18c3dc":["state"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e9dee7dd-6185-4c5b-a217-ba94ec3520f3","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <master>true</master>
+        <name>Update State, Stage and Notes (MC)</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Update State, Stage and Notes (MC)">96c946342f61f6d0b14f861cbfa4e3b4</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:35:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f48a0ab42f61f6d0b14f861cbfa4e37d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:35:56</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=f48a0ab42f61f6d0b14f861cbfa4e37d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f48a0ab42f61f6d0b14f861cbfa4e37d"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=f48a0ab42f61f6d0b14f861cbfa4e37d"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=f48a0ab42f61f6d0b14f861cbfa4e37d^sys_idNOT INb48a0ab42f61f6d0b14f861cbfa4e37e"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>f48a0ab42f61f6d0b14f861cbfa4e37d</id>
+        <name>Update State, Stage and Notes (MC)</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:35:56</sys_created_on>
+        <sys_id>b48a0ab42f61f6d0b14f861cbfa4e37e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:35:56</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b48a0ab42f61f6d0b14f861cbfa4e37e"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=f48a0ab42f61f6d0b14f861cbfa4e37d^sys_idNOT IN348a0ab42f61f6d0b14f861cbfa4e37f,858a0ab42f61f6d0b14f861cbfa4e3fa,f08a0ab42f61f6d0b14f861cbfa4e3a6,f48a0ab42f61f6d0b14f861cbfa4e3cf"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=fe28ca47-2c98-4cf9-aa66-d74e623bb4eb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sn_bom_treasury_wire_service</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>case</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Case</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Update State, Stage and Notes (MC)">f48a0ab42f61f6d0b14f861cbfa4e37d</model>
+        <model_id>f48a0ab42f61f6d0b14f861cbfa4e37d</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sn_bom_treasury_wire_service">sn_bom_treasury_wire_service</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:35:56</sys_created_on>
+        <sys_id>348a0ab42f61f6d0b14f861cbfa4e37f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:35:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=348a0ab42f61f6d0b14f861cbfa4e37f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1a117a03-7596-415c-80fe-12283e9ce671</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>work_notes</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Work Notes</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update State, Stage and Notes (MC)">f48a0ab42f61f6d0b14f861cbfa4e37d</model>
+        <model_id>f48a0ab42f61f6d0b14f861cbfa4e37d</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:35:57</sys_created_on>
+        <sys_id>858a0ab42f61f6d0b14f861cbfa4e3fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:35:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=858a0ab42f61f6d0b14f861cbfa4e3fa"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=f32d78d5-3b3e-434f-b7ee-4f4399948069</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>1</choice>
+        <choice_field>stage</choice_field>
+        <choice_table>sn_bom_treasury_wire_service</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>initiate</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>stage</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>Stage</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Update State, Stage and Notes (MC)">f48a0ab42f61f6d0b14f861cbfa4e37d</model>
+        <model_id>f48a0ab42f61f6d0b14f861cbfa4e37d</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:35:56</sys_created_on>
+        <sys_id>f08a0ab42f61f6d0b14f861cbfa4e3a6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:35:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f08a0ab42f61f6d0b14f861cbfa4e3a6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=choice,uiTypeLabel=Choice,uiUniqueId=e9dee7dd-6185-4c5b-a217-ba94ec3520f3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice>3</choice>
+        <choice_field>state</choice_field>
+        <choice_table>sn_bom_treasury_wire_service</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>1</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>state</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Choice">choice</internal_type>
+        <label>State</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Update State, Stage and Notes (MC)">f48a0ab42f61f6d0b14f861cbfa4e37d</model>
+        <model_id>f48a0ab42f61f6d0b14f861cbfa4e37d</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:35:57</sys_created_on>
+        <sys_id>f48a0ab42f61f6d0b14f861cbfa4e3cf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:35:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f48a0ab42f61f6d0b14f861cbfa4e3cf"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=f48a0ab42f61f6d0b14f861cbfa4e37d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f48a0ab42f61f6d0b14f861cbfa4e37d"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=f48a0ab42f61f6d0b14f861cbfa4e37d"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=f48a0ab42f61f6d0b14f861cbfa4e37d^sys_idNOT IN4d8a4ab42f61f6d0b14f861cbfa4e33a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Update State, Stage and Notes (MC)">f48a0ab42f61f6d0b14f861cbfa4e37d</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:35:58</sys_created_on>
+        <sys_id>4d8a4ab42f61f6d0b14f861cbfa4e33a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:35:58</sys_updated_on>
+        <ui_id>b993b724-78e0-48cb-a857-0aa76e18c3dc</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPCCUEGPA2gSoh9UNqp750bXQT31BrjpPZDjRD/Pdd5wMQRRXVuknVeEG+H/Y5x/fEDxsGsRWZWihjQcV4V5oFZ1M2ijjnSRBMvgzGw/7EmwyHo2Dgc/SGASTjEesy4eoGyD1/4o/iwA+Cvuf1xwM/GgWR3+cBIPpUpyBFqtQYZ5rTegWycIHNxhRRIrN1LwaD2y2luDC5hPK+qaBI/Cwk16jY9OGxy3LQtJlFzaabo9S5aCREKKn0toVzDM+WuVvzLC5SVDYUbfCy6Zw3mc5iThlqcnB8r8vwxaLiSEASkAa7LAXFwWa6ZFOrCwpoBH6jZLmreBbK1kRTeDHiF5088FxdgsQsbkTYLcNGoDqczMHCHe0c20Lv9MpEjKbWhGMChbSzw1hdcJO7S69bLESy7c5kkarrWhG22+DgPgpDIDB3PB3ymlZy95ytb1uQF0JVkjQUZRaD3K3AWi2iwjo4G4YSK41TyHOhlmGus5WomglK2ltKWvTciNCZRixVrx7WHqkKvQuKz6vwPWjhSFzRNtS87TJTmpkEY/ZUSMPwZ+GQ1MQaCmGlQiVBWE2Ca461yO1XOmqFDfBt90+NEg3fGs14sp/EAzB7sxgVRlkaWpogU+gyXAuNoUG9ost8bZzZVWehVmisWIID3ZmRw97tpjMgt276Vs3QaQqNoV7FLg97O9d1orHT8MPsNP5MdmpofHo//TUXef03P/AHI1gZxxw6yMISvxeeF/D9y1MFt9sn+renktYl15n+EaqMND6u2GdOPV//4MT3GfoM9VpDXwiU3JyQs3UzpkTVYljLe+ToJtm5b5K7R/LDbO2PvOr3icz937yVj78BbgY3vFYKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4d8a4ab42f61f6d0b14f861cbfa4e33a"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=f48a0ab42f61f6d0b14f861cbfa4e37d"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=f48a0ab42f61f6d0b14f861cbfa4e37d"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f48a0ab42f61f6d0b14f861cbfa4e37d"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=f48a0ab42f61f6d0b14f861cbfa4e37d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>work_notes</element>
+        <help/>
+        <hint/>
+        <label>Work Notes</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:35:58</sys_created_on>
+        <sys_id>0d8a4ab42f61f6d0b14f861cbfa4e30b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:35:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>state</element>
+        <help/>
+        <hint/>
+        <label>State</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:35:57</sys_created_on>
+        <sys_id>4d8a0ab42f61f6d0b14f861cbfa4e3f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:35:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>case</element>
+        <help/>
+        <hint/>
+        <label>Case</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:35:56</sys_created_on>
+        <sys_id>b88a0ab42f61f6d0b14f861cbfa4e3a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:35:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>stage</element>
+        <help/>
+        <hint/>
+        <label>Stage</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:35:57</sys_created_on>
+        <sys_id>bc8a0ab42f61f6d0b14f861cbfa4e3cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:35:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d^sys_idNOT IN098a0ab42f61f6d0b14f861cbfa4e3ee,0d8a0ab42f61f6d0b14f861cbfa4e3f1,308a0ab42f61f6d0b14f861cbfa4e3ae,458a0ab42f61f6d0b14f861cbfa4e3ef,4d8a0ab42f61f6d0b14f861cbfa4e3d4,788a0ab42f61f6d0b14f861cbfa4e3ab,818a0ab42f61f6d0b14f861cbfa4e3f0,b48a0ab42f61f6d0b14f861cbfa4e3ac,bc8a0ab42f61f6d0b14f861cbfa4e3a9,c18a0ab42f61f6d0b14f861cbfa4e3d3,cd8a0ab42f61f6d0b14f861cbfa4e3f0,f08a0ab42f61f6d0b14f861cbfa4e3ad"/>
+    <sys_choice field="stage" table="var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stage</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed Complete</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-29 00:35:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>308a0ab42f61f6d0b14f861cbfa4e3ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-29 00:35:57</sys_updated_on>
+            <value>closed_complete</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stage</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Initiate</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-29 00:35:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>788a0ab42f61f6d0b14f861cbfa4e3ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-29 00:35:57</sys_updated_on>
+            <value>initiate</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stage</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Agreement Documents</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-29 00:35:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b48a0ab42f61f6d0b14f861cbfa4e3ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-29 00:35:57</sys_updated_on>
+            <value>agreement_documents</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stage</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-29 00:35:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bc8a0ab42f61f6d0b14f861cbfa4e3a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-29 00:35:57</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>stage</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Fulfillment</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-29 00:35:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f08a0ab42f61f6d0b14f861cbfa4e3ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-29 00:35:57</sys_updated_on>
+            <value>fulfillment</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_choice field="state" table="var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Work in Progress</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-29 00:35:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>098a0ab42f61f6d0b14f861cbfa4e3ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-29 00:35:57</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancelled</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-29 00:35:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0d8a0ab42f61f6d0b14f861cbfa4e3f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-29 00:35:57</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Awaiting Info</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-29 00:35:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>458a0ab42f61f6d0b14f861cbfa4e3ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-29 00:35:57</sys_updated_on>
+            <value>18</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Open</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-29 00:35:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4d8a0ab42f61f6d0b14f861cbfa4e3d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-29 00:35:57</sys_updated_on>
+            <value>10</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed Complete</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-29 00:35:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>818a0ab42f61f6d0b14f861cbfa4e3f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-29 00:35:57</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-29 00:35:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c18a0ab42f61f6d0b14f861cbfa4e3d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-29 00:35:57</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed Rejected</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_f48a0ab42f61f6d0b14f861cbfa4e37d</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-11-29 00:35:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cd8a0ab42f61f6d0b14f861cbfa4e3f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-11-29 00:35:57</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_f48a0ab42f61f6d0b14f861cbfa4e37d"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>96c946342f61f6d0b14f861cbfa4e3b4</sys_id>
+        <latest_snapshot>f48a0ab42f61f6d0b14f861cbfa4e37d</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch1-hotfix1a-09-24-2025_10-14-2025_2100.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=96c946342f61f6d0b14f861cbfa4e3b4"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=96c946342f61f6d0b14f861cbfa4e3b4^sys_idNOT IN558a4ab42f61f6d0b14f861cbfa4e342"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"558a4ab42f61f6d0b14f861cbfa4e342","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Update State, Stage and Notes (MC)">96c946342f61f6d0b14f861cbfa4e3b4</plan_id>
+        <snapshot>4b7d4a3893697e900f91fce79503d67c</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 00:35:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>558a4ab42f61f6d0b14f861cbfa4e342</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 00:35:58</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=246000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>map_account_details_to_unmatched_trade</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Treasury Task Record","reference":"sn_bom_treasury_task","reference_display":"Treasury Task","type":"reference","base_type":"reference","usedInstances":{"11ea1001-2fa9-440c-b1d6-bdcfcbcc6466":["record"]},"attributes":{}},{"name":"Created_1.current.parent.sys_id","label":"Trigger - Record Created➛Treasury Task Record➛Parent➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id","usedInstances":{"b852cc5f-9152-44af-a75f-a6850ad52946":["conditions"]}},{"name":"b852cc5f-9152-44af-a75f-a6850ad52946.Record.account","label":"1 - Look Up Record➛CM Investigation Case Record➛Account","reference":"customer_account","reference_display":"Account","type":"reference","base_type":"reference","parent_table_name":"sn_bom_treasury_wire_service","column_name":"account","usedInstances":{"11ea1001-2fa9-440c-b1d6-bdcfcbcc6466":["account"]}},{"name":"b852cc5f-9152-44af-a75f-a6850ad52946.Record.contact","label":"1 - Look Up Record➛CM Investigation Case Record➛Contact","reference":"customer_contact","reference_display":"Contact","type":"reference","base_type":"reference","parent_table_name":"sn_bom_treasury_wire_service","column_name":"contact","usedInstances":{"11ea1001-2fa9-440c-b1d6-bdcfcbcc6466":["contact"]}}]</label_cache>
+        <master_snapshot>95ef9b512fe17ed0b14f861cbfa4e3aa</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Map Account Details to Unmatched Trade</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>adefdb512fe17ed0b14f861cbfa4e312</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:01:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>05fe5f9d2fa17ed0b14f861cbfa4e357</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Map Account Details to Unmatched Trade</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sys_hub_flow_05fe5f9d2fa17ed0b14f861cbfa4e357</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:07:07</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 2025-11-30 03:07:07 PM">1a20e7912fe17ed0b14f861cbfa4e326</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=05fe5f9d2fa17ed0b14f861cbfa4e357"/>
+    <sys_variable_value action="delete_multiple" query="document_key=05fe5f9d2fa17ed0b14f861cbfa4e357"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="sn_bom_treasury_task">service_definition=2f9c53d52fa17ed0b14f861cbfa4e3e9<item display_table="sn_bom_service_definition" display_value="Investigate Trade for Settlement" endquery="false" field="service_definition" goto="false" newquery="false" operator="=" or="false" value="2f9c53d52fa17ed0b14f861cbfa4e3e9"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:05:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>adefdb512fe17ed0b14f861cbfa4e312</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:05:58</sys_updated_on>
+        <table>sn_bom_treasury_task</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>05fe5f9d2fa17ed0b14f861cbfa4e357</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:05:58</sys_created_on>
+        <sys_id>2defdb512fe17ed0b14f861cbfa4e313</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:07:06</sys_updated_on>
+        <trigger display_value="">adefdb512fe17ed0b14f861cbfa4e312</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=05fe5f9d2fa17ed0b14f861cbfa4e357^sys_idNOT IN2defdb512fe17ed0b14f861cbfa4e313"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=05fe5f9d2fa17ed0b14f861cbfa4e357"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=05fe5f9d2fa17ed0b14f861cbfa4e357^sys_idNOT IN49fe5f9d2fa17ed0b14f861cbfa4e359"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>05fe5f9d2fa17ed0b14f861cbfa4e357</id>
+        <name>Map Account Details to Unmatched Trade</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:01:50</sys_created_on>
+        <sys_id>49fe5f9d2fa17ed0b14f861cbfa4e359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:01:50</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=49fe5f9d2fa17ed0b14f861cbfa4e359"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=05fe5f9d2fa17ed0b14f861cbfa4e357^sys_idNOT IN7bfed3dd2fa17ed0b14f861cbfa4e37e,ebfed3dd2fa17ed0b14f861cbfa4e313"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Map Account Details to Unmatched Trade">05fe5f9d2fa17ed0b14f861cbfa4e357</model>
+        <model_id>05fe5f9d2fa17ed0b14f861cbfa4e357</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_05fe5f9d2fa17ed0b14f861cbfa4e357</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:02:01</sys_created_on>
+        <sys_id>7bfed3dd2fa17ed0b14f861cbfa4e37e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:05:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7bfed3dd2fa17ed0b14f861cbfa4e37e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Map Account Details to Unmatched Trade">05fe5f9d2fa17ed0b14f861cbfa4e357</model>
+        <model_id>05fe5f9d2fa17ed0b14f861cbfa4e357</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_05fe5f9d2fa17ed0b14f861cbfa4e357</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:02:01</sys_created_on>
+        <sys_id>ebfed3dd2fa17ed0b14f861cbfa4e313</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:05:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ebfed3dd2fa17ed0b14f861cbfa4e313"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=05fe5f9d2fa17ed0b14f861cbfa4e357"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=05fe5f9d2fa17ed0b14f861cbfa4e357"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=05fe5f9d2fa17ed0b14f861cbfa4e357^sys_idNOT IN6ffe53dd2fa17ed0b14f861cbfa4e34d"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Map Account Details to Unmatched Trade">05fe5f9d2fa17ed0b14f861cbfa4e357</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:02:00</sys_created_on>
+        <sys_id>6ffe53dd2fa17ed0b14f861cbfa4e34d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:05:56</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACuvgS523rZNEAaRZwvO1DGgiUOLSJlSlXopT1LvLvHepmWZIdX1PnJYA4NHnm8MwZMk8/dZ+44OvX+oS4PugdnQsJoSD+ZLkAHJZq2BFkrmJzIiiRQbjUr2UYQ0dnYTCfwHzhE4mTGfEjHAxCCqF+bXb0hPgxPC6jO4or4e/TZfI19TyM35Fw3GDuyBBIFIdLR5LoG4Ypj3Dh5V/5rEke1iZZ2Jtxn4Yg9Oun546+ICEuLtXGP2shiZk4a2lqD1k+XOHymEeGFhiebdqWZRjWVdd0+7ZrWtQmYBg4r85RLQ/ZQtWKBPguQVCgJT8NFjEx+kX4y3LGDA8hY2xOvkf8B65+Zah5DDArD7JY+enkTGXD3izgHnxZSB6IbCTDmQUDP56Lhwy/4hgYiX1ZcIwjcYTrwUJBViByROxxFryMiw0/c5Fmlwf9wCN++UWkDLkbS4jUUTDu46E4GTdREIcp+vHt6Mv4xvn702T0x+3YGd8+TsZ3o8ntjf6a5uX8G6sVM4Q5FidL57UUxmcOvjpAEc9dRNPRIy/kC/nJkzwp1PjaWSl8FAjKU1YaKveKULSu8iL7bTI3jI1C9yo7lmKHMOHqzIBxkQb/iQ3DphYbej2b9ixGzAFQwzW77Kpvei4jXbBheLDiR9XcUsX3+4RQIBsU77KK4quctSQlW+ir8rJN+/nILuLvGsb/JP/c5g5V/zyg4N+sltMxOJ1iPXCxiKVi64UIGTkycAilToVHNRUxvVUOWW7Nmni7GsJY4BJOeULNmkiJLBm95xEm8IQVXbCVLolxdp8vOY6FFuBR4h/Ni0MkS2qFR7K7OZnmHLNH8MGTFVmwr1H1608eRVxMK6jLTVNWGnuW26G8tCKlbO/oyM2fT2kITdKTGpm1pnd41Renl1a8aTLmArOMgap307BdZhoDo0cYtQ3DsyoV34S4EbusCeUslb9f3UepRP0dBFknPgdvVGtkJ3El68osSFDCye1ldBpo5omgWQpazSbtvXyyFGs2fLOu2W2pnfh2QWhC8Bd0V7tUE3bwReYHL2jRB3iiS7xv0zCIBa2blFpT40JbzdB+yfn79YT+yIIQtgNYn3FJzriivRAuEcuzeaLNTHcIXTDQCm10Qbc3HLoesRgb9AdgmTVPXIFrRfwhvPANDSZtIt7ki61yStpUuIcjHgGw4Y57AzzeF3O5trpiFvsY/vcyA+Eg1NDxlcM1bHDqcwpF7LQe0Ng6WVX9qXzgPk9K7c6u8NllDgbeAN9B6AKsCy4xu1aPDAd9+6pXc4EGvG3QZQtb7/I6ipZRCmSDQ3zNQpf1j4JzSjkCKVXj2r+fC7zxpr8h2SaVnqqORUuNJgi1h0D8dreapz0Ctsr0iXyqxr4LCnWw2nlhuIGcNW4WuPXvOL62tbqRbmDl4p5kNZEk67me6UkG3avekNntxsOGbcazgrgZ/MVfRHasm2RjBbbdSHYtg6S1mjZeIQ4Qdk081bvFlsvPqUgxT06KdT5S7KMvXEWFbnyHHgL2AzW29LZxTHdTe4ITsKql3wQaBjTcRONMy/9jCVRzl5qcAVLq480aN9TU7sd6ebW3NKGUCn5fINldvdHjcFjLr1WX175qUniPFzTQAen17A1352H9Bd0G840sLr6Z7V0rSVvpbe1o+61bX7O1p1WEvK6THbvVSbNub1nHZd3atN7K+vh2tO3934LiQhvN838wzOuzFiAAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=05fe5f9d2fa17ed0b14f861cbfa4e357^sys_idNOT IN872fdbdd2fa17ed0b14f861cbfa4e345,879f9f112fe17ed0b14f861cbfa4e3ff"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Map Account Details to Unmatched Trade">05fe5f9d2fa17ed0b14f861cbfa4e357</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:02:47</sys_created_on>
+        <sys_id>872fdbdd2fa17ed0b14f861cbfa4e345</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:05:56</sys_updated_on>
+        <ui_id>11ea1001-2fa9-440c-b1d6-bdcfcbcc6466</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VwW7bMAz9lcDn1LCdOEtyGxYE2GEt0AW9dK1BS3QrTJY8WU6bBfn3Ubacpl3XBUWBbcB8IymS75FP1uU2EDyYB2PkUTyLJ2wUj0ZJFCXTcZxPRnmc8BEgxsEwUFAinTTItOFkr0E2zrHdfjAIFnkWh6wxBpXd7SjORV1J2Fz4Y+Rht0Jyigfzy6thUIGhihZNMN8+CdlNhZmEHCUlLjRrSio6+LigGsei7bPPe7hP4bseZHNfPRPOSSGHJ46GAd5bVBypXQGyxmFQguJgtdkEc2sachBrfqbkZn/iVijbMS3hvhbfqf44cucKJGrMT2FvZn5C/XC0YHhWWaFV57GQy35yWjalOu0ouNliAY20B7NtaqqHlYPsQHQIi8+3+u6877cUqmXn0UrNQO4tsNaIvLFYu3WgxHYoJVSVUDdZZfRatMkEpQxvJBlhIfUd9azFjQqBOdwhDQjCJfkXrfsCjHAkPlEZSt615LNvjevb0fCAs5ZzSzhrF0VHa2ZEZd9T4TV6mLuhl2ueviQANnvY90HNB8nWKst1mVnaYN2YTWah/vqzYlc+PFh14dfJd+UADE47AMeCf5T8CzJewI98Xr/pm+l3+of06xH9YwL+nWyj5MX/1sGmW6XWB5IFxnSj7JcmikZ8u82nacJYWpzM4jQ5GY+hOIF3ZMJkmkbA02Q2noTdvy/0qbvdNdPKEtHXFPGpz/3Z/yZor7yjWBIhi4OO0vDobfUFlgIlr59ZX39JfYNs7RvsH5o3u6nxJGq//+/NG743Vz8AtSptQyAJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=872fdbdd2fa17ed0b14f861cbfa4e345"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Map Account Details to Unmatched Trade">05fe5f9d2fa17ed0b14f861cbfa4e357</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:04:42</sys_created_on>
+        <sys_id>879f9f112fe17ed0b14f861cbfa4e3ff</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:05:56</sys_updated_on>
+        <ui_id>b852cc5f-9152-44af-a75f-a6850ad52946</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VY227bOBD9FUHPjlfyTXbeFg4MBNg2QNvtSxoQlEjZRGlSJSmnjuF/36EoyY7t+L5t+mSInMuZmTOjkR8XPiP+rU8GwSAdDLr9KAja7SDo9doJDuO43UviIMYdv+ELPKUgaXDMKTzOMM/tsxYollNkFMU6V3P0zBRFmqoZS6wYYTrjeP61lB5+8O7FjGrDxtgwKbwh1lYsmTBOFBX+7eNTw8+wAmeGKv92sXFl5hlFHMeUg7UvFov30QJrHB3HK+XtuKyD6hEJZ1oqYrEEDZ/+NFQQCq5SzDVt+FMsCDZSzesTSAR5EHx1MGHCgEXfCv/U7AXM9wMrl1IIK6Hurn5EZcrccTKRkMiHzCbLnTig7lLyfCo+ugBssmmKc26qZMNJrsEezSxmC6JElH6eyOdPlcMRE0V45SWXCeb1EzZGsTg3VNtaUE6nYAhNcZYxMUaZkjNWKAOWaXPM4aGZcvkMTjUbiyZOLPAmpAg3R3B+Vxx/xYrZKD6AGVAGQIxDtZFLupa5KrIyQwnPdXGhsNDOlr8scoV+5Bali7qMD7kUgYBOFMvM36Awo2Uoy0ZF9e5eigxWlEikIMz61Ot8n2vEyLcclMliMYRqG0pQ2ExyBdk0TeCu/XFiy+V2C5xu4LzmGK6jPzbyncq70lG2yauzsk3Cq7VJJwh+U6MYlb+/PjnEfBfwAfqHZC8JyKreWiqDXObW+L9N6LMZOmKUk1fj+whwlfKDJZsXz9/CWxI0tT425njrj5/jF9IzJcjlhQnORPG6A4Pg5h3ztruXGnG4wYOi/GtT255hnWyzF3tGei/nT9mirhV/jwBZKX4GRN4Xh3IH8Gq+VuZL6ravRt126zTqAnEeFzX6Oms7ElxtS7Z0lfyLlceb8kCiNYVw+VRTf3iez/BUny3rc6M32yc15zqz3M3dGwS78i72i5u4YR1OQLX0h1yzwr5PxtSsvFdSRJpnzL/vui/ZVfdQEd7Fe124d/WP1/Y6lqIp1IllsGwqmgAVNIKlC6UyFwSVa+aKNrZuKVPalMLbM+QTNbkSnoSW88yEeoW0V0tfY7IcEV2leJ96VXglBu1BeF4RnleHd1oy3phHnSvuepfMoxFmvEg9fC5ka7WjSkn1xkw6ULU95T9yYB0JKrwqqMsn2i6+75xsB7D+Ed+el06dhOK408K9qB2GQRAGJAr6URT2e3Haw1EnXTUaQlokMBbBcgrEAPOoIkJV1WB7tLjZePYfJDBz/xqVJo7FWynfSWG/UluR8SxgqLNXAT4cUjkvYik5xWJFz+5vGxjv5T+UnNmt759dFfq/3tzO5aty5OxfwX7k9N6Sok+DVj8kyU0/CqObTkp6NwOCuzd4EHejNqFJJz3//fz0H0FNYCpkFAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=879f9f112fe17ed0b14f861cbfa4e3ff"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=05fe5f9d2fa17ed0b14f861cbfa4e357"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=05fe5f9d2fa17ed0b14f861cbfa4e357"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=05fe5f9d2fa17ed0b14f861cbfa4e357"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=05fe5f9d2fa17ed0b14f861cbfa4e357"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_05fe5f9d2fa17ed0b14f861cbfa4e357</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:02:01</sys_created_on>
+        <sys_id>bbfed3dd2fa17ed0b14f861cbfa4e37b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:02:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_05fe5f9d2fa17ed0b14f861cbfa4e357</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:02:02</sys_created_on>
+        <sys_id>bbfed3dd2fa17ed0b14f861cbfa4e38f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:02:02</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_05fe5f9d2fa17ed0b14f861cbfa4e357"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_05fe5f9d2fa17ed0b14f861cbfa4e357"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>map_account_details_to_unmatched_trade</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Treasury Task Record","reference":"sn_bom_treasury_task","reference_display":"Treasury Task","type":"reference","base_type":"reference","usedInstances":{"11ea1001-2fa9-440c-b1d6-bdcfcbcc6466":["record"]},"attributes":{}},{"name":"Created_1.current.parent.sys_id","label":"Trigger - Record Created➛Treasury Task Record➛Parent➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"task","column_name":"sys_id","usedInstances":{"b852cc5f-9152-44af-a75f-a6850ad52946":["conditions"]}},{"name":"b852cc5f-9152-44af-a75f-a6850ad52946.Record.account","label":"1 - Look Up Record➛CM Investigation Case Record➛Account","reference":"customer_account","reference_display":"Account","type":"reference","base_type":"reference","parent_table_name":"sn_bom_treasury_wire_service","column_name":"account","usedInstances":{"11ea1001-2fa9-440c-b1d6-bdcfcbcc6466":["account"]}},{"name":"b852cc5f-9152-44af-a75f-a6850ad52946.Record.contact","label":"1 - Look Up Record➛CM Investigation Case Record➛Contact","reference":"customer_contact","reference_display":"Contact","type":"reference","base_type":"reference","parent_table_name":"sn_bom_treasury_wire_service","column_name":"contact","usedInstances":{"11ea1001-2fa9-440c-b1d6-bdcfcbcc6466":["contact"]}}]</label_cache>
+        <master>true</master>
+        <name>Map Account Details to Unmatched Trade</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Map Account Details to Unmatched Trade">05fe5f9d2fa17ed0b14f861cbfa4e357</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:05:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>95ef9b512fe17ed0b14f861cbfa4e3aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:05:57</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=95ef9b512fe17ed0b14f861cbfa4e3aa"/>
+    <sys_variable_value action="delete_multiple" query="document_key=95ef9b512fe17ed0b14f861cbfa4e3aa"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=95ef9b512fe17ed0b14f861cbfa4e3aa"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=95ef9b512fe17ed0b14f861cbfa4e3aa^sys_idNOT IN19ef9b512fe17ed0b14f861cbfa4e3ab"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>95ef9b512fe17ed0b14f861cbfa4e3aa</id>
+        <name>Map Account Details to Unmatched Trade</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:05:57</sys_created_on>
+        <sys_id>19ef9b512fe17ed0b14f861cbfa4e3ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:05:57</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=19ef9b512fe17ed0b14f861cbfa4e3ab"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=95ef9b512fe17ed0b14f861cbfa4e3aa^sys_idNOT IN5def9b512fe17ed0b14f861cbfa4e3b8,95ef9b512fe17ed0b14f861cbfa4e3ac"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Map Account Details to Unmatched Trade">95ef9b512fe17ed0b14f861cbfa4e3aa</model>
+        <model_id>95ef9b512fe17ed0b14f861cbfa4e3aa</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_95ef9b512fe17ed0b14f861cbfa4e3aa</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:05:57</sys_created_on>
+        <sys_id>5def9b512fe17ed0b14f861cbfa4e3b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:05:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5def9b512fe17ed0b14f861cbfa4e3b8"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Map Account Details to Unmatched Trade">95ef9b512fe17ed0b14f861cbfa4e3aa</model>
+        <model_id>95ef9b512fe17ed0b14f861cbfa4e3aa</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_95ef9b512fe17ed0b14f861cbfa4e3aa</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:05:57</sys_created_on>
+        <sys_id>95ef9b512fe17ed0b14f861cbfa4e3ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:05:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=95ef9b512fe17ed0b14f861cbfa4e3ac"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=95ef9b512fe17ed0b14f861cbfa4e3aa"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=95ef9b512fe17ed0b14f861cbfa4e3aa"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=95ef9b512fe17ed0b14f861cbfa4e3aa^sys_idNOT INe1ef9b512fe17ed0b14f861cbfa4e3ee"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Map Account Details to Unmatched Trade">95ef9b512fe17ed0b14f861cbfa4e3aa</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:05:57</sys_created_on>
+        <sys_id>e1ef9b512fe17ed0b14f861cbfa4e3ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:05:57</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLeACuvgS523rZNEAaRZwvO1DGgiUOLSJlSlXopT1LvLvHepmWZIdX1PnJYA4NHnm8MwZMk8/dZ+44OvX+oS4PugdnQsJoSD+ZLkAHJZq2BFkrmJzIiiRQbjUr2UYQ0dnYTCfwHzhE4mTGfEjHAxCCqF+bXb0hPgxPC6jO4or4e/TZfI19TyM35Fw3GDuyBBIFIdLR5LoG4Ypj3Dh5V/5rEke1iZZ2Jtxn4Yg9Oun546+ICEuLtXGP2shiZk4a2lqD1k+XOHymEeGFhiebdqWZRjWVdd0+7ZrWtQmYBg4r85RLQ/ZQtWKBPguQVCgJT8NFjEx+kX4y3LGDA8hY2xOvkf8B65+Zah5DDArD7JY+enkTGXD3izgHnxZSB6IbCTDmQUDP56Lhwy/4hgYiX1ZcIwjcYTrwUJBViByROxxFryMiw0/c5Fmlwf9wCN++UWkDLkbS4jUUTDu46E4GTdREIcp+vHt6Mv4xvn702T0x+3YGd8+TsZ3o8ntjf6a5uX8G6sVM4Q5FidL57UUxmcOvjpAEc9dRNPRIy/kC/nJkzwp1PjaWSl8FAjKU1YaKveKULSu8iL7bTI3jI1C9yo7lmKHMOHqzIBxkQb/iQ3DphYbej2b9ixGzAFQwzW77Kpvei4jXbBheLDiR9XcUsX3+4RQIBsU77KK4quctSQlW+ir8rJN+/nILuLvGsb/JP/c5g5V/zyg4N+sltMxOJ1iPXCxiKVi64UIGTkycAilToVHNRUxvVUOWW7Nmni7GsJY4BJOeULNmkiJLBm95xEm8IQVXbCVLolxdp8vOY6FFuBR4h/Ni0MkS2qFR7K7OZnmHLNH8MGTFVmwr1H1608eRVxMK6jLTVNWGnuW26G8tCKlbO/oyM2fT2kITdKTGpm1pnd41Renl1a8aTLmArOMgap307BdZhoDo0cYtQ3DsyoV34S4EbusCeUslb9f3UepRP0dBFknPgdvVGtkJ3El68osSFDCye1ldBpo5omgWQpazSbtvXyyFGs2fLOu2W2pnfh2QWhC8Bd0V7tUE3bwReYHL2jRB3iiS7xv0zCIBa2blFpT40JbzdB+yfn79YT+yIIQtgNYn3FJzriivRAuEcuzeaLNTHcIXTDQCm10Qbc3HLoesRgb9AdgmTVPXIFrRfwhvPANDSZtIt7ki61yStpUuIcjHgGw4Y57AzzeF3O5trpiFvsY/vcyA+Eg1NDxlcM1bHDqcwpF7LQe0Ng6WVX9qXzgPk9K7c6u8NllDgbeAN9B6AKsCy4xu1aPDAd9+6pXc4EGvG3QZQtb7/I6ipZRCmSDQ3zNQpf1j4JzSjkCKVXj2r+fC7zxpr8h2SaVnqqORUuNJgi1h0D8dreapz0Ctsr0iXyqxr4LCnWw2nlhuIGcNW4WuPXvOL62tbqRbmDl4p5kNZEk67me6UkG3avekNntxsOGbcazgrgZ/MVfRHasm2RjBbbdSHYtg6S1mjZeIQ4Qdk081bvFlsvPqUgxT06KdT5S7KMvXEWFbnyHHgL2AzW29LZxTHdTe4ITsKql3wQaBjTcRONMy/9jCVRzl5qcAVLq480aN9TU7sd6ebW3NKGUCn5fINldvdHjcFjLr1WX175qUniPFzTQAen17A1352H9Bd0G840sLr6Z7V0rSVvpbe1o+61bX7O1p1WEvK6THbvVSbNub1nHZd3atN7K+vh2tO3934LiQhvN838wzOuzFiAAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=95ef9b512fe17ed0b14f861cbfa4e3aa^sys_idNOT IN55ef9b512fe17ed0b14f861cbfa4e3ec,ddef9b512fe17ed0b14f861cbfa4e3ea"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Map Account Details to Unmatched Trade">95ef9b512fe17ed0b14f861cbfa4e3aa</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:05:57</sys_created_on>
+        <sys_id>55ef9b512fe17ed0b14f861cbfa4e3ec</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:05:57</sys_updated_on>
+        <ui_id>11ea1001-2fa9-440c-b1d6-bdcfcbcc6466</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5WfS5SkTdf2baJCmsRAAsQLY9GN7YA1x878AXRR//tuEqetADGYeBha3u6nz7m+J75qiGBkSaacxckimdFJMpmkcZzOp0kxmxRJyibAeULGREHFMdNwqg1D+w6kbx1Nc2g4OM7yJKLeGK7cZoNxJmwtYX0Z0tBDb4VkGCfLq+sxqcFgR8cNWTaPQq+FJKHgElPPBkyPMbp13dpMU18hrlwMzuNQuQqR0ZcVRrCohZPEY8IfHFeMI5ASpOVjUoFi4LRZk6UzHh1Imp0qud5m3ArleqIVPFjxC0+exm1eyZEZDUPYmnkYUO8uV+DgHDtT5812XlpQbvuZMF6Cl+5w39cnnNZOaNWXOCjkUK2lr9RJPxGybbB3H94iCF63PFvkPa3y/Fbfnw0gj4TqRhIoSk1Bbi1wzojCuxZOQ7jk3YwrqGuhbvLa6DvRFSOUKrqRaESl1Pd4phU3KgLa4o5wqhAdoX/VuS/BiJbEV2yDxZsxsWt7KMHaHRWcYf7Tt0h6YoFC3k2hG0HebUJbTI2o3Wc86o4H4JtxWPoie2nD6GK3UHs9d4tvVV7oKne4CNabde7A/ni69xchPLrow28TwSsgDiK46K7+echBB098x/u1o5M+EFSQvZsK5h9JBYHGh5fBn5Y/Tl/8ve5tUrfvdm/xgVLtlfvm43jCmqaYZymlWXmwSLL0YDqF8gA+oQmzeRYDy9LFdBb1v+golG4236lWDqn/TZNQ+twr8y9Be5vSX3Efg9KPBJfMPnNBg8x5hTNxPO8v7JHUQ3B0GYLbR+/d9J7M4u77QKr/b96+69+38ZB38gkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=55ef9b512fe17ed0b14f861cbfa4e3ec"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Map Account Details to Unmatched Trade">95ef9b512fe17ed0b14f861cbfa4e3aa</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:05:57</sys_created_on>
+        <sys_id>ddef9b512fe17ed0b14f861cbfa4e3ea</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:05:57</sys_updated_on>
+        <ui_id>b852cc5f-9152-44af-a75f-a6850ad52946</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYXW/iOhD9K1GeKTfhK9C3KyqkSrtbadu7L3tXlhM7YF1jZ22HLkX89zuOE4ggBaKlUqt9Qh6P7TMz54wdvm98Rvxbn0yCSTqZDMdREPT7QTAa9RMcxnF/lMRBjAd+xxd4ScHT4JhTGK4wz+1YCxTLJTKKYp2rNXpmiiJN1Yol1o0wnXG8/lZ6Tz9792JFtWFzbJgU3hRr65YsGCeKCv/2+4+On2EFhxmq/NvNwdSlaDmOKQfXpxLuAXqzznZDVMw526f6Mu+Lm5CKWChBx6e/DBWEAoYUc007/hILgo1U650F8kAeBN8bFkwY2NG3zr80e4Fzx4H1SylElVA3txuiMmPOnN5hgx+NyhOTq9I1WUjIrXb5IDTFOTfTus05PGQ2wW6JC9utljxfii8uHf5ug6pAYMk1gKCZDdQiL8NIHxfy+WuFcsZEkZNykssE890IG6NYnBuLZ+NTTpewEVriLGNijjIlV6xYDFiW3TmHQTfl8hkO1WwuujixwLuQV9ydgf2uMH/DitkoPsM2sBgAMQ4MQa6EWuaqSOUKJTzXxYTCQru9/G3H12s95VjrfeSQcvQzt7hdHsqIkUuaXZIolpm/YYsVLYPbdirBDE9ScLKnXCIFYRaFrqtmrREj/+awmGw2UyCNoQSF3SRXkF/TBQXYH+e23R4Lqf0GLSV2Pr5KYtN6gE1Bl2I7sn1q2qAUW3g1sQ2C4CPJDQ5/f2prrx+XgjMiCslJkpE9n7RUBrlc1lR0LIvWPL8AQsXzB8tML16/hqqkecooJ013ysxOHNwpvT/zTnmXJAdABLnqMcGZKB4IAPSt2D88Sb04POBZQa/aDWJtWCfHGsCekd5LayVcAKdSwiOc7T05PA0Qq35fUOaw11fGUgD9qwmg37uOADa7MHeJbMh59Sa01az8X6w/PvQHCtYWhNsmgbU6M2x7Zm97LOB+KwXXyeZm7l7h3JUfj68osvOWLWABS8vzkNMvfNSQOTX70ysvIs0z5v81zZeMQ1WhivDe4CEanvwWimsPUZaiJVSOZfBeVjQBcmgEr0SUylwQVL6U90SylUyZ0qZ0Pm40XynoR3gShOmZBfUKb2/n3fIiPh9Hlcr71KsCKU/THgTiFYF4u0Dahd2maQ2u+Di9dtOaYcaLasBHUFYrJ1VKqlca15lCnmDEhV3tQlDhVUH9fttrkkBj+zuD9UN8UV+/NSUUx4MeHkX9MAyCMCBRMI6icDyK0xGOBuleowhpkUA3hZ1ToApsjypqVHUOjvuPa6ltG80FqCoK3klhv7B7kfEsLKivV8E6D7xsKLGUnGJx0FGe4J74a1biL/k6fHdd5UP8v5Szp8NMO1Njrt/q3ZCzfwT7mdN7S7ExDXrjkCQ34yiMbgYpGd1MCB7e4Ek8jPqEJoP0mk+BH/8Dq3YbXcYVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ddef9b512fe17ed0b14f861cbfa4e3ea"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=95ef9b512fe17ed0b14f861cbfa4e3aa"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=95ef9b512fe17ed0b14f861cbfa4e3aa"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=95ef9b512fe17ed0b14f861cbfa4e3aa"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=95ef9b512fe17ed0b14f861cbfa4e3aa"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_95ef9b512fe17ed0b14f861cbfa4e3aa</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:05:57</sys_created_on>
+        <sys_id>15ef9b512fe17ed0b14f861cbfa4e3b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:05:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_95ef9b512fe17ed0b14f861cbfa4e3aa</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:05:57</sys_created_on>
+        <sys_id>19ef9b512fe17ed0b14f861cbfa4e3bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:05:57</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_95ef9b512fe17ed0b14f861cbfa4e3aa"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_95ef9b512fe17ed0b14f861cbfa4e3aa"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>05fe5f9d2fa17ed0b14f861cbfa4e357</sys_id>
+        <latest_snapshot>95ef9b512fe17ed0b14f861cbfa4e3aa</latest_snapshot>
+        <compiler_build/>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=05fe5f9d2fa17ed0b14f861cbfa4e357^sys_idNOT INa1efdb512fe17ed0b14f861cbfa4e315"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>05fe5f9d2fa17ed0b14f861cbfa4e357</plan_id>
+        <snapshot>95ef9b512fe17ed0b14f861cbfa4e3aa</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-30 20:05:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a1efdb512fe17ed0b14f861cbfa4e315</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-30 20:05:58</sys_updated_on>
+        <trigger display_value="">adefdb512fe17ed0b14f861cbfa4e312</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=05fe5f9d2fa17ed0b14f861cbfa4e357"/>
+</record_update>

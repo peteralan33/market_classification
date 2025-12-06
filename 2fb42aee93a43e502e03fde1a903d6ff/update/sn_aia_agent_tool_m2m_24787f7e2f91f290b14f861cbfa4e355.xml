@@ -11,13 +11,13 @@
         <name>Review attachment for unmatched trades</name>
         <output_transformation_strategy>paraphrase</output_transformation_strategy>
         <post_processing_script/>
-        <pre_message>Reviewing attachments</pre_message>
+        <pre_message>Reviewing attachments for unmatched trades</pre_message>
         <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-11-23 03:28:24</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>24787f7e2f91f290b14f861cbfa4e355</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Review attachment for unmatched trades</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
@@ -25,7 +25,7 @@
         <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
         <sys_update_name>sn_aia_agent_tool_m2m_24787f7e2f91f290b14f861cbfa4e355</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-23 03:28:24</sys_updated_on>
+        <sys_updated_on>2025-11-23 14:35:19</sys_updated_on>
         <tool display_value="Review attachment for unmatched trades">925753b62f5db290b14f861cbfa4e392</tool>
         <tool_attributes>{}</tool_attributes>
         <transformation_instructions/>

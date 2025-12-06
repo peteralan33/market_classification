@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=117000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>update_case_for_work_allocation</internal_name>
+        <label_cache>[{"name":"subflow.exception_case","label":"Input➛Exception Case","reference":"sn_bom_treasury_wire_service","reference_display":"CM Investigation Case","type":"reference","base_type":"reference","usedInstances":{"7187fb0d-500c-400a-b0c7-210c3a3af27c":["record"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"204ed08e-abbf-4827-b779-d74a1bfa8385","uiTypeLabel":"Reference"}}]</label_cache>
+        <master_snapshot>f5f1a4742fad76d0b14f861cbfa4e388</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Update Case for Work Allocation</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 16:57:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>59816cf02fad76d0b14f861cbfa4e3e2</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Update Case for Work Allocation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sys_hub_flow_59816cf02fad76d0b14f861cbfa4e3e2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 16:59:17</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 2025-11-28 11:59:13 AM">96f1e4742fad76d0b14f861cbfa4e323</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=59816cf02fad76d0b14f861cbfa4e3e2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=59816cf02fad76d0b14f861cbfa4e3e2"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_59816cf02fad76d0b14f861cbfa4e3e2^id=59816cf02fad76d0b14f861cbfa4e3e2"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=59816cf02fad76d0b14f861cbfa4e3e2"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=59816cf02fad76d0b14f861cbfa4e3e2^sys_idNOT IN55816cf02fad76d0b14f861cbfa4e3e3"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>59816cf02fad76d0b14f861cbfa4e3e2</id>
+        <name>Update Case for Work Allocation</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 16:57:13</sys_created_on>
+        <sys_id>55816cf02fad76d0b14f861cbfa4e3e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 16:57:13</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=55816cf02fad76d0b14f861cbfa4e3e3"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=59816cf02fad76d0b14f861cbfa4e3e2^sys_idNOT IN32c16c342fad76d0b14f861cbfa4e3ac"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=204ed08e-abbf-4827-b779-d74a1bfa8385</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sn_bom_treasury_wire_service</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>exception_case</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Exception Case</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Update Case for Work Allocation">59816cf02fad76d0b14f861cbfa4e3e2</model>
+        <model_id>59816cf02fad76d0b14f861cbfa4e3e2</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_59816cf02fad76d0b14f861cbfa4e3e2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sn_bom_treasury_wire_service">sn_bom_treasury_wire_service</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 16:58:25</sys_created_on>
+        <sys_id>32c16c342fad76d0b14f861cbfa4e3ac</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 16:58:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=32c16c342fad76d0b14f861cbfa4e3ac"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=59816cf02fad76d0b14f861cbfa4e3e2^sys_idNOT INc7c1ac342fad76d0b14f861cbfa4e32a"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=854d1fe9-6e4f-450f-86b8-c82f5070fb6e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>update_status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Update Status</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Case for Work Allocation">59816cf02fad76d0b14f861cbfa4e3e2</model>
+        <model_id>59816cf02fad76d0b14f861cbfa4e3e2</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_59816cf02fad76d0b14f861cbfa4e3e2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 16:58:26</sys_created_on>
+        <sys_id>c7c1ac342fad76d0b14f861cbfa4e32a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 16:59:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c7c1ac342fad76d0b14f861cbfa4e32a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=59816cf02fad76d0b14f861cbfa4e3e2"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=59816cf02fad76d0b14f861cbfa4e3e2"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=59816cf02fad76d0b14f861cbfa4e3e2^sys_idNOT IN0fc1ac342fad76d0b14f861cbfa4e33f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Update Case for Work Allocation">59816cf02fad76d0b14f861cbfa4e3e2</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 16:58:26</sys_created_on>
+        <sys_id>0fc1ac342fad76d0b14f861cbfa4e33f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-11-28 17:21:16</sys_updated_on>
+        <ui_id>7187fb0d-500c-400a-b0c7-210c3a3af27c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy27iMBT9FeQ1QglQ1LIbgZAq9SG1IzadKrqxL2DJcTK2w2MQ/z7XiQMIqg6VukGT3X3Z55ycm7xtmRRsyPooovguHvBe3Ot1o6h724/TQS+Nu6IHiDFrMw0ZUqdBnhtB8RJU6RPbrS3TmcpXHVxzLJzMdcLB4m5HTULaQsFmGnopwxdSCYOaDd/e26wAQ8c6NGy4PSldiktBiopaXxpgp0DdpvCxyHmZoXaJbJIPYXIcKq37MVVoyMOJozbDtUMtkIDMQFlsswy0AJebDRs6U1LCIIhnrTb7joXUriaawdrKP3RzP/J9MyRmPIiwD5MgUJ2ejcHBK53MXWn2euWSo601ETiDUrnRca5ueK6Er0ccpKqZzlWZ6adaEbY/4Oh9lJZAYOF5euQ1rdnrIl+9NCAnUleSBIoq56D2EThnZFo6D2fLUGGlcQZFIfU8KUy+lNUwQck6c0VBx5uF7rRyrjvAPe4OqQqdCeXHVXoKRnoSj3QMDe/azG7sSIG1ByqkYfK79EhqYoFCUqlQSZBUTvDD3MjC/aCrlhiA79rB+enNZw7jdwdDHZ15cL/VSZpniSMj2NJskpU0mFg0S3on5/4fPbbu9RKtk3PwvFsjWpQvL8UFkJul+FlZ4WMKYS/Ocg/Hs62nuhC24ubbtuL2mrYi0Lj6tfjXMkTdTz+3R06q/G+PF8GBw19lFPVE99z4J9Wv+f0CVI3fJxKVsB/AbMyOGcFymNSwTwwfiq1pKO5/Bd/m+ngQVc8Vef+/+SO8/wW8c6dIDQkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0fc1ac342fad76d0b14f861cbfa4e33f"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=59816cf02fad76d0b14f861cbfa4e3e2"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=59816cf02fad76d0b14f861cbfa4e3e2^sys_idNOT IN54e160742fad76d0b14f861cbfa4e31e"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e9f1a4742fad76d0b14f861cbfa4e362</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Update Case for Work Allocation">59816cf02fad76d0b14f861cbfa4e3e2</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned>update_status</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 16:58:47</sys_created_on>
+        <sys_id>54e160742fad76d0b14f861cbfa4e31e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 16:59:09</sys_updated_on>
+        <ui_id>737b8f40-5df3-414c-80c6-fdf69833ecc5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/5WPwQrCMBBEfyXk7Bf0Vjx5L15EZE22dTFmS3bTUkr/3QQFe/U4j5lhZrWcdcwqHbciNETbXFYb4YW2sXn0oHgTBc1iD3aCkCs/gqAhMZFnkxD8YnpOBgaMaiAEdqDEsQQ8yRhgOf+bcw8KPmEdcz1YcYlGbZ3SVFp6CIJbwRTr7o9lgkRwD/iVHh1JqeoqO+18finXyO3RzOnZB55/bHsDVXz9+RUBAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=59816cf02fad76d0b14f861cbfa4e3e2"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=59816cf02fad76d0b14f861cbfa4e3e2"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>exception_case</element>
+        <help/>
+        <hint/>
+        <label>Exception Case</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_59816cf02fad76d0b14f861cbfa4e3e2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 16:58:26</sys_created_on>
+        <sys_id>87c16c342fad76d0b14f861cbfa4e3d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 16:58:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_59816cf02fad76d0b14f861cbfa4e3e2"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>update_status</element>
+        <help/>
+        <hint/>
+        <label>Update Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_59816cf02fad76d0b14f861cbfa4e3e2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 16:58:26</sys_created_on>
+        <sys_id>87c1ac342fad76d0b14f861cbfa4e33a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 16:58:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_59816cf02fad76d0b14f861cbfa4e3e2"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>update_case_for_work_allocation</internal_name>
+        <label_cache>[{"name":"subflow.exception_case","label":"Input➛Exception Case","reference":"sn_bom_treasury_wire_service","reference_display":"CM Investigation Case","type":"reference","base_type":"reference","usedInstances":{"7187fb0d-500c-400a-b0c7-210c3a3af27c":["record"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"204ed08e-abbf-4827-b779-d74a1bfa8385","uiTypeLabel":"Reference"}}]</label_cache>
+        <master>true</master>
+        <name>Update Case for Work Allocation</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Update Case for Work Allocation">59816cf02fad76d0b14f861cbfa4e3e2</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 16:59:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f5f1a4742fad76d0b14f861cbfa4e388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 16:59:10</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=f5f1a4742fad76d0b14f861cbfa4e388"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f5f1a4742fad76d0b14f861cbfa4e388"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_f5f1a4742fad76d0b14f861cbfa4e388^id=f5f1a4742fad76d0b14f861cbfa4e388"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=f5f1a4742fad76d0b14f861cbfa4e388"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=f5f1a4742fad76d0b14f861cbfa4e388^sys_idNOT IN35f1a4742fad76d0b14f861cbfa4e389"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>f5f1a4742fad76d0b14f861cbfa4e388</id>
+        <name>Update Case for Work Allocation</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 16:59:10</sys_created_on>
+        <sys_id>35f1a4742fad76d0b14f861cbfa4e389</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 16:59:10</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=35f1a4742fad76d0b14f861cbfa4e389"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=f5f1a4742fad76d0b14f861cbfa4e388^sys_idNOT INb1f1a4742fad76d0b14f861cbfa4e38a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=204ed08e-abbf-4827-b779-d74a1bfa8385</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sn_bom_treasury_wire_service</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>exception_case</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Exception Case</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Update Case for Work Allocation">f5f1a4742fad76d0b14f861cbfa4e388</model>
+        <model_id>f5f1a4742fad76d0b14f861cbfa4e388</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_f5f1a4742fad76d0b14f861cbfa4e388</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sn_bom_treasury_wire_service">sn_bom_treasury_wire_service</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 16:59:10</sys_created_on>
+        <sys_id>b1f1a4742fad76d0b14f861cbfa4e38a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 16:59:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b1f1a4742fad76d0b14f861cbfa4e38a"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=f5f1a4742fad76d0b14f861cbfa4e388^sys_idNOT INfdf1a4742fad76d0b14f861cbfa4e39a"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=854d1fe9-6e4f-450f-86b8-c82f5070fb6e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>update_status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Update Status</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Case for Work Allocation">f5f1a4742fad76d0b14f861cbfa4e388</model>
+        <model_id>f5f1a4742fad76d0b14f861cbfa4e388</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_f5f1a4742fad76d0b14f861cbfa4e388</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 16:59:11</sys_created_on>
+        <sys_id>fdf1a4742fad76d0b14f861cbfa4e39a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 16:59:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fdf1a4742fad76d0b14f861cbfa4e39a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f5f1a4742fad76d0b14f861cbfa4e388"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=f5f1a4742fad76d0b14f861cbfa4e388"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=f5f1a4742fad76d0b14f861cbfa4e388^sys_idNOT IN46f1a4742fad76d0b14f861cbfa4e3b3"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Update Case for Work Allocation">f5f1a4742fad76d0b14f861cbfa4e388</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 16:59:11</sys_created_on>
+        <sys_id>46f1a4742fad76d0b14f861cbfa4e3b3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 16:59:11</sys_updated_on>
+        <ui_id>7187fb0d-500c-400a-b0c7-210c3a3af27c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy27iMBT9FeQ1QglQ1LIbgZAq9SG1IzadKrqxL2DJcTK2w2MQ/z7XiQMIqg6VukGT3X3Z55ycm7xtmRRsyPooovguHvBe3Ot1o6h724/TQS+Nu6IHiDFrMw0ZUqdBnhtB8RJU6RPbrS3TmcpXHVxzLJzMdcLB4m5HTULaQsFmGnopwxdSCYOaDd/e26wAQ8c6NGy4PSldiktBiopaXxpgp0DdpvCxyHmZoXaJbJIPYXIcKq37MVVoyMOJozbDtUMtkIDMQFlsswy0AJebDRs6U1LCIIhnrTb7joXUriaawdrKP3RzP/J9MyRmPIiwD5MgUJ2ejcHBK53MXWn2euWSo601ETiDUrnRca5ueK6Er0ccpKqZzlWZ6adaEbY/4Oh9lJZAYOF5euQ1rdnrIl+9NCAnUleSBIoq56D2EThnZFo6D2fLUGGlcQZFIfU8KUy+lNUwQck6c0VBx5uF7rRyrjvAPe4OqQqdCeXHVXoKRnoSj3QMDe/azG7sSIG1ByqkYfK79EhqYoFCUqlQSZBUTvDD3MjC/aCrlhiA79rB+enNZw7jdwdDHZ15cL/VSZpniSMj2NJskpU0mFg0S3on5/4fPbbu9RKtk3PwvFsjWpQvL8UFkJul+FlZ4WMKYS/Ocg/Hs62nuhC24ubbtuL2mrYi0Lj6tfjXMkTdTz+3R06q/G+PF8GBw19lFPVE99z4J9Wv+f0CVI3fJxKVsB/AbMyOGcFymNSwTwwfiq1pKO5/Bd/m+ngQVc8Vef+/+SO8/wW8c6dIDQkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=46f1a4742fad76d0b14f861cbfa4e3b3"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=f5f1a4742fad76d0b14f861cbfa4e388"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=f5f1a4742fad76d0b14f861cbfa4e388^sys_idNOT INcef1a4742fad76d0b14f861cbfa4e3b1"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e9f1a4742fad76d0b14f861cbfa4e362</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Update Case for Work Allocation">f5f1a4742fad76d0b14f861cbfa4e388</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned>update_status</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 16:59:11</sys_created_on>
+        <sys_id>cef1a4742fad76d0b14f861cbfa4e3b1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 16:59:11</sys_updated_on>
+        <ui_id>737b8f40-5df3-414c-80c6-fdf69833ecc5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/5VTyW7bMBD9FYFn25Adb/UtcBAgQNoAtZNLEQgjcmgToUiFix3XyL93KMkLGvTQm+ZxlvfejI7MxlDH4Nf21nu1MWzx68gMVMgWLNYCAhY+QIie9dgOdEz4EjxmymfG7jOHIA6ZtC6DDZqQgdaWQ1DWUIFQvtZwePnfOr5VWjhMZF57rAZHfAI6tjgyZejDgH5U5o1afklWglA+40PgN+ORBDGbirwcjuV8OuSlhDHejICqNJSoKfW50ZitThr/IT0c6gT74JTZdPFj12J1Aq0TieSwx/AjoBFIXCRojz1WgaGG1h3OSDLgyegLsCVpraIKPrz6TfPmeZ6nTImkj2P7eg6Lzt4WlncQgKhEHqLDkzVWcfStMwIlRB2W11ib8FQ3vjclAUp9qrY6VuZHawg7Nzhtk5DoiQTWSWri3gmRq63d/zyxvFemcaV7TFvW5wgCeVfGkPgcWVTrv2xukS9Go8aKJhYV1DUhRe3sTjVTiHQ12GgKBlLbPbFLRz0AnhQOaAUwuCf8roFfwKkk9zu1oeI07tmo94gP6Yjmk7EYSvzWn+JY9seTXPbn03Le5/ORnOSzXJZTZJ895g9+qcH7i1G0oeI9JpmtbZ1BRetxKuFO1eGWSO2w8+Iz3a5Jf2K7mV3H7bw8rjxJWCfs4SpPHOhiFb+G9ta9JfEX7PMPpd+UaucDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f5f1a4742fad76d0b14f861cbfa4e388"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=f5f1a4742fad76d0b14f861cbfa4e388"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>exception_case</element>
+        <help/>
+        <hint/>
+        <label>Exception Case</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_f5f1a4742fad76d0b14f861cbfa4e388</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 16:59:10</sys_created_on>
+        <sys_id>f1f1a4742fad76d0b14f861cbfa4e396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 16:59:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_f5f1a4742fad76d0b14f861cbfa4e388"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>update_status</element>
+        <help/>
+        <hint/>
+        <label>Update Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_f5f1a4742fad76d0b14f861cbfa4e388</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 16:59:11</sys_created_on>
+        <sys_id>cef1a4742fad76d0b14f861cbfa4e39f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 16:59:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_f5f1a4742fad76d0b14f861cbfa4e388"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>59816cf02fad76d0b14f861cbfa4e3e2</sys_id>
+        <latest_snapshot>f5f1a4742fad76d0b14f861cbfa4e388</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch1-hotfix1a-09-24-2025_10-14-2025_2100.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=59816cf02fad76d0b14f861cbfa4e3e2"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=59816cf02fad76d0b14f861cbfa4e3e2^sys_idNOT IN82f1a4742fad76d0b14f861cbfa4e3bb"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"82f1a4742fad76d0b14f861cbfa4e3bb","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Update Case for Work Allocation">59816cf02fad76d0b14f861cbfa4e3e2</plan_id>
+        <snapshot>e107e83093e93e900f91fce79503d6b3</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 16:59:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>82f1a4742fad76d0b14f861cbfa4e3bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 16:59:11</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

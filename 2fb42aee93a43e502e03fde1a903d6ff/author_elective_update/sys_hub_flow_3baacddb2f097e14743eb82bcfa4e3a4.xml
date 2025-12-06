@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=61000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>set_wire_case_parameters</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛Wire Service Case Record","reference":"sn_bom_treasury_wire_service","reference_display":"Wire Service Case","type":"reference","base_type":"reference","usedInstances":{"317b7ea8-2228-47f6-bb12-69084694126e":["record"]},"attributes":{}}]</label_cache>
+        <master_snapshot>03eac91f2f097e14743eb82bcfa4e3ba</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Set Wire Case Parameters</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>1bea0d1f2f097e14743eb82bcfa4e30a</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:50:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3baacddb2f097e14743eb82bcfa4e3a4</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Set Wire Case Parameters</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sys_hub_flow_3baacddb2f097e14743eb82bcfa4e3a4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:59:33</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record display_value="Created 2025-11-11 12:51:33 PM">e7ea0d1f2f097e14743eb82bcfa4e337</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=3baacddb2f097e14743eb82bcfa4e3a4"/>
+    <sys_variable_value action="DELETE" query="document_key=3baacddb2f097e14743eb82bcfa4e3a4"/>
+    <sys_flow_record_trigger action="DELETE">
+        <active>true</active>
+        <condition table="sn_bom_treasury_wire_service">state=1<item display_value="New" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:51:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1bea0d1f2f097e14743eb82bcfa4e30a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:51:32</sys_updated_on>
+        <table>sn_bom_treasury_wire_service</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="DELETE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>3baacddb2f097e14743eb82bcfa4e3a4</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:51:32</sys_created_on>
+        <sys_id>97ea0d1f2f097e14743eb82bcfa4e30b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:51:32</sys_updated_on>
+        <trigger display_value="">1bea0d1f2f097e14743eb82bcfa4e30a</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="DELETE" query="identifier=3baacddb2f097e14743eb82bcfa4e3a4^sys_idNOT IN97ea0d1f2f097e14743eb82bcfa4e30b"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=3baacddb2f097e14743eb82bcfa4e3a4"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=3baacddb2f097e14743eb82bcfa4e3a4^sys_idNOT INf3aa411f2f097e14743eb82bcfa4e3bc"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>3baacddb2f097e14743eb82bcfa4e3a4</id>
+        <name>Set Wire Case Parameters</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:50:29</sys_created_on>
+        <sys_id>f3aa411f2f097e14743eb82bcfa4e3bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:50:29</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=f3aa411f2f097e14743eb82bcfa4e3bc"/>
+    <sys_hub_flow_input action="DELETE" query="model=3baacddb2f097e14743eb82bcfa4e3a4^sys_idNOT IN56bac11f2f097e14743eb82bcfa4e331,8aba811f2f097e14743eb82bcfa4e3db,92bac11f2f097e14743eb82bcfa4e32a"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Set Wire Case Parameters">3baacddb2f097e14743eb82bcfa4e3a4</model>
+        <model_id>3baacddb2f097e14743eb82bcfa4e3a4</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3baacddb2f097e14743eb82bcfa4e3a4</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:50:38</sys_created_on>
+        <sys_id>56bac11f2f097e14743eb82bcfa4e331</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:50:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=56bac11f2f097e14743eb82bcfa4e331"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Set Wire Case Parameters">3baacddb2f097e14743eb82bcfa4e3a4</model>
+        <model_id>3baacddb2f097e14743eb82bcfa4e3a4</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3baacddb2f097e14743eb82bcfa4e3a4</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:50:38</sys_created_on>
+        <sys_id>8aba811f2f097e14743eb82bcfa4e3db</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:51:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=8aba811f2f097e14743eb82bcfa4e3db"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Set Wire Case Parameters">3baacddb2f097e14743eb82bcfa4e3a4</model>
+        <model_id>3baacddb2f097e14743eb82bcfa4e3a4</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_3baacddb2f097e14743eb82bcfa4e3a4</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:50:38</sys_created_on>
+        <sys_id>92bac11f2f097e14743eb82bcfa4e32a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:51:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=92bac11f2f097e14743eb82bcfa4e32a"/>
+    <sys_hub_flow_output action="DELETE" query="model=3baacddb2f097e14743eb82bcfa4e3a4"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=3baacddb2f097e14743eb82bcfa4e3a4"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=3baacddb2f097e14743eb82bcfa4e3a4^sys_idNOT INceba411f2f097e14743eb82bcfa4e3dc"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Set Wire Case Parameters">3baacddb2f097e14743eb82bcfa4e3a4</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:50:37</sys_created_on>
+        <sys_id>ceba411f2f097e14743eb82bcfa4e3dc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:51:30</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=3baacddb2f097e14743eb82bcfa4e3a4^sys_idNOT INc5da451f2f097e14743eb82bcfa4e330"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Set Wire Case Parameters">3baacddb2f097e14743eb82bcfa4e3a4</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:51:07</sys_created_on>
+        <sys_id>c5da451f2f097e14743eb82bcfa4e330</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-11-11 20:28:14</sys_updated_on>
+        <ui_id>317b7ea8-2228-47f6-bb12-69084694126e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVTW+bQBD9K9aeEQLjWIlvlS1LldJEilv3kCZoYQd7pWWh+2HHtfzfO8CCkROljpSLVW4zb2b3vWEePO4JZ2RCRsCC8CYcp1EYRcMgGF6PwmQcJeGQRRQgJB6RNAesVJAWimG8ocJWif3+R8moARaHfmqVAmkOB8QZ16Wgu6Urw0y65oIhTiaPTx4pqcITDSgy2Z9A51ISNAGBpQ8tp1OOZldWMStSmyOvmLfJW9c5c8jg6wwRbKrohIFH4MWAZIBEMio0eCSnElUWakcmRllMKKDsXopdV7Hm0jRCc/qi+R+8eRRUdRmgstQNoQtjN6Amnc2ooQs8OTVWdfMqeAq6mQmDjFphpv1cU3BfGl7IpsXQRLTdhbC5vGsmQroDeu/DaiQBZaWzYt7IyhbrYvvQkpxzWY/ESRRFSkUXUWMUT6yp6OwJCKhnnNOy5HIVl6rY8LoZqeT+SmDgZ6LY4p2ar6RP04q3j1Ol/hzzszq9pIpXIr7hMdh88Ije6amgWh+l4Azj37Zi0ghzEuJ6CvUI4noTquZU8dJ8was24IgfPLf0ydV7G5beHBeqd+Zx8bWMkyKPDS6CtmoXb7mCWIPa4Dt5vf8/ER0sGnQwpRo+bIgz6LaG+F6vwdv0nSde5W77vYO7BnCOuPo0R1xfkiOcjIu3xL+MEAzf/dT2Nqnefd03gcFP/y8bBBELg2ekhHxrzStV2LIBXpvhzK6P+eMMFa0/5hwE02/Ias0BOdI1EDcyTwziwMHSgd1v49NcEo6D+rkgr/w3f4+nvxzRk600CQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=c5da451f2f097e14743eb82bcfa4e330"/>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=3baacddb2f097e14743eb82bcfa4e3a4"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=3baacddb2f097e14743eb82bcfa4e3a4"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=3baacddb2f097e14743eb82bcfa4e3a4"/>
+    <sys_hub_flow_variable action="DELETE" query="model=3baacddb2f097e14743eb82bcfa4e3a4"/>
+    <sys_documentation action="DELETE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3baacddb2f097e14743eb82bcfa4e3a4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:50:39</sys_created_on>
+        <sys_id>1abac11f2f097e14743eb82bcfa4e336</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:50:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3baacddb2f097e14743eb82bcfa4e3a4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:50:38</sys_created_on>
+        <sys_id>1ebac11f2f097e14743eb82bcfa4e32e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:50:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3baacddb2f097e14743eb82bcfa4e3a4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:50:38</sys_created_on>
+        <sys_id>d2bac11f2f097e14743eb82bcfa4e327</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:50:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_3baacddb2f097e14743eb82bcfa4e3a4"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_3baacddb2f097e14743eb82bcfa4e3a4"/>
+    <sys_hub_flow_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>set_wire_case_parameters</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛Wire Service Case Record","reference":"sn_bom_treasury_wire_service","reference_display":"Wire Service Case","type":"reference","base_type":"reference","usedInstances":{"317b7ea8-2228-47f6-bb12-69084694126e":["record"]},"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Set Wire Case Parameters</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Set Wire Case Parameters">3baacddb2f097e14743eb82bcfa4e3a4</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:51:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>03eac91f2f097e14743eb82bcfa4e3ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:51:31</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=03eac91f2f097e14743eb82bcfa4e3ba"/>
+    <sys_variable_value action="DELETE" query="document_key=03eac91f2f097e14743eb82bcfa4e3ba"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=03eac91f2f097e14743eb82bcfa4e3ba"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=03eac91f2f097e14743eb82bcfa4e3ba^sys_idNOT IN4feac91f2f097e14743eb82bcfa4e3ba"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>03eac91f2f097e14743eb82bcfa4e3ba</id>
+        <name>Set Wire Case Parameters</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:51:31</sys_created_on>
+        <sys_id>4feac91f2f097e14743eb82bcfa4e3ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:51:31</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=4feac91f2f097e14743eb82bcfa4e3ba"/>
+    <sys_hub_flow_input action="DELETE" query="model=03eac91f2f097e14743eb82bcfa4e3ba^sys_idNOT INcbeac91f2f097e14743eb82bcfa4e3bb,cfeac91f2f097e14743eb82bcfa4e3df,cfeac91f2f097e14743eb82bcfa4e3f3"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Set Wire Case Parameters">03eac91f2f097e14743eb82bcfa4e3ba</model>
+        <model_id>03eac91f2f097e14743eb82bcfa4e3ba</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_03eac91f2f097e14743eb82bcfa4e3ba</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:51:31</sys_created_on>
+        <sys_id>cbeac91f2f097e14743eb82bcfa4e3bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:51:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=cbeac91f2f097e14743eb82bcfa4e3bb"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Set Wire Case Parameters">03eac91f2f097e14743eb82bcfa4e3ba</model>
+        <model_id>03eac91f2f097e14743eb82bcfa4e3ba</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_03eac91f2f097e14743eb82bcfa4e3ba</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:51:31</sys_created_on>
+        <sys_id>cfeac91f2f097e14743eb82bcfa4e3df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:51:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=cfeac91f2f097e14743eb82bcfa4e3df"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Set Wire Case Parameters">03eac91f2f097e14743eb82bcfa4e3ba</model>
+        <model_id>03eac91f2f097e14743eb82bcfa4e3ba</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_03eac91f2f097e14743eb82bcfa4e3ba</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:51:31</sys_created_on>
+        <sys_id>cfeac91f2f097e14743eb82bcfa4e3f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:51:31</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=cfeac91f2f097e14743eb82bcfa4e3f3"/>
+    <sys_hub_flow_output action="DELETE" query="model=03eac91f2f097e14743eb82bcfa4e3ba"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=03eac91f2f097e14743eb82bcfa4e3ba"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=03eac91f2f097e14743eb82bcfa4e3ba^sys_idNOT IN5fea0d1f2f097e14743eb82bcfa4e302"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Set Wire Case Parameters">03eac91f2f097e14743eb82bcfa4e3ba</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:51:31</sys_created_on>
+        <sys_id>5fea0d1f2f097e14743eb82bcfa4e302</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:51:31</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=03eac91f2f097e14743eb82bcfa4e3ba^sys_idNOT IN8fea0d1f2f097e14743eb82bcfa4e300"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Set Wire Case Parameters">03eac91f2f097e14743eb82bcfa4e3ba</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:51:31</sys_created_on>
+        <sys_id>8fea0d1f2f097e14743eb82bcfa4e300</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:51:31</sys_updated_on>
+        <ui_id>317b7ea8-2228-47f6-bb12-69084694126e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVTW+bQBD9K9aeEQLjWIlvlS1LldJEilv3kCZoYQd7pWWh+2HHtfzfO8CCkROljpSLVW4zb2b3vWEePO4JZ2RCRsCC8CYcp1EYRcMgGF6PwmQcJeGQRRQgJB6RNAesVJAWimG8ocJWif3+R8moARaHfmqVAmkOB8QZ16Wgu6Urw0y65oIhTiaPTx4pqcITDSgy2Z9A51ISNAGBpQ8tp1OOZldWMStSmyOvmLfJW9c5c8jg6wwRbKrohIFH4MWAZIBEMio0eCSnElUWakcmRllMKKDsXopdV7Hm0jRCc/qi+R+8eRRUdRmgstQNoQtjN6Amnc2ooQs8OTVWdfMqeAq6mQmDjFphpv1cU3BfGl7IpsXQRLTdhbC5vGsmQroDeu/DaiQBZaWzYt7IyhbrYvvQkpxzWY/ESRRFSkUXUWMUT6yp6OwJCKhnnNOy5HIVl6rY8LoZqeT+SmDgZ6LY4p2ar6RP04q3j1Ol/hzzszq9pIpXIr7hMdh88Ije6amgWh+l4Azj37Zi0ghzEuJ6CvUI4noTquZU8dJ8was24IgfPLf0ydV7G5beHBeqd+Zx8bWMkyKPDS6CtmoXb7mCWIPa4Dt5vf8/ER0sGnQwpRo+bIgz6LaG+F6vwdv0nSde5W77vYO7BnCOuPo0R1xfkiOcjIu3xL+MEAzf/dT2Nqnefd03gcFP/y8bBBELg2ekhHxrzStV2LIBXpvhzK6P+eMMFa0/5hwE02/Ias0BOdI1EDcyTwziwMHSgd1v49NcEo6D+rkgr/w3f4+nvxzRk600CQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=8fea0d1f2f097e14743eb82bcfa4e300"/>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=03eac91f2f097e14743eb82bcfa4e3ba"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=03eac91f2f097e14743eb82bcfa4e3ba"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=03eac91f2f097e14743eb82bcfa4e3ba"/>
+    <sys_hub_flow_variable action="DELETE" query="model=03eac91f2f097e14743eb82bcfa4e3ba"/>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_03eac91f2f097e14743eb82bcfa4e3ba</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:51:31</sys_created_on>
+        <sys_id>0feac91f2f097e14743eb82bcfa4e3f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:51:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_03eac91f2f097e14743eb82bcfa4e3ba</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:51:31</sys_created_on>
+        <sys_id>87eac91f2f097e14743eb82bcfa4e3dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:51:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_03eac91f2f097e14743eb82bcfa4e3ba</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:51:31</sys_created_on>
+        <sys_id>87eac91f2f097e14743eb82bcfa4e3f1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:51:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_03eac91f2f097e14743eb82bcfa4e3ba"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_03eac91f2f097e14743eb82bcfa4e3ba"/>
+    <sys_hub_flow action="DELETE">
+        <sys_id>3baacddb2f097e14743eb82bcfa4e3a4</sys_id>
+        <latest_snapshot>03eac91f2f097e14743eb82bcfa4e3ba</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch1-hotfix1-09-18-2025_09-20-2025_1616.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=3baacddb2f097e14743eb82bcfa4e3a4^sys_idNOT IN1fea0d1f2f097e14743eb82bcfa4e30c"/>
+    <sys_flow_trigger_plan action="DELETE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"1fea0d1f2f097e14743eb82bcfa4e30c","name":"plan","plan_signature":null}}</plan>
+        <plan_id>3baacddb2f097e14743eb82bcfa4e3a4</plan_id>
+        <snapshot>dece6d5b934132140f91fce79503d6dd</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-11 17:51:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1fea0d1f2f097e14743eb82bcfa4e30c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-11 17:51:32</sys_updated_on>
+        <trigger display_value="">1bea0d1f2f097e14743eb82bcfa4e30a</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=3baacddb2f097e14743eb82bcfa4e3a4"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</application>
+        <file_path/>
+        <instance_id>a434dbe42b687e102fdcfcd2ce91bfe9</instance_id>
+        <instance_name>demofsobzu130015</instance_name>
+        <name>sys_hub_flow_3baacddb2f097e14743eb82bcfa4e3a4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=61000,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;28100&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;generation_source/&gt;&lt;internal_name&gt;set_wire_case_parameters&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"Updated_1.current","label":"Trigger - Record Updated➛Wire Service Case Record","reference":"sn_bom_treasury_wire_service","reference_display":"Wire Service Case","type":"reference","base_type":"reference","usedInstances":{"317b7ea8-2228-47f6-bb12-69084694126e":["record"]},"attributes":{}}]&lt;/label_cache&gt;&lt;master_snapshot&gt;03eac91f2f097e14743eb82bcfa4e3ba&lt;/master_snapshot&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;Set Wire Case Parameters&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id&gt;1bea0d1f2f097e14743eb82bcfa4e30a&lt;/remote_trigger_id&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;published&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:50:29&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;3baacddb2f097e14743eb82bcfa4e3a4&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_name&gt;Set Wire Case Parameters&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_3baacddb2f097e14743eb82bcfa4e3a4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-12 02:59:33&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;updation_source/&gt;&lt;version&gt;2&lt;/version&gt;&lt;version_record display_value="Created 2025-11-11 12:51:33 PM"&gt;e7ea0d1f2f097e14743eb82bcfa4e337&lt;/version_record&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=3baacddb2f097e14743eb82bcfa4e3a4"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=3baacddb2f097e14743eb82bcfa4e3a4"/&gt;&lt;sys_flow_record_trigger action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;condition table="sn_bom_treasury_wire_service"&gt;state=1&lt;item display_value="New" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/&gt;&lt;/condition&gt;&lt;name/&gt;&lt;on_delete&gt;false&lt;/on_delete&gt;&lt;on_insert&gt;false&lt;/on_insert&gt;&lt;on_update&gt;true&lt;/on_update&gt;&lt;published_version/&gt;&lt;run_flow_in&gt;background&lt;/run_flow_in&gt;&lt;run_on_extended&gt;false&lt;/run_on_extended&gt;&lt;run_when_setting&gt;both&lt;/run_when_setting&gt;&lt;run_when_user_list/&gt;&lt;run_when_user_setting&gt;any&lt;/run_when_user_setting&gt;&lt;sys_class_name&gt;sys_flow_record_trigger&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:51:32&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;1bea0d1f2f097e14743eb82bcfa4e30a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:51:32&lt;/sys_updated_on&gt;&lt;table&gt;sn_bom_treasury_wire_service&lt;/table&gt;&lt;trigger_definition/&gt;&lt;/sys_flow_record_trigger&gt;&lt;sys_trigger_runner_mapping action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;data&gt;{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}&lt;/data&gt;&lt;identifier&gt;3baacddb2f097e14743eb82bcfa4e3a4&lt;/identifier&gt;&lt;runner&gt;FDTriggerRunner&lt;/runner&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:51:32&lt;/sys_created_on&gt;&lt;sys_id&gt;97ea0d1f2f097e14743eb82bcfa4e30b&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:51:32&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;1bea0d1f2f097e14743eb82bcfa4e30a&lt;/trigger&gt;&lt;/sys_trigger_runner_mapping&gt;&lt;sys_trigger_runner_mapping action="delete_multiple" query="identifier=3baacddb2f097e14743eb82bcfa4e3a4^sys_idNOT IN97ea0d1f2f097e14743eb82bcfa4e30b"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=3baacddb2f097e14743eb82bcfa4e3a4"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=3baacddb2f097e14743eb82bcfa4e3a4^sys_idNOT INf3aa411f2f097e14743eb82bcfa4e3bc"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;3baacddb2f097e14743eb82bcfa4e3a4&lt;/id&gt;&lt;name&gt;Set Wire Case Parameters&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:50:29&lt;/sys_created_on&gt;&lt;sys_id&gt;f3aa411f2f097e14743eb82bcfa4e3bc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:50:29&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f3aa411f2f097e14743eb82bcfa4e3bc"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=3baacddb2f097e14743eb82bcfa4e3a4^sys_idNOT IN56bac11f2f097e14743eb82bcfa4e331,8aba811f2f097e14743eb82bcfa4e3db,92bac11f2f097e14743eb82bcfa4e32a"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;4000&lt;/max_length&gt;&lt;model display_value="Set Wire Case Parameters"&gt;3baacddb2f097e14743eb82bcfa4e3a4&lt;/model&gt;&lt;model_id&gt;3baacddb2f097e14743eb82bcfa4e3a4&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_3baacddb2f097e14743eb82bcfa4e3a4&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:50:38&lt;/sys_created_on&gt;&lt;sys_id&gt;56bac11f2f097e14743eb82bcfa4e331&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:50:38&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=56bac11f2f097e14743eb82bcfa4e331"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Set Wire Case Parameters"&gt;3baacddb2f097e14743eb82bcfa4e3a4&lt;/model&gt;&lt;model_id&gt;3baacddb2f097e14743eb82bcfa4e3a4&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_3baacddb2f097e14743eb82bcfa4e3a4&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:50:38&lt;/sys_created_on&gt;&lt;sys_id&gt;8aba811f2f097e14743eb82bcfa4e3db&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:51:30&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8aba811f2f097e14743eb82bcfa4e3db"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent&gt;table_name&lt;/dependent&gt;&lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Set Wire Case Parameters"&gt;3baacddb2f097e14743eb82bcfa4e3a4&lt;/model&gt;&lt;model_id&gt;3baacddb2f097e14743eb82bcfa4e3a4&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_3baacddb2f097e14743eb82bcfa4e3a4&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:50:38&lt;/sys_created_on&gt;&lt;sys_id&gt;92bac11f2f097e14743eb82bcfa4e32a&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:51:30&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;true&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=92bac11f2f097e14743eb82bcfa4e32a"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=3baacddb2f097e14743eb82bcfa4e3a4"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=3baacddb2f097e14743eb82bcfa4e3a4"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=3baacddb2f097e14743eb82bcfa4e3a4^sys_idNOT INceba411f2f097e14743eb82bcfa4e3dc"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Set Wire Case Parameters"&gt;3baacddb2f097e14743eb82bcfa4e3a4&lt;/flow&gt;&lt;generation_source/&gt;&lt;name&gt;Updated&lt;/name&gt;&lt;published_version/&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:50:37&lt;/sys_created_on&gt;&lt;sys_id&gt;ceba411f2f097e14743eb82bcfa4e3dc&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:51:30&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Updated"&gt;bb695e60c31322002841b63b12d3aea5&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;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&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_update&lt;/trigger_type&gt;&lt;updation_source/&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=3baacddb2f097e14743eb82bcfa4e3a4^sys_idNOT INc5da451f2f097e14743eb82bcfa4e330"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;&lt;action_type_parent display_value="Update Record"&gt;baf174c8c3c232002841b63b12d3aee4&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Set Wire Case Parameters"&gt;3baacddb2f097e14743eb82bcfa4e3a4&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:51:07&lt;/sys_created_on&gt;&lt;sys_id&gt;c5da451f2f097e14743eb82bcfa4e330&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_updated_by&gt;system&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 20:28:14&lt;/sys_updated_on&gt;&lt;ui_id&gt;317b7ea8-2228-47f6-bb12-69084694126e&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+VVTW+bQBD9K9aeEQLjWIlvlS1LldJEilv3kCZoYQd7pWWh+2HHtfzfO8CCkROljpSLVW4zb2b3vWEePO4JZ2RCRsCC8CYcp1EYRcMgGF6PwmQcJeGQRRQgJB6RNAesVJAWimG8ocJWif3+R8moARaHfmqVAmkOB8QZ16Wgu6Urw0y65oIhTiaPTx4pqcITDSgy2Z9A51ISNAGBpQ8tp1OOZldWMStSmyOvmLfJW9c5c8jg6wwRbKrohIFH4MWAZIBEMio0eCSnElUWakcmRllMKKDsXopdV7Hm0jRCc/qi+R+8eRRUdRmgstQNoQtjN6Amnc2ooQs8OTVWdfMqeAq6mQmDjFphpv1cU3BfGl7IpsXQRLTdhbC5vGsmQroDeu/DaiQBZaWzYt7IyhbrYvvQkpxzWY/ESRRFSkUXUWMUT6yp6OwJCKhnnNOy5HIVl6rY8LoZqeT+SmDgZ6LY4p2ar6RP04q3j1Ol/hzzszq9pIpXIr7hMdh88Ije6amgWh+l4Azj37Zi0ghzEuJ6CvUI4noTquZU8dJ8was24IgfPLf0ydV7G5beHBeqd+Zx8bWMkyKPDS6CtmoXb7mCWIPa4Dt5vf8/ER0sGnQwpRo+bIgz6LaG+F6vwdv0nSde5W77vYO7BnCOuPo0R1xfkiOcjIu3xL+MEAzf/dT2Nqnefd03gcFP/y8bBBELg2ekhHxrzStV2LIBXpvhzK6P+eMMFa0/5hwE02/Ias0BOdI1EDcyTwziwMHSgd1v49NcEo6D+rkgr/w3f4+nvxzRk600CQAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=c5da451f2f097e14743eb82bcfa4e330"/&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=3baacddb2f097e14743eb82bcfa4e3a4"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=3baacddb2f097e14743eb82bcfa4e3a4"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=3baacddb2f097e14743eb82bcfa4e3a4"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=3baacddb2f097e14743eb82bcfa4e3a4"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_3baacddb2f097e14743eb82bcfa4e3a4&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:50:39&lt;/sys_created_on&gt;&lt;sys_id&gt;1abac11f2f097e14743eb82bcfa4e336&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:50:39&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_3baacddb2f097e14743eb82bcfa4e3a4&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:50:38&lt;/sys_created_on&gt;&lt;sys_id&gt;1ebac11f2f097e14743eb82bcfa4e32e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:50:38&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_3baacddb2f097e14743eb82bcfa4e3a4&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:50:38&lt;/sys_created_on&gt;&lt;sys_id&gt;d2bac11f2f097e14743eb82bcfa4e327&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:50:38&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3baacddb2f097e14743eb82bcfa4e3a4"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3baacddb2f097e14743eb82bcfa4e3a4"/&gt;&lt;sys_hub_flow_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;28100&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;flow_priority&gt;MEDIUM&lt;/flow_priority&gt;&lt;internal_name&gt;set_wire_case_parameters&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"Updated_1.current","label":"Trigger - Record Updated➛Wire Service Case Record","reference":"sn_bom_treasury_wire_service","reference_display":"Wire Service Case","type":"reference","base_type":"reference","usedInstances":{"317b7ea8-2228-47f6-bb12-69084694126e":["record"]},"attributes":{}}]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;Set Wire Case Parameters&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;parent_flow display_value="Set Wire Case Parameters"&gt;3baacddb2f097e14743eb82bcfa4e3a4&lt;/parent_flow&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;status&gt;published&lt;/status&gt;&lt;sys_class_name&gt;sys_hub_flow_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:51:31&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;03eac91f2f097e14743eb82bcfa4e3ba&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:51:31&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=03eac91f2f097e14743eb82bcfa4e3ba"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=03eac91f2f097e14743eb82bcfa4e3ba"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=03eac91f2f097e14743eb82bcfa4e3ba"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=03eac91f2f097e14743eb82bcfa4e3ba^sys_idNOT IN4feac91f2f097e14743eb82bcfa4e3ba"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;03eac91f2f097e14743eb82bcfa4e3ba&lt;/id&gt;&lt;name&gt;Set Wire Case Parameters&lt;/name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:51:31&lt;/sys_created_on&gt;&lt;sys_id&gt;4feac91f2f097e14743eb82bcfa4e3ba&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:51:31&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4feac91f2f097e14743eb82bcfa4e3ba"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=03eac91f2f097e14743eb82bcfa4e3ba^sys_idNOT INcbeac91f2f097e14743eb82bcfa4e3bb,cfeac91f2f097e14743eb82bcfa4e3df,cfeac91f2f097e14743eb82bcfa4e3f3"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent&gt;table_name&lt;/dependent&gt;&lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Set Wire Case Parameters"&gt;03eac91f2f097e14743eb82bcfa4e3ba&lt;/model&gt;&lt;model_id&gt;03eac91f2f097e14743eb82bcfa4e3ba&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_03eac91f2f097e14743eb82bcfa4e3ba&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:51:31&lt;/sys_created_on&gt;&lt;sys_id&gt;cbeac91f2f097e14743eb82bcfa4e3bb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:51:31&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;true&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cbeac91f2f097e14743eb82bcfa4e3bb"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;4000&lt;/max_length&gt;&lt;model display_value="Set Wire Case Parameters"&gt;03eac91f2f097e14743eb82bcfa4e3ba&lt;/model&gt;&lt;model_id&gt;03eac91f2f097e14743eb82bcfa4e3ba&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_03eac91f2f097e14743eb82bcfa4e3ba&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:51:31&lt;/sys_created_on&gt;&lt;sys_id&gt;cfeac91f2f097e14743eb82bcfa4e3df&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:51:31&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cfeac91f2f097e14743eb82bcfa4e3df"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="Set Wire Case Parameters"&gt;03eac91f2f097e14743eb82bcfa4e3ba&lt;/model&gt;&lt;model_id&gt;03eac91f2f097e14743eb82bcfa4e3ba&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_03eac91f2f097e14743eb82bcfa4e3ba&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:51:31&lt;/sys_created_on&gt;&lt;sys_id&gt;cfeac91f2f097e14743eb82bcfa4e3f3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:51:31&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cfeac91f2f097e14743eb82bcfa4e3f3"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=03eac91f2f097e14743eb82bcfa4e3ba"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=03eac91f2f097e14743eb82bcfa4e3ba"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=03eac91f2f097e14743eb82bcfa4e3ba^sys_idNOT IN5fea0d1f2f097e14743eb82bcfa4e302"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Set Wire Case Parameters"&gt;03eac91f2f097e14743eb82bcfa4e3ba&lt;/flow&gt;&lt;generation_source/&gt;&lt;name&gt;Updated&lt;/name&gt;&lt;published_version/&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:51:31&lt;/sys_created_on&gt;&lt;sys_id&gt;5fea0d1f2f097e14743eb82bcfa4e302&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:51:31&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Updated"&gt;bb695e60c31322002841b63b12d3aea5&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;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&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_update&lt;/trigger_type&gt;&lt;updation_source/&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=03eac91f2f097e14743eb82bcfa4e3ba^sys_idNOT IN8fea0d1f2f097e14743eb82bcfa4e300"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;&lt;action_type_parent display_value="Update Record"&gt;baf174c8c3c232002841b63b12d3aee4&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="Set Wire Case Parameters"&gt;03eac91f2f097e14743eb82bcfa4e3ba&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:51:31&lt;/sys_created_on&gt;&lt;sys_id&gt;8fea0d1f2f097e14743eb82bcfa4e300&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:51:31&lt;/sys_updated_on&gt;&lt;ui_id&gt;317b7ea8-2228-47f6-bb12-69084694126e&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+VVTW+bQBD9K9aeEQLjWIlvlS1LldJEilv3kCZoYQd7pWWh+2HHtfzfO8CCkROljpSLVW4zb2b3vWEePO4JZ2RCRsCC8CYcp1EYRcMgGF6PwmQcJeGQRRQgJB6RNAesVJAWimG8ocJWif3+R8moARaHfmqVAmkOB8QZ16Wgu6Urw0y65oIhTiaPTx4pqcITDSgy2Z9A51ISNAGBpQ8tp1OOZldWMStSmyOvmLfJW9c5c8jg6wwRbKrohIFH4MWAZIBEMio0eCSnElUWakcmRllMKKDsXopdV7Hm0jRCc/qi+R+8eRRUdRmgstQNoQtjN6Amnc2ooQs8OTVWdfMqeAq6mQmDjFphpv1cU3BfGl7IpsXQRLTdhbC5vGsmQroDeu/DaiQBZaWzYt7IyhbrYvvQkpxzWY/ESRRFSkUXUWMUT6yp6OwJCKhnnNOy5HIVl6rY8LoZqeT+SmDgZ6LY4p2ar6RP04q3j1Ol/hzzszq9pIpXIr7hMdh88Ije6amgWh+l4Azj37Zi0ghzEuJ6CvUI4noTquZU8dJ8was24IgfPLf0ydV7G5beHBeqd+Zx8bWMkyKPDS6CtmoXb7mCWIPa4Dt5vf8/ER0sGnQwpRo+bIgz6LaG+F6vwdv0nSde5W77vYO7BnCOuPo0R1xfkiOcjIu3xL+MEAzf/dT2Nqnefd03gcFP/y8bBBELg2ekhHxrzStV2LIBXpvhzK6P+eMMFa0/5hwE02/Ias0BOdI1EDcyTwziwMHSgd1v49NcEo6D+rkgr/w3f4+nvxzRk600CQAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=8fea0d1f2f097e14743eb82bcfa4e300"/&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=03eac91f2f097e14743eb82bcfa4e3ba"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=03eac91f2f097e14743eb82bcfa4e3ba"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=03eac91f2f097e14743eb82bcfa4e3ba"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=03eac91f2f097e14743eb82bcfa4e3ba"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_03eac91f2f097e14743eb82bcfa4e3ba&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:51:31&lt;/sys_created_on&gt;&lt;sys_id&gt;0feac91f2f097e14743eb82bcfa4e3f8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:51:31&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_03eac91f2f097e14743eb82bcfa4e3ba&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:51:31&lt;/sys_created_on&gt;&lt;sys_id&gt;87eac91f2f097e14743eb82bcfa4e3dd&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:51:31&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_03eac91f2f097e14743eb82bcfa4e3ba&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:51:31&lt;/sys_created_on&gt;&lt;sys_id&gt;87eac91f2f097e14743eb82bcfa4e3f1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Pete's Market Classifications Toolkit"&gt;2fb42aee93a43e502e03fde1a903d6ff&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:51:31&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_03eac91f2f097e14743eb82bcfa4e3ba"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_03eac91f2f097e14743eb82bcfa4e3ba"/&gt;&lt;sys_hub_flow action="UPDATE"&gt;&lt;sys_id&gt;3baacddb2f097e14743eb82bcfa4e3a4&lt;/sys_id&gt;&lt;latest_snapshot&gt;03eac91f2f097e14743eb82bcfa4e3ba&lt;/latest_snapshot&gt;&lt;compiler_build&gt;glide-zurich-07-01-2025__patch1-hotfix1-09-18-2025_09-20-2025_1616.zip&lt;/compiler_build&gt;&lt;version_record/&gt;&lt;/sys_hub_flow&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=3baacddb2f097e14743eb82bcfa4e3a4^sys_idNOT IN1fea0d1f2f097e14743eb82bcfa4e30c"/&gt;&lt;sys_flow_trigger_plan action="INSERT_OR_UPDATE"&gt;&lt;binding_strategy&gt;com.snc.process_flow.engine.binding.OncePerRecord&lt;/binding_strategy&gt;&lt;plan&gt;{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"1fea0d1f2f097e14743eb82bcfa4e30c","name":"plan","plan_signature":null}}&lt;/plan&gt;&lt;plan_id&gt;3baacddb2f097e14743eb82bcfa4e3a4&lt;/plan_id&gt;&lt;snapshot&gt;dece6d5b934132140f91fce79503d6dd&lt;/snapshot&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-11-11 17:51:32&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;1fea0d1f2f097e14743eb82bcfa4e30c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-11-11 17:51:32&lt;/sys_updated_on&gt;&lt;trigger display_value=""&gt;1bea0d1f2f097e14743eb82bcfa4e30a&lt;/trigger&gt;&lt;/sys_flow_trigger_plan&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=3baacddb2f097e14743eb82bcfa4e3a4"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1457411638</payload_hash>
+        <record_name>Set Wire Case Parameters</record_name>
+        <reverted_from/>
+        <source>01a9c0fa2fa4b650b14f861cbfa4e3fb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-12 02:59:33</sys_created_on>
+        <sys_id>7a588b572f0dbe14743eb82bcfa4e39a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19a760113a70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-12 02:59:33</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>ba588b572e0dbe14dbd7191db6dbdb99</update_guid>
+        <update_guid_history>ba588b572e0dbe14dbd7191db6dbdb99:1457411638,bcfa0d1f21097e1458532029913010f1:-1836737719,97ea0d1f53097e141d8d5af1e91bb319:-916837526,36eac91f23097e14638f9cf2d140a9ad:-206344276,ebda491fa8097e1408a9818bb8e8dca5:483678455,ebda491fa8097e1408a9818bb8e8dca5:483678455,b3cac15fe80dfed0c65021f8f008007f:-55535971,b3cac15fe80dfed0c65021f8f008007f:-55535971,54ca815f160dfed0dfe2c96b95a99d05:-1462292904,54ca815f160dfed0dfe2c96b95a99d05:-1462292904,3faa411fd2097e14c379238db098c8bf:-1658054464</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 21:09:53</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>29ce5638f60540f08b6e869cdb2b1e24</sys_id>
+        <sys_metadata>3baacddb2f097e14743eb82bcfa4e3a4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set Wire Case Parameters</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_scope_delete display_value="">1f26bce786f64c68a8aed337e0a89e90</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_3baacddb2f097e14743eb82bcfa4e3a4</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_3baacddb2f097e14743eb82bcfa4e3a4">7a588b572f0dbe14743eb82bcfa4e39a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 21:09:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

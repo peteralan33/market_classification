@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent">
+    <sn_aia_agent action="INSERT_OR_UPDATE">
+        <agent_type>internal</agent_type>
+        <applicability_script><![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * @param {string} inputs.context.device_type - The device type from which the experience is accessed, e.g.'mweb' 
+ * @param {string} inputs.context.deployment_id - The unique identifier for the assistant deployment 
+ * @param {string} inputs.context.assistant_type - The type of assistant, e.g., 'nava' 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]></applicability_script>
+        <compiled_handbook/>
+        <description>Automates the process of updating exception cases for unmatched trades in allocation workflows. Designed for operations and reconciliation teams to streamline exception handling, reduce manual intervention, and improve allocation accuracy.</description>
+        <external_agent_configuration/>
+        <instructions>1. Using the current Exception Case Record in Memory
+2. Update the Exception Case Record so that it is ready for allocation.
+3. Save the updated Exception Case Record.</instructions>
+        <internal_name>global.x_snc_pab_mc_tkit.Trade Exception Work Allocation Agent</internal_name>
+        <name>Trade Exception Work Allocation Agent</name>
+        <parent/>
+        <processing_message/>
+        <proficiency>- Expert in exception case management for unmatched trades during the allocation process, including identification, updating, and tracking of exception records to ensure accurate trade allocation, resolution, and data integrity throughout the exception management lifecycle.
+- Proficient in utilizing the 'Update Exception Case for Work Allocation' tool to update exception case records, ensuring that unmatched trades are prepared for automated work allocation and review. This includes referencing the correct exception case and making necessary updates to facilitate accurate and efficient allocation.
+- Capable of executing a structured workflow for exception case management by sequentially accessing, updating, and saving exception case records, thereby ensuring that all exception data is current, accurate, and ready for allocation as per defined operational procedures.</proficiency>
+        <record_type>custom</record_type>
+        <role>Responsible for updating exception cases related to unmatched trades during the allocation process. Acts as a workflow enabler by identifying, updating, and tracking exception records to ensure accurate trade allocation and resolution. Communicates updates clearly and maintains data integrity throughout the exception management lifecycle.</role>
+        <source_id/>
+        <strategy display_value="ReAct">f0bff21f9f13c6108f431597d90a1c74</strategy>
+        <sys_class_name>sn_aia_agent</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-28 17:10:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>63a364b82fad76d0b14f861cbfa4e375</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Trade Exception Work Allocation Agent</sys_name>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sn_aia_agent_63a364b82fad76d0b14f861cbfa4e375</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-28 17:12:58</sys_updated_on>
+    </sn_aia_agent>
+</record_update>

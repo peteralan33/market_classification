@@ -7,92 +7,59 @@ Input: Unstructured text, including email content and attached document data, wh
 
 Objective: Your sole task is to analyze the input text and identify ALL distinct unmatched trades. For each trade identified, you MUST create a separate record,  containing all specified data points, listed below, to trigger the creation of a new, actionable investigation Task in the downstream system.
 
-
 Goal: Your single goal is to analyze all the input text. For every distinct unmatched trade you find, you must create one separate, complete activity record.
 
-MAPPING RULES: What to Extract
-For each unmatched trade, extract and map the data exactly as follows. Use the specified Missing Data Policy if the information is not found.
+Key Considerations 
+--&gt; DO NOT CREATE DUPLICATE RECORDS
+--&gt; DO NOT PLACE MULTIPLE TRADES IN ONE RECORD
 
-1. Short_Description
-What to Find: A concise summary of the task.
+MAPPING RULES AND EXTRACTION GUIDANCE
+Case Management Fields (High-Level Context)
+Key Name: Current_Case_Record --&gt; What to Find: The unique identifier for the current underlying case or task (System Context).
 
-Required Format: MUST be constructed as: "Unmatched Trade: [Instrument_Name] - [Reference_Number]"
+Trade Detail Fields (Transaction Specific)
+Key Name: Short_Description --&gt; What to Find: A concise summary of the task. --&gt; Required Format: MUST be constructed as: "Unmatched Trade: [Instrument_Name] - [Reference_Number]".
 
-Missing Policy: (Depends on finding the Instrument Name and Reference Number)
+Key Name: ISIN --&gt; What to Find: The 12-character alphanumeric security identifier. --&gt; Required Format: Must start with a two-letter country code (e.g., 'US', 'FR'). --&gt; Missing Data Policy: If not found, use the value "N/A".
 
-2. ISIN (International Securities Identification Number)
-What to Find: The 12-character alphanumeric security identifier.
+Key Name: Reference_Number --&gt; What to Find: The unique trade identifier (Deal ID, Trade Reference, or Confirmation Number). --&gt; Missing Data Policy: If not found, use the value "N/A".
 
-Required Format: Must start with a two-letter country code (e.g., 'US', 'FR').
+Key Name: Trade_Date --&gt; What to Find: The date the trade was executed. --&gt; Required Format: Strictly YYYY-MM-DD (e.g., '2025-10-27'). --&gt; Missing Data Policy: If not found, use the value "N/A".
 
-Missing Policy: "N/A"
+Key Name: Settlement_Date --&gt; What to Find: The date the trade is scheduled to settle (Value Date). --&gt; Required Format: Strictly YYYY-MM-DD. --&gt; Missing Data Policy: If not found, use the value "N/A".
 
-3. Reference_Number
-What to Find: The unique trade identifier (Deal ID, Trade Reference, or Confirmation Number).
+Key Name: Direction --&gt; What to Find: Whether the transaction was a Buy or a Sell. --&gt; Required Value: MUST be either "Buy" or "Sell". --&gt; Missing Data Policy: If ambiguous or not found, use the value "UNCLEAR".
 
-Missing Policy: "N/A"
+Key Name: Settlement_Amount --&gt; What to Find: The total monetary value of the trade. --&gt; Required Format: Numeric value only (no currency symbols or text). Use standard decimal notation (e.g., '1250000.50'). --&gt; Missing Data Policy: If not found or ambiguous, use the value 0.
 
-4. Trade_Date
-What to Find: The date the trade was executed.
+Key Name: Instrument_Name --&gt; What to Find: The full, descriptive name of the security. --&gt; Missing Data Policy: If not found, use the value "N/A".
 
-Required Format: Strictly YYYY-MM-DD (e.g., '2025-10-27').
+Key Name: Quantity --&gt; What to Find: The quantity of shares, bonds, or contracts traded. --&gt; Missing Data Policy: If not found, use the value 0.
 
-Missing Policy: "N/A"
+Key Name: Price_Per_Share --&gt; What to Find: The price per unit of the security. --&gt; Missing Data Policy: If not found, use the value 0.00.
 
-5. Settlement_Date (Value Date)
-What to Find: The date the trade is scheduled to settle.
+Key Name: Source --&gt; Extraction Logic: This value will be defaulted. --&gt; Default Value: Always use the literal value "Attachment".
 
-Required Format: Strictly YYYY-MM-DD.
-
-Missing Policy: "N/A"
-
-6. Direction
-What to Find: Whether the transaction was a Buy or a Sell.
-
-Required Value: MUST be either "Buy" or "Sell".
-
-Missing Policy: "UNCLEAR"
-
-7. Settlement_Amount
-What to Find: The total monetary value of the trade.
-
-Required Format: Numeric value only (no currency symbols or text). Use standard decimal notation (e.g., '1250000.50').
-
-Missing Policy: 0
-
-8. Instrument_Name
-What to Find: The full, descriptive name of the security (e.g., 'Apple Inc. Common Stock').
-
-Missing Policy: "N/A"
-
-9. Category
-What to Find: The classification for internal routing.
-
-Required Value: Always use the literal text "Trade Reconciliation".
-
-Missing Policy: "Trade Reconciliation"
-
-Required Output Format
-Present your final output as a list of separated Trade Activity Records, using the exact field names shown below.
-
-Example Output:
-
-Trade Activity Record 1
-* Short_Description: Unmatched Trade: [Instrument_Name] - [Reference_Number]
-* ISIN: [Extracted Value or N/A]
-* Reference_Number: [Extracted Value or N/A]
-* Trade_Date: YYYY-MM-DD
-* Settlement_Date: YYYY-MM-DD
-* Direction: Buy/Sell/UNCLEAR
-* Settlement_Amount: 1250000.50 or 0
-* Instrument_Name: [Extracted Value or N/A]
-* Category: Trade Reconciliation
+Example Output 
+Current_Case_Record: WIR0000NNN
+Account: Boxeo Investments
+Contact: Jane Doe
+Short_Description: Unmatched Trade: INVESCO QQQ TRUST ETF - 95004413
+ISIN: US46090E1035
+Reference_Number: 95004413
+Trade_Date: 2025-12-01
+Settlement_Date: 2025-12-02
+Direction: Buy
+Settlement_Amount: 2580000.00
+Instrument_Name: INVESCO QQQ TRUST ETF
+Quantity: 6000
+Price_Per_Share: 430.00
+Source: Email
 ---
 Trade Activity Record 2
-* Short_Description: ...
 (Continue all fields for every trade found)</description>
-        <input_schema>[{"name":"Parent","description":"The current case the task is being ran on","mandatory":false},{"name":"ISIN","description":"International Securities Identification Number","mandatory":false},{"name":"Reference_Number","description":"The reference number outlined in the document","mandatory":false},{"name":"Trade_Date","description":"Trade Date","mandatory":false},{"name":"Settlement_Date","description":"Settlement / Value Date","mandatory":false},{"name":"Direction","description":"Buy or Sell","mandatory":false},{"name":"Settlement_Amount","description":"Settlement Amount","mandatory":false},{"name":"Instrument_Name","description":"Instrument Name","mandatory":false},{"name":"Quantity","description":"Volume of the trade","mandatory":false},{"name":"PerSharePrice","description":"Per share price","mandatory":false},{"name":"ShortDesc","description":"Overview of the task","mandatory":false},{"name":"Description","description":"The detailed description of the task","mandatory":false},{"name":"crudInputs","description":"CRUD Input Variables. These are already pre-defined. Under no circumstances should you prompt the user for this information or attempt to change these values."}]</input_schema>
-        <name>Unmatched Trade Activity Creation</name>
+        <input_schema>[{"name":"Current_Case_Record","description":"The current case the task is being ran on","mandatory":true},{"name":"ISIN","description":"International Securities Identification Number","mandatory":true},{"name":"Reference_Number","description":"The reference number outlined for each order","mandatory":true},{"name":"Trade_Date","description":"Trade Date","mandatory":true},{"name":"Settlement_Date","description":"Settlement / Value Date","mandatory":true},{"name":"Direction","description":"Buy or Sell","mandatory":true},{"name":"Settlement_Amount","description":"Settlement Amount","mandatory":true},{"name":"Instrument_Name","description":"Instrument Name","mandatory":true},{"name":"Quantity","description":"Volume of the trade","mandatory":true},{"name":"ShortDesc","description":"Overview of the task","mandatory":true},{"name":"Description","description":"The detailed description of the task","mandatory":true},{"name":"Price_Per_Share","description":"The price per share that was traded","mandatory":true},{"name":"Source","description":"Attachment","mandatory":true},{"name":"crudInputs","description":"CRUD Input Variables. These are already pre-defined. Under no circumstances should you prompt the user for this information or attempt to change these values."}]</input_schema>
+        <name>Create Unmatched Trade Activity</name>
         <record_type>custom</record_type>
         <script><![CDATA[(function (inputs) {
     function getChoiceList(tableName, fieldName) {
@@ -235,15 +202,15 @@ Trade Activity Record 2
         <sys_created_on>2025-11-12 05:09:22</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>e816af1f2f01fe14743eb82bcfa4e321</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>Unmatched Trade Activity Creation</sys_name>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Create Unmatched Trade Activity</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
         <sys_update_name>sn_aia_tool_e816af1f2f01fe14743eb82bcfa4e321</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-22 15:41:08</sys_updated_on>
+        <sys_updated_on>2025-11-30 19:58:11</sys_updated_on>
         <target_document/>
         <target_document_table>sn_aia_tool</target_document_table>
         <type>crud</type>

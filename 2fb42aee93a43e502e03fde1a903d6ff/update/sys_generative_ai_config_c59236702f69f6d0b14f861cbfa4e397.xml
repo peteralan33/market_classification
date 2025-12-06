@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
     <sys_generative_ai_config action="INSERT_OR_UPDATE">
-        <active>false</active>
+        <active>true</active>
         <additional_configurations>{"skill_config_id":"630b853e2f557290b14f861cbfa4e35a"}</additional_configurations>
         <ai_suggested>false</ai_suggested>
         <definition>9f0b853e2f557290b14f861cbfa4e31a</definition>
@@ -9,7 +9,7 @@
         <min_word_count>-1</min_word_count>
         <model>llm_generic_small</model>
         <name>Create Unmatched Trade Structure</name>
-        <parent/>
+        <parent display_value="OneExtend Capability Definition: Create Unmatched Trade Structure  (Now LLM Service - Now LLM Generic)">8dd6d7582fe5b2d0b14f861cbfa4e3e4</parent>
         <prompt>## Role
 You are a data extraction expert. Your task is to extract and structure unmatched trade data from email content for downstream processing.
 
@@ -37,7 +37,6 @@ Email Body: {{LookUpEmailsOnUnmatchedRecord.email_body}}
 The output should be a list of Trade Activity Records in the following format:
 
 Trade Activity Record 1
-* Short_Description: Unmatched Trade: [Instrument_Name] - [Reference_Number]
 * ISIN: [Extracted Value or N/A]
 * Reference_Number: [Extracted Value or N/A]
 * Trade_Date: YYYY-MM-DD
@@ -45,31 +44,32 @@ Trade Activity Record 1
 * Direction: Buy/Sell/UNCLEAR
 * Settlement_Amount: 1250000.50 or 0
 * Instrument_Name: [Extracted Value or N/A]
-* Category: Trade Reconciliation
+* Quantity: [Extracted Value or 0]
+* Price Per Share: [Extracted Value or 0]
 * Source: Email
 
 Repeat the above format for each unmatched trade extracted from the email content.</prompt>
         <prompt_template_role>user</prompt_template_role>
         <request_tokens>32018</request_tokens>
         <show_in_prompt_library>true</show_in_prompt_library>
-        <state>archived</state>
+        <state>published</state>
         <sys_class_name>sys_generative_ai_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-11-22 14:50:50</sys_created_on>
+        <sys_created_on>2025-11-29 03:31:00</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>ef0b853e2f557290b14f861cbfa4e327</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_id>c59236702f69f6d0b14f861cbfa4e397</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>9f0b853e2f557290b14f861cbfa4e31a</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
-        <sys_update_name>sys_generative_ai_config_ef0b853e2f557290b14f861cbfa4e327</sys_update_name>
+        <sys_update_name>sys_generative_ai_config_c59236702f69f6d0b14f861cbfa4e397</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-27 16:48:31</sys_updated_on>
+        <sys_updated_on>2025-11-29 03:31:28</sys_updated_on>
         <temperature>0.2</temperature>
         <thinking_tokens>0</thinking_tokens>
-        <version>1</version>
+        <version>4</version>
     </sys_generative_ai_config>
 </record_update>

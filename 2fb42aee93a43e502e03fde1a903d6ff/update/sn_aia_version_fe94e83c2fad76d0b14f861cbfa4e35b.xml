@@ -1,32 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_version">
     <sn_aia_version action="INSERT_OR_UPDATE">
         <condition/>
-        <instructions>### Mission
-Execute the following sequential workflow to process inbound unmatched trades.
-
-### Execution Steps
-
-1. Review inbound emails 
---&gt; Tool - Unmatched Trade Triage Specialist Email
-2. Review inbound documents -
---&gt; Tool - Unmatched Trade Triage Specialist Documents</instructions>
+        <instructions>1. Using the current Exception Case Record in Memory
+2. Update the Exception Case Record so that it is ready for allocation.
+3. Save the updated Exception Case Record.</instructions>
         <state>published</state>
         <sys_class_name>sn_aia_version</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-11-23 03:37:50</sys_created_on>
+        <sys_created_on>2025-11-28 17:10:43</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_id>b29a77362fd1f290b14f861cbfa4e378</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_id>fe94e83c2fad76d0b14f861cbfa4e35b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>V1</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
-        <sys_update_name>sn_aia_version_b29a77362fd1f290b14f861cbfa4e378</sys_update_name>
+        <sys_update_name>sn_aia_version_fe94e83c2fad76d0b14f861cbfa4e35b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-29 01:24:58</sys_updated_on>
-        <target_id>b42abfb22fd1f290b14f861cbfa4e3d4</target_id>
-        <target_table>sn_aia_usecase</target_table>
+        <sys_updated_on>2025-11-28 17:10:43</sys_updated_on>
+        <target_id>63a364b82fad76d0b14f861cbfa4e375</target_id>
+        <target_table>sn_aia_agent</target_table>
         <version_name>V1</version_name>
         <version_number>1</version_number>
     </sn_aia_version>

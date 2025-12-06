@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages>Now Assist has a plan for solving {0}. 
+Now Assist has a plan for solving this record. </messages>
+        <name>Show AIA notification - sn_bom_treasury_</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    var ga = new GlideAjax('sn_aia.AIAConversationUtilsAjax');
+    ga.addParam('sysparm_name', 'hasNonInteractedAgenticConversationForTargetRecord');
+    ga.addParam('sysparm_target_record_id', g_form.getUniqueValue());
+    ga.getXMLAnswer(function(convId) {
+        if (convId) {
+            var isWorkspace = typeof GwtMessage === 'function' ? false : true;
+            var message = '';
+            var number = g_form.getValue('number');
+            if (isWorkspace) {
+                if (number) {
+                    message = getMessage("Now Assist has a plan for solving {0}. ", number);
+                } else {
+                    message = getMessage("Now Assist has a plan for solving this record. ");
+                }
+                message += `<now-button label="View plan" bare=true onClick="(function(e){e.target.dispatch('OPEN_UTILITY_MENU', { id: 'nowAssist', pin: false, additionalData: { conversationId: '${convId}' } }); })(event);">View plan</now-button>`
+            } else {
+                if (number) {
+                    message = new GwtMessage().getMessage("Now Assist has a plan for solving {0}. ", number);
+                } else {
+                    message = new GwtMessage().getMessage("Now Assist has a plan for solving this record. ");
+                }
+                message += `<a href="#" onclick="CustomEvent.fireTop('nowassist:open_utility_menu', { id: 'nowAssist', pin: false, additionalData: { conversationId: '${convId}' } });">View plan</a>`;
+            }
+            g_form.addSuggestionMessage(message);
+        }
+    });
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-11-29 02:13:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f9c0eaf0932d7e900f91fce79503d6bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Show AIA notification - sn_bom_treasury_</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
+        <sys_update_name>sys_script_client_f9c0eaf0932d7e900f91fce79503d6bb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-11-29 02:13:13</sys_updated_on>
+        <table>sn_bom_treasury_wire_service</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

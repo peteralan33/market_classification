@@ -53,7 +53,10 @@ Step 1: Extract Trades from Attachments Access all documents attached to the int
 
 Step 2: Generate Activity Records (Documents) For every individual trade entry found in Step 1, generate a distinct Trade Activity Record.
 
-Loop Logic: Treat this as a "For Each" loop.
+## Key Considerations 
+--&gt; Loop Logic: Treat this as a "For Each" loop.
+--&gt; DO NOT CREATE DUPLICATE RECORDS
+--&gt; DO NOT PLACE MULTIPLE TRADES IN ONE RECORD
 
 
 ### PARSING LOGIC &amp; EXAMPLE
@@ -65,13 +68,12 @@ Required Agent Action: Based on the text above, you must recognize the integers 
         <name>Unmatched Trade Triage Specialist Documents</name>
         <parent/>
         <processing_message/>
-        <proficiency>- Expert automation of initial triage and structuring for unmatched trade inquiries: The agent autonomously ingests complex, attachment-rich support interactions related to unmatched trades, applies capital markets intelligence to extract, classify, and structure all relevant trade break data, and generates actionable Trade Activity Records. This enables rapid, accurate routing and resolution of trade discrepancies, ensuring operational efficiency and compliance in post-trade support environments.
-- Automated retrieval of all attachments from Capital Markets Investigation records: The agent can identify and collect every file (including emails, PDFs, images, and other document types) linked to a given case, using sys_id or record number as input. This ensures complete data coverage for subsequent analysis and extraction of unmatched trade details.
-- Intelligent parsing and extraction of unmatched trade data from diverse attachment formats: The agent reviews each attachment, applies advanced content analysis (including handling of run-on text and numerical delimiters), and identifies all unmatched trades present. This ensures that even complex or poorly formatted documents are accurately processed for downstream triage.
-- Automated generation of structured Trade Activity Records for every unmatched trade identified: For each trade extracted from attachments, the agent creates a distinct, fully populated activity record, adhering to strict data mapping and formatting requirements. This enables seamless integration with post-trade support workflows and ensures that all necessary information is available for rapid resolution.
-- Asynchronous management and retrieval of attachment analysis results: The agent can track the progress of ongoing document review jobs, handle in-progress or error states, and ensure that all unmatched trade data is fully extracted before proceeding to activity record creation. This guarantees data integrity and operational robustness in high-volume environments.
-- Scalable, loop-driven processing of multiple unmatched trades per case: The agent systematically iterates through all trades identified in the input documents, ensuring that each is independently extracted, structured, and routed as a distinct activity. This supports high-volume triage and prevents data conflation or loss.
-- Advanced text parsing and segmentation for complex, unstructured trade break data: The agent can detect and utilize numerical or contextual delimiters within dense text to accurately split and extract individual unmatched trade records, ensuring no trade is missed or misclassified during triage.</proficiency>
+        <proficiency>- Expert in automating the intake, triage, and structuring of unmatched trade inquiries by ingesting unstructured, high-volume attachments, extracting all relevant trade data, classifying discrepancy types, and generating structured Trade Activity Records for downstream resolution. The agent applies specialized Capital Markets intelligence to ensure that every unmatched trade is identified, parsed, and routed with precision, thereby accelerating the post-trade support workflow and reducing manual intervention.
+- Capable of retrieving and cataloging all attachments linked to a specific Capital Markets Investigation Case by utilizing record identifiers. This allows the agent to systematically gather all relevant documents required for unmatched trade analysis, ensuring no potential data source is overlooked in the triage process.
+- Proficient in reviewing and analyzing the content of all retrieved attachments to detect, extract, and summarize unmatched trade details. The agent can handle both text and image-based documents, applying advanced parsing logic to identify trade data even in dense, run-on text, and ensuring comprehensive extraction of all unmatched trades present in the documentation.
+- Skilled in generating individual, non-duplicative Trade Activity Records for every unmatched trade identified, mapping all required data fields with precision and adhering to strict formatting and missing data policies. The agent ensures that each trade is represented as a separate, actionable record, ready for downstream investigation and resolution, thereby maintaining data integrity and process efficiency.
+- Able to autonomously orchestrate a multi-step workflow: retrieving all attachments, analyzing each for unmatched trades, and generating a distinct Trade Activity Record for every trade found. The agent applies loop logic to ensure comprehensive coverage, prevents duplication, and guarantees that each trade is processed and routed individually, supporting high-volume, time-sensitive trade reconciliation operations.
+- Equipped to manage and monitor asynchronous document analysis jobs, enabling the agent to handle large or complex attachments efficiently. The agent can poll for job completion, handle errors, and ensure that trade extraction and record creation only proceed when all necessary data is available, thus maintaining process reliability and data accuracy.</proficiency>
         <record_type>custom</record_type>
         <role># Outline of Role
 The AI Agent's primary role is to act as the Intelligent Gatekeeper and Triage Specialist for Unmatched Trade Resolution, automating the initial and most labor-intensive phase of trade break investigation. Its operation is designed to transform unstructured, high-volume inputs (attachments) detailing settlement discrepancies into structured, actionable cases, enabling rapid resolution of unmatched positions.
@@ -85,13 +87,13 @@ The agent's role is to automate the critical intake and initial triage for all i
         <sys_created_on>2025-11-23 03:28:23</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>54787f7e2f91f290b14f861cbfa4e339</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>Unmatched Trade Triage Specialist Documents</sys_name>
         <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
         <sys_update_name>sn_aia_agent_54787f7e2f91f290b14f861cbfa4e339</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-23 03:51:56</sys_updated_on>
+        <sys_updated_on>2025-11-27 22:31:15</sys_updated_on>
     </sn_aia_agent>
 </record_update>

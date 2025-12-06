@@ -9,7 +9,7 @@
         <min_word_count>-1</min_word_count>
         <model>llm_generic_small</model>
         <name>Create Unmatched Trade Structure</name>
-        <parent/>
+        <parent display_value="OneExtend Capability Definition: Create Unmatched Trade Structure  (Now LLM Service - Now LLM Generic)">19459f142fe5b2d0b14f861cbfa4e36d</parent>
         <prompt>## Role
 You are a data extraction expert. Your task is to extract and structure unmatched trade data from email content for downstream processing.
 
@@ -37,7 +37,6 @@ Email Body: {{LookUpEmailsOnUnmatchedRecord.email_body}}
 The output should be a list of Trade Activity Records in the following format:
 
 Trade Activity Record 1
-* Short_Description: Unmatched Trade: [Instrument_Name] - [Reference_Number]
 * ISIN: [Extracted Value or N/A]
 * Reference_Number: [Extracted Value or N/A]
 * Trade_Date: YYYY-MM-DD
@@ -46,6 +45,8 @@ Trade Activity Record 1
 * Settlement_Amount: 1250000.50 or 0
 * Instrument_Name: [Extracted Value or N/A]
 * Category: Trade Reconciliation
+* Quantity: [Extracted Value or 0]
+* Price Per Share: [Extracted Value or 0]
 * Source: Email
 
 Repeat the above format for each unmatched trade extracted from the email content.</prompt>
@@ -55,21 +56,21 @@ Repeat the above format for each unmatched trade extracted from the email conten
         <state>archived</state>
         <sys_class_name>sys_generative_ai_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-11-22 14:50:50</sys_created_on>
+        <sys_created_on>2025-11-27 16:52:25</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>ef0b853e2f557290b14f861cbfa4e327</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_id>8dd6d7582fe5b2d0b14f861cbfa4e3e4</sys_id>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>9f0b853e2f557290b14f861cbfa4e31a</sys_name>
         <sys_overrides/>
         <sys_package display_value="Pete's Market Classifications Toolkit" source="x_snc_pab_mc_tkit">2fb42aee93a43e502e03fde1a903d6ff</sys_package>
         <sys_policy/>
         <sys_scope display_value="Pete's Market Classifications Toolkit">2fb42aee93a43e502e03fde1a903d6ff</sys_scope>
-        <sys_update_name>sys_generative_ai_config_ef0b853e2f557290b14f861cbfa4e327</sys_update_name>
+        <sys_update_name>sys_generative_ai_config_8dd6d7582fe5b2d0b14f861cbfa4e3e4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-11-27 16:48:31</sys_updated_on>
+        <sys_updated_on>2025-11-29 03:31:28</sys_updated_on>
         <temperature>0.2</temperature>
         <thinking_tokens>0</thinking_tokens>
-        <version>1</version>
+        <version>3</version>
     </sys_generative_ai_config>
 </record_update>
